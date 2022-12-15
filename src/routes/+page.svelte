@@ -1,7 +1,8 @@
 <script>
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
+	import RichTextResolver from 'storyblok-js-client/dist/rich-text-resolver.cjs';
+	/** @type {import('./$types').PageData} */
+	export let data;
+	const aboutLine = new RichTextResolver().render(data.data);
 </script>
 
 <svelte:head>
@@ -9,51 +10,38 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
-
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
-
-	<Counter />
-</section>
-
-<style>
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex: 0.6;
-	}
-
-	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
-	}
-</style>
+<div class="md:justify-auto flex min-h-[90vh] flex-col justify-center md:flex-row md:items-center">
+	<div class="flex w-full flex-col items-center justify-center md:w-1/2 md:items-start">
+		<div class="filter md:hidden">
+			<img
+				alt="Something"
+				width={120}
+				height={120}
+				src={`/static/favicon-image.jpg`}
+				class="rounded-full grayscale"
+			/>
+		</div>
+		<h1 class="mt-5 text-2xl font-bold sm:text-5xl md:mt-0">Rishi Raj Jain</h1>
+		<h2 class="mt-5 text-center text-lg text-gray-500 dark:text-white sm:text-xl md:text-left">
+			Technical Customer Success Manager at Edgio
+		</h2>
+		<!-- <div class="flex flex-row space-x-5">
+		<SocialLinks />
+	  </div> -->
+		<div class="mt-10 h-[1px] w-full bg-gray-200 dark:bg-gray-700" />
+		<h2 class="text-md mt-10 text-center text-gray-500 dark:text-white sm:text-lg md:text-left">
+			{@html aboutLine}
+		</h2>
+	</div>
+	<div class="hidden flex-col items-end justify-center md:flex md:w-1/2">
+		<div class="grayscale filter">
+			<img
+				width={330}
+				height={440}
+				alt="Something"
+				class="rounded object-cover"
+				src={`/static/favicon-image.jpg`}
+			/>
+		</div>
+	</div>
+</div>
