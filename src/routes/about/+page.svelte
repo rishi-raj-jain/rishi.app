@@ -1,13 +1,11 @@
 <script>
 	export let data
 
+	import Seo from '../Seo.svelte'
 	import RichTextResolver from 'storyblok-js-client/dist/rich-text-resolver.cjs'
 </script>
 
-<svelte:head>
-	<title>About</title>
-	<meta name="description" content="About this app" />
-</svelte:head>
+<Seo title={`About - Rishi Raj Jain`} pathname="/about/" />
 
 <h1 class="text-2xl font-bold sm:text-5xl">About Me</h1>
 <h2 class="font-regular text-md mt-5 whitespace-pre-line dark:text-gray-400 sm:text-xl">

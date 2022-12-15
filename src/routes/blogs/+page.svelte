@@ -1,14 +1,12 @@
 <script>
 	export let data
 
+	import Seo from '../Seo.svelte'
 	import DateString from '../DateString.svelte'
 	import RichTextResolver from 'storyblok-js-client/dist/rich-text-resolver.cjs'
 </script>
 
-<svelte:head>
-	<title>About</title>
-	<meta name="description" content="About this app" />
-</svelte:head>
+<Seo title="Blogs - Rishi Raj Jain" pathname="/blogs/" />
 
 <div class="flex flex-col">
 	<h1 class="text-2xl font-bold sm:text-5xl">Blogs</h1>

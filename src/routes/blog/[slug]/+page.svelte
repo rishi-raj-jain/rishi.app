@@ -1,9 +1,18 @@
 <script>
 	export let data
 
+	let slug = '/' + data.slug
+
+	if (!slug.endsWith('/')) {
+		slug += '/'
+	}
+
+	import Seo from '../../Seo.svelte'
 	import Author from './Author.svelte'
 	import DateString from '../../DateString.svelte'
 </script>
+
+<Seo title={`${data.post.content.title} - Rishi Raj Jain`} pathname={slug} />
 
 <div class="flex w-full flex-col items-center">
 	<div class="w-full md:max-w-2xl">

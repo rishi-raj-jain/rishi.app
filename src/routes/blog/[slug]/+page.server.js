@@ -20,6 +20,7 @@ export async function load({ params }) {
 		const appendFirst = (item) => (item.length ? morePosts.push(item[0]) : null)
 		appendFirst(await getOtherBlogs(data.post.first_published_at, data.post.full_slug, 1, true))
 		appendFirst(await getOtherBlogs(data.post.first_published_at, data.post.full_slug, 1, false))
+		data['seo_slug'] = slug
 	} catch (e) {
 		console.log(e)
 	}

@@ -1,6 +1,9 @@
 <script>
+	import Seo from '../Seo.svelte'
 	import { storyblok } from './data'
 </script>
+
+<Seo title="Storyblok - Rishi Raj Jain" pathname="/storyblok/" />
 
 <div class="flex w-full flex-col items-center text-[14px]">
 	<div class="mt-10 flex w-[90vw] max-w-[540px] flex-col">

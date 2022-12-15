@@ -1,6 +1,9 @@
 <script>
 	import { cv } from './data'
+	import Seo from '../Seo.svelte'
 </script>
+
+<Seo title="CV - Rishi Raj Jain" pathname="/cv/" />
 
 <div class="flex w-full flex-col items-center text-[14px]">
 	<div class="mt-10 flex w-[90vw] max-w-[540px] flex-col">

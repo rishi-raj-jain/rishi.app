@@ -1,14 +1,12 @@
 <script>
 	export let data
 
+	import Seo from './Seo.svelte'
 	import SocialLinks from './SocialLinks.svelte'
 	import RichTextResolver from 'storyblok-js-client/dist/rich-text-resolver.cjs'
 </script>
 
-<svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
-</svelte:head>
+<Seo />
 
 <div class="md:justify-auto flex min-h-[90vh] flex-col justify-center md:flex-row md:items-center">
 	<div class="flex w-full flex-col items-center justify-center md:w-1/2 md:items-start">
