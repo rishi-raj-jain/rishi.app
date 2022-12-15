@@ -1,19 +1,12 @@
-<script>
-</script>
-
-<nav
-	class="dark:bg-black sticky top-0 z-10 flex w-full flex-col items-center backdrop-blur-xl backdrop-filter"
->
-	<div
-		class="flex w-full max-w-[90vw] flex-row items-center justify-between sm:px-10 lg:max-w-[75vw]"
-	>
+<nav class="dark:bg-black sticky top-0 z-10 flex w-full flex-col items-center backdrop-blur-xl backdrop-filter">
+	<div class="flex w-full max-w-[90vw] flex-row items-center justify-between sm:px-10 lg:max-w-[75vw]">
 		<button class="appearance-none focus:outline-none">
 			<svg
-				xmlns="http://www.w3.org/2000/svg"
 				width="12"
 				height="12"
 				fill="black"
 				viewBox="0 0 16 16"
+				xmlns="http://www.w3.org/2000/svg"
 				class="block transition-all duration-500 dark:hidden"
 			>
 				<title>Turn on the dark mode</title>
@@ -22,11 +15,11 @@
 				/>
 			</svg>
 			<svg
-				xmlns="http://www.w3.org/2000/svg"
 				width="12"
-				viewBox="0 0 16 16"
 				height="12"
 				fill="white"
+				viewBox="0 0 16 16"
+				xmlns="http://www.w3.org/2000/svg"
 				class="hidden transition-all duration-500 dark:block"
 			>
 				<title>Turn on the light mode</title>
@@ -35,12 +28,10 @@
 				/>
 			</svg>
 		</button>
-		<div
-			class="relative flex max-w-[258px] flex-row items-center space-x-5 overflow-x-scroll sm:max-w-none sm:overflow-x-hidden"
-		>
+		<div class="relative flex max-w-[258px] flex-row items-center space-x-5 overflow-x-scroll sm:max-w-none sm:overflow-x-hidden">
 			<a href="/">Home</a>
 			<a href="/about">About</a>
-			<!-- <a href="/blogs">Blogs</a> -->
+			<a href="/blogs">Blogs</a>
 			<a href="/cv">CV</a>
 			<a href="/storyblok">Storyblok</a>
 		</div>

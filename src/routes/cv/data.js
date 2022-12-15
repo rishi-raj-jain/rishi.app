@@ -44,8 +44,7 @@ export const cv = {
 	Education: [
 		{
 			name: '2018 — 2022',
-			title:
-				'B.Tech Computer Science and Design at Indraprastha Institute of Information Technology, Delhi',
+			title: 'B.Tech Computer Science and Design at Indraprastha Institute of Information Technology, Delhi',
 			href: 'https://iiitd.ac.in'
 		}
 	],

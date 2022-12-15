@@ -40,11 +40,7 @@ self.addEventListener('fetch', (event) => {
 					// Both fetch() and cache.put() "consume" the request, so we need to make a copy.
 					// (see https://developer.mozilla.org/en-US/docs/Web/API/Request/clone)
 					return fetch(event.request.clone()).then((response) => {
-						if (
-							response.status < 400 &&
-							event.request.method === 'GET' &&
-							response.headers.has('content-type')
-						) {
+						if (response.status < 400 && event.request.method === 'GET' && response.headers.has('content-type')) {
 							// This avoids caching responses that we know are errors (i.e. HTTP status code of 4xx or 5xx).
 							// We also only want to cache responses that correspond to fonts,
 							// i.e. have a Content-Type response header that starts with "font/".

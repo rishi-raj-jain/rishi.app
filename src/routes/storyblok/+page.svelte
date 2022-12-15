@@ -7,14 +7,9 @@
 		<h2 class="text-3xl font-bold text-zinc-700 dark:text-gray-300">Storyblok x Rishi Raj Jain</h2>
 		<a href="#About" id="About" class="mt-10 text-zinc-700 dark:text-gray-300">About</a>
 		<p class="mt-2 font-light text-slate-600 dark:text-slate-400">
-			Rishi is a<a
-				target="_blank"
-				rel="noreferrer"
-				href="https://storyblok.com"
-				class="text-black underline dark:text-slate-200"
-			>
-				Storyblok Ambassador</a
-			>, since Sept. 2021.
+			Rishi is a
+			<a target="_blank" rel="noreferrer" href="https://storyblok.com" class="text-black underline dark:text-slate-200"> Storyblok Ambassador</a>,
+			since Sept. 2021.
 		</p>
 	</div>
 	{#each Object.keys(storyblok) as i}

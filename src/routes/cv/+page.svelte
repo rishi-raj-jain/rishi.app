@@ -15,15 +15,8 @@
 			>
 				Edgio</a
 			>.
-			<a
-				target="_blank"
-				rel="noreferrer"
-				href="https://storyblok.com"
-				class="text-black underline dark:text-slate-200"
-			>
-				Storyblok</a
-			> Ambassador. Synchronising my knowledge with community about Web Development, Caching, Edge Computing,
-			Serverless, front-end ecosystems.
+			<a target="_blank" rel="noreferrer" href="https://storyblok.com" class="text-black underline dark:text-slate-200"> Storyblok</a> Ambassador. Synchronising
+			my knowledge with community about Web Development, Caching, Edge Computing, Serverless, front-end ecosystems.
 		</p>
 	</div>
 	{#each Object.keys(cv) as i}

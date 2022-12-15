@@ -1,8 +1,8 @@
-import * as dotenv from 'dotenv';
-dotenv.config();
-
-import { env } from '$env/dynamic/private';
 import fetch from 'node-fetch';
+import * as dotenv from 'dotenv';
+import { env } from '$env/dynamic/private';
+
+dotenv.config();
 
 async function fetchAPI(query, { variables, preview } = {}) {
 	const res = await fetch('https://gapi.storyblok.com/v1/api', {
