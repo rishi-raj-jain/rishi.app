@@ -24,10 +24,8 @@ const minification_options = {
 export async function handle({ event, resolve }) {
 	const response = await resolve(event, {
 		transformPageChunk: ({ html, done }) => {
-			let page = '';
-			html += page;
 			if (done) {
-				return building ? minify(page, minification_options) : page;
+				return building ? minify(html, minification_options) : html;
 			}
 		}
 	});
