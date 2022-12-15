@@ -1,8 +1,8 @@
-import fetch from 'node-fetch';
-import * as dotenv from 'dotenv';
-import { env } from '$env/dynamic/private';
+import fetch from 'node-fetch'
+import * as dotenv from 'dotenv'
+import { env } from '$env/dynamic/private'
 
-dotenv.config();
+dotenv.config()
 
 async function fetchAPI(query, { variables, preview } = {}) {
 	const res = await fetch('https://gapi.storyblok.com/v1/api', {
@@ -16,13 +16,13 @@ async function fetchAPI(query, { variables, preview } = {}) {
 			query,
 			variables
 		})
-	});
-	const json = await res.json();
+	})
+	const json = await res.json()
 	if (json.errors) {
-		console.error(json.errors);
-		throw new Error('Failed to fetch API');
+		console.error(json.errors)
+		throw new Error('Failed to fetch API')
 	}
-	return json.data;
+	return json.data
 }
 
 export async function getTagline(slug) {
@@ -34,8 +34,8 @@ export async function getTagline(slug) {
         }
       }
     }
-  `);
-	return data?.TaglineItem.content.Text;
+  `)
+	return data?.TaglineItem.content.Text
 }
 
 export async function getAllPostsWithSlug() {
@@ -47,8 +47,8 @@ export async function getAllPostsWithSlug() {
           }
         }
       }
-    `);
-	return data?.PostItems.items;
+    `)
+	return data?.PostItems.items
 }
 
 export async function getAllPostsForHome() {
@@ -69,8 +69,8 @@ export async function getAllPostsForHome() {
         }
       }
     `
-	);
-	return data?.PostItems.items;
+	)
+	return data?.PostItems.items
 }
 
 export async function getRecommendedPosts() {
@@ -89,8 +89,8 @@ export async function getRecommendedPosts() {
         }
       }
     `
-	);
-	return data?.PostlinkItems.items;
+	)
+	return data?.PostlinkItems.items
 }
 
 export async function getTimelineItems(per_page_items, page) {
@@ -108,8 +108,8 @@ export async function getTimelineItems(per_page_items, page) {
         }
       }
     `
-	);
-	return data?.TimelineitemItems.items;
+	)
+	return data?.TimelineitemItems.items
 }
 
 export async function getProjectItems(some) {
@@ -144,8 +144,8 @@ export async function getProjectItems(some) {
         }
       }
     `
-	);
-	return data?.ProjectitemItems.items;
+	)
+	return data?.ProjectitemItems.items
 }
 
 export async function getOtherBlogs(first_published_at, excluded_slug, items, desc) {
@@ -174,8 +174,8 @@ export async function getOtherBlogs(first_published_at, excluded_slug, items, de
 				excluded_slug
 			}
 		}
-	);
-	return data?.PostItems.items;
+	)
+	return data?.PostItems.items
 }
 
 export async function getPost(slug) {
@@ -206,8 +206,8 @@ export async function getPost(slug) {
 				slug: `posts/${slug}`
 			}
 		}
-	);
+	)
 	return {
 		post: data?.PostItem
-	};
+	}
 }

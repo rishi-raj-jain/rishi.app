@@ -1,6 +1,6 @@
 <nav class="dark:bg-black sticky top-0 z-10 flex w-full flex-col items-center backdrop-blur-xl backdrop-filter">
 	<div class="flex w-full max-w-[90vw] flex-row items-center justify-between sm:px-10 lg:max-w-[75vw]">
-		<button class="appearance-none focus:outline-none">
+		<button onclick="toggleTheme()" class="appearance-none focus:outline-none">
 			<svg
 				width="12"
 				height="12"

@@ -1,9 +1,8 @@
 <script>
-	import SocialLinks from './SocialLinks.svelte';
-	import RichTextResolver from 'storyblok-js-client/dist/rich-text-resolver.cjs';
-	/** @type {import('./$types').PageData} */
-	export let data;
-	const aboutLine = new RichTextResolver().render(data.data);
+	export let data
+
+	import SocialLinks from './SocialLinks.svelte'
+	import RichTextResolver from 'storyblok-js-client/dist/rich-text-resolver.cjs'
 </script>
 
 <svelte:head>
@@ -23,7 +22,7 @@
 		</div>
 		<div class="mt-10 h-[1px] w-full bg-gray-200 dark:bg-gray-700" />
 		<h2 class="text-md mt-10 text-center text-gray-500 dark:text-white sm:text-lg md:text-left">
-			{@html aboutLine}
+			{@html new RichTextResolver().render(data.data)}
 		</h2>
 	</div>
 	<div class="hidden flex-col items-end justify-center md:flex md:w-1/2">

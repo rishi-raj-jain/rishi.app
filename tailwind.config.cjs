@@ -1,4 +1,4 @@
-const { fontFamily } = require('tailwindcss/defaultTheme');
+const { fontFamily } = require('tailwindcss/defaultTheme')
 
 const noTailwindCode = {
 	pre: false,
@@ -6,7 +6,7 @@ const noTailwindCode = {
 	'pre code': false,
 	'code::before': false,
 	'code::after': false
-};
+}
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -82,4 +82,4 @@ module.exports = {
 		}
 	},
 	plugins: [require('@tailwindcss/line-clamp'), require('@tailwindcss/typography')]
-};
+}

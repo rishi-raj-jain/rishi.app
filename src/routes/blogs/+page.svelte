@@ -1,8 +1,8 @@
 <script>
-	import DateString from '../DateString.svelte';
-	import RichTextResolver from 'storyblok-js-client/dist/rich-text-resolver.cjs';
-	/** @type {import('./$types').PageData} */
-	export let data;
+	export let data
+
+	import DateString from '../DateString.svelte'
+	import RichTextResolver from 'storyblok-js-client/dist/rich-text-resolver.cjs'
 </script>
 
 <svelte:head>

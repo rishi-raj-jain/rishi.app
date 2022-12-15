@@ -1,5 +1,5 @@
 <script>
-	import { storyblok } from './data';
+	import { storyblok } from './data'
 </script>
 
 <div class="flex w-full flex-col items-center text-[14px]">

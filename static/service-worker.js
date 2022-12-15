@@ -1,26 +1,26 @@
 const CURRENT_CACHES = {
 	font: `prefetch`
-};
+}
 
 self.addEventListener('activate', async (event) => {
 	// Delete all caches that aren't named in CURRENT_CACHES.
 	// While there is only one cache in this example, the same logic will handle the case where
 	// there are multiple versioned caches.
-	let expectedCacheNamesSet = new Set();
+	let expectedCacheNamesSet = new Set()
 	event.waitUntil(
 		caches.keys().then((cacheNames) =>
 			Promise.all(
 				cacheNames.map((cacheName) => {
 					if (!expectedCacheNamesSet.has(cacheName)) {
 						// If this cache name isn't present in the set of "expected" cache names, then delete it.
-						console.log('[DROP]:', cacheName);
-						return caches.delete(cacheName);
+						console.log('[DROP]:', cacheName)
+						return caches.delete(cacheName)
 					}
 				})
 			)
 		)
-	);
-});
+	)
+})
 
 self.addEventListener('fetch', (event) => {
 	event.respondWith(
@@ -31,7 +31,7 @@ self.addEventListener('fetch', (event) => {
 					if (response) {
 						// If there is an entry in the cache for event.request, then response will be defined
 						// and we can just return it. Note that in this example, only font resources are cached.
-						return response;
+						return response
 					}
 					// Otherwise, if there is no entry in the cache for event.request, response will be
 					// undefined, and we need to fetch() the resource.
@@ -53,32 +53,32 @@ self.addEventListener('fetch', (event) => {
 							// the original response object which we will return back to the controlled page.
 							// (see https://developer.mozilla.org/en-US/docs/Web/API/Request/clone)
 							if (response.headers.get('content-type').includes('font')) {
-								console.log(event.request.url);
-								cache.put(event.request, response.clone());
+								console.log(event.request.url)
+								cache.put(event.request, response.clone())
 							} else if (response.headers.get('content-type').includes('image')) {
-								console.log(event.request.url);
-								cache.put(event.request, response.clone());
+								console.log(event.request.url)
+								cache.put(event.request, response.clone())
 							} else if (response.headers.get('content-type').includes('css')) {
-								console.log(event.request.url);
-								cache.put(event.request, response.clone());
+								console.log(event.request.url)
+								cache.put(event.request, response.clone())
 							} else if (response.headers.get('content-type').includes('javascript')) {
 								if (!event.request.url.includes('service-worker.js')) {
-									console.log(event.request.url);
-									cache.put(event.request, response.clone());
+									console.log(event.request.url)
+									cache.put(event.request, response.clone())
 								}
 							}
 						}
 						// Return the original response object, which will be used to fulfill the resource request.
-						return response;
-					});
+						return response
+					})
 				})
 				.catch((error) => {
 					// This catch() will handle exceptions that arise from the match() or fetch() operations.
 					// Note that a HTTP error response (e.g. 404) will NOT trigger an exception.
 					// It will return a normal response object that has the appropriate error code set.
-					console.error('  Error in fetch handler:', error);
-					throw error;
-				});
+					console.error('  Error in fetch handler:', error)
+					throw error
+				})
 		})
-	);
-});
+	)
+})

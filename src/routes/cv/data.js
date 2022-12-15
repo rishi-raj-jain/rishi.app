@@ -75,4 +75,4 @@ export const cv = {
 			href: 'mailto:rjain@edg.io'
 		}
 	]
-};
+}

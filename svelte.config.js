@@ -1,5 +1,5 @@
-import vercel from '@sveltejs/adapter-vercel';
-import preprocess from 'svelte-preprocess';
+import preprocess from 'svelte-preprocess'
+import vercel from '@sveltejs/adapter-vercel'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -15,6 +15,6 @@ const config = {
 			postcss: true
 		})
 	]
-};
+}
 
-export default config;
+export default config

@@ -1,5 +1,5 @@
 <script>
-	import { cv } from './data';
+	import { cv } from './data'
 </script>
 
 <div class="flex w-full flex-col items-center text-[14px]">

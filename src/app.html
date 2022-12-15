@@ -8,5 +8,85 @@
 	<body class="bg-white dark:bg-black min-h-screen font-display" data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
 		<link rel="stylesheet" href="/css/dark.css" />
+		<script defer>
+			// Add listener to sessionStorage events
+			const themeChangeListener = () => {
+				let sessionTheme = sessionStorage.getItem('theme')
+				if (sessionTheme === 'light') {
+					document.documentElement.classList.remove('dark')
+				} else {
+					document.documentElement.classList.add('dark')
+				}
+			}
+			// Check the theme preferred in the window acc. to the zone
+			const theme = (() => {
+				if (typeof window !== 'undefined') {
+					return window.sessionStorage.getItem('theme') || 'light'
+				}
+				if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+					return 'dark'
+				}
+				return 'light'
+			})()
+			// Set the theme as light / dark
+			window.sessionStorage.setItem('theme', theme)
+			themeChangeListener()
+			// Toggle theme function
+			const toggleTheme = () => {
+				let existingTheme
+				if (typeof window !== 'undefined' && window.sessionStorage.getItem('theme')) {
+					existingTheme = window.sessionStorage.getItem('theme')
+				}
+				if (existingTheme) {
+					window.sessionStorage.setItem('theme', existingTheme === 'dark' ? 'light' : 'dark')
+				} else {
+					window.sessionStorage.setItem('theme', 'light')
+				}
+				themeChangeListener()
+			}
+			if ('serviceWorker' in navigator) {
+				fetch('/version.json')
+					.then((res) => res.json())
+					.then((res) => {
+						if (res && res.version) {
+							localStorage.setItem('received-sw-version', res.version)
+							console.log('going to register.')
+							navigator.serviceWorker.register('/service-worker.js').then(
+								(registration) => {
+									console.log('Service worker registration succeeded:', registration)
+									const swVersion = localStorage.getItem('sw-version')
+									if (swVersion) {
+										if (swVersion !== res.version) {
+											console.log('Update registeration')
+											self.caches.delete('prefetch').then(() => {
+												registration.update().then(() => {
+													// Update the version if updated locally
+													localStorage.setItem('sw-version', res.version)
+												})
+											})
+										}
+									} else {
+										localStorage.setItem('sw-version', res.version)
+									}
+								},
+								(error) => {
+									console.error(`Service worker registration failed: ${error}`)
+								}
+							)
+						}
+					})
+			} else {
+				console.error('Service workers are not supported.')
+			}
+			const attrs = ['href', 'src', 'srcset', 'data-src']
+			attrs.forEach((j) => {
+				document.querySelectorAll(`[${j}^="/"]`).forEach((i) => {
+					let sc = document.createElement('link')
+					sc.setAttribute('rel', 'prefetch')
+					sc.setAttribute('href', i.getAttribute(j))
+					document.head.appendChild(sc)
+				})
+			})
+		</script>
 	</body>
 </html>

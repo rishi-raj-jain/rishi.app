@@ -57,4 +57,4 @@ export const storyblok = {
 			href: 'https://www.storyblok.com/cs/rishi-raj-jain'
 		}
 	]
-};
+}
