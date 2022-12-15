@@ -34,7 +34,7 @@ Rishi's portfolio is built with [SvelteKit](https://kit.svelte.dev), [Storyblok]
 
 ## Deploy Your Own
 
-You can deploy your own hosted version of rishi.app website.
+You can deploy your own hosted version of sveltekit.rishi.app website.
 
 [![Deploy with Edgio](https://docs.edg.io/button.svg)](app.layer0.co/deploy?repo=https://github.com/rishi-raj-jain/rishi.app)
 
