@@ -18,7 +18,7 @@ paths.forEach((i) => {
 		})
 		renderWithApp()
 	})
-	router.match(`${i}/__data.json`, ({ renderWithApp, removeUpstreamResponseHeader, cache }) => {
+	router.match(`${i === '/' ? '' : '/'}/__data.json`, ({ renderWithApp, removeUpstreamResponseHeader, cache }) => {
 		removeUpstreamResponseHeader('cache-control')
 		cache({
 			edge: {
