@@ -5,14 +5,6 @@
 </p>
 
 <p align="center">
-    <h1 align="center">
-      <a href="https://sveltekit.rishi.app">
-        sveltekit.rishi.app
-      </a>
-    </h1>
-</p>
-
-<p align="center">
   <a href="https://twitter.com/rishi_raj_jain_">
     <img src="https://img.shields.io/twitter/follow/rishi_raj_jain_?style=flat&label=%40rishi_raj_jain_&logo=twitter&color=0bf&logoColor=fff" alt="Twitter" />
   </a>
@@ -34,7 +26,7 @@ Rishi's portfolio is built with [SvelteKit](https://kit.svelte.dev), [Storyblok]
 
 ## Deploy Your Own
 
-You can deploy your own hosted version of sveltekit.rishi.app website.
+You can deploy your own hosted version of Rishi's SvelteKit website.
 
 [![Deploy with Edgio](https://docs.edg.io/button.svg)](app.layer0.co/deploy?repo=https://github.com/rishi-raj-jain/rishi.app)
 
