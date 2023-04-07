@@ -7,7 +7,7 @@ const config = {
 		adapter: vercel({
 			edge: false,
 			external: [],
-			split: false
+			split: true
 		})
 	},
 	preprocess: [

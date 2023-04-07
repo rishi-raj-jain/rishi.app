@@ -1,10 +1,20 @@
+const url = require('url')
 const { join } = require('path')
-const { existsSync } = require('fs')
+const { readFileSync } = require('fs')
 const { createServer } = require('http')
 
 module.exports = async (port) => {
-	const appFilePath = join(process.cwd(), '.vercel', 'output', 'functions', 'render.func', '.svelte-kit', 'vercel-tmp', 'index.js')
-	if (existsSync(appFilePath)) {
-		createServer(await (await import(appFilePath)).default).listen(port)
-	}
+	createServer(async (request, response) => {
+		try {
+			const paths = JSON.parse(readFileSync(join(process.cwd(), 'config.json'), 'utf8'))
+			const funcName = paths.routes.filter((i) => i.src).find((i) => i.src && url.parse(request.url).pathname.match(i.src)).dest
+			const appFilePath = join(process.cwd(), `dist${funcName}.func`, '.svelte-kit', 'vercel-tmp', 'index.js')
+			const funcHandler = await (await import(appFilePath)).default
+			await funcHandler(request, response)
+		} catch (e) {
+			console.log(e.message || e.toString())
+			// We are emulating the XBP behavior on uncaught exceptions within user project code.
+			response.writeHead(534, 'Project Unexpected Error')
+		}
+	}).listen(port)
 }
