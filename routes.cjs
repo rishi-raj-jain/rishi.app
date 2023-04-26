@@ -7,7 +7,8 @@ router.static('.vercel/output/static')
 const paths = ['/', '/about', '/cv', '/storyblok', '/blogs']
 
 paths.forEach((i) => {
-	router.match(i, ({ cache, renderWithApp }) => {
+	router.match(i, ({ renderWithApp, removeUpstreamResponseHeader, cache }) => {
+		removeUpstreamResponseHeader('cache-control')
 		cache({
 			browser: false,
 			edge: {
@@ -17,7 +18,8 @@ paths.forEach((i) => {
 		})
 		renderWithApp()
 	})
-	router.match(`${i}/__data.json`, ({ cache, renderWithApp }) => {
+	router.match(`${i}/__data.json`, ({ renderWithApp, removeUpstreamResponseHeader, cache }) => {
+		removeUpstreamResponseHeader('cache-control')
 		cache({
 			browser: false,
 			edge: {
