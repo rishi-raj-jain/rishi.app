@@ -4,7 +4,7 @@ const router = new Router()
 
 router.static('.vercel/output/static')
 
-const paths = ['/', '/about', '/cv', '/storyblok', '/blogs']
+const paths = ['/', '/about', '/cv', '/storyblok', '/blogs', '/blog/:id']
 
 paths.forEach((i) => {
 	router.match(i, ({ renderWithApp, removeUpstreamResponseHeader, cache }) => {
