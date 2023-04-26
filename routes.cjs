@@ -17,6 +17,16 @@ paths.forEach((i) => {
 		})
 		renderWithApp()
 	})
+	router.match(`${i}/__data.json`, ({ cache, renderWithApp }) => {
+		cache({
+			browser: false,
+			edge: {
+				maxAgeSeconds: 60,
+				staleWhileRevalidateSeconds: 60 * 60 * 24 * 365
+			}
+		})
+		renderWithApp()
+	})
 })
 
 router.fallback(({ renderWithApp, removeUpstreamResponseHeader, cache }) => {
