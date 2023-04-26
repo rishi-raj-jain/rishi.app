@@ -29,11 +29,11 @@
 			</svg>
 		</button>
 		<div class="relative flex max-w-[258px] flex-row items-center space-x-5 overflow-x-scroll sm:max-w-none sm:overflow-x-hidden">
-			<a href="/">Home</a>
-			<a href="/about">About</a>
-			<a href="/blogs">Blogs</a>
-			<a href="/cv">CV</a>
-			<a href="/storyblok">Storyblok</a>
+			<a class="dark:text-white" href="/">Home</a>
+			<a class="dark:text-white" href="/about">About</a>
+			<a class="dark:text-white" href="/blogs">Blogs</a>
+			<a class="dark:text-white" href="/cv">CV</a>
+			<a class="dark:text-white" href="/storyblok">Storyblok</a>
 		</div>
 	</div>
 </nav>
