@@ -43,6 +43,10 @@ export default new Router()
 		})
 		proxy('web')
 	})
-	.fallback(({ proxy }) => {
+	.fallback(({ proxy, cache }) => {
+		cache({
+			edge: false,
+			browser: false
+		})
 		proxy('web')
 	})
