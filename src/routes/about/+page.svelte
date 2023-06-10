@@ -1,15 +1,15 @@
-<script>
-	export let data
+<script lang="ts">
+	export let data: PageData
 
-	import Seo from '../Seo.svelte'
-	import RichTextResolver from 'storyblok-js-client/dist/rich-text-resolver.cjs'
+	import Seo from '@/src/components/Seo.svelte'
+	import renderRichText from '@/src/lib/render'
 </script>
 
 <Seo title={`About - Rishi Raj Jain`} pathname="/about/" />
 
 <h1 class="text-2xl font-bold sm:text-5xl">About Me</h1>
 <h2 class="font-regular text-md mt-5 whitespace-pre-line dark:text-gray-400 sm:text-xl">
-	{@html new RichTextResolver().render(data.aboutTagline)}
+	{@html renderRichText.render(data.aboutTagline)}
 </h2>
 <h1 class="mt-16 text-2xl font-bold sm:text-5xl">My Timeline</h1>
 {#each Object.keys(data.Timeline).sort((a, b) => (a > b ? -1 : 1)) as item}
@@ -25,7 +25,7 @@
 				<div class="flex flex-col">
 					<span class="text-md font-semibold sm:text-lg">{exp.content.Title}</span>
 					<span class="dark:text-gray-400">
-						{@html new RichTextResolver().render(exp.content.Description)}
+						{@html renderRichText.render(exp.content.Description)}
 					</span>
 				</div>
 			</div>

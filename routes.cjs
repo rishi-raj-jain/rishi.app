@@ -1,43 +1,48 @@
-import { Router } from '@edgio/core/router'
+import { CustomCacheKey, Router } from '@edgio/core'
 
-const router = new Router()
-
-router.static('.vercel/output/static')
-
-const paths = ['/', '/about', '/cv', '/storyblok', '/blogs', '/blog/:id']
-
-paths.forEach((i) => {
-	router.match(i, ({ renderWithApp, removeUpstreamResponseHeader, cache }) => {
-		removeUpstreamResponseHeader('cache-control')
+export default new Router()
+	.match('/static/:path*', ({ cache, proxy }) => {
 		cache({
-			browser: false,
+			edge: {
+				forcePrivateCaching: true,
+				maxAgeSeconds: 60 * 60 * 24 * 365
+			},
+			key: new CustomCacheKey().excludeAllQueryParameters()
+		})
+		proxy('web')
+	})
+	.match('/_app/:path*', ({ cache, proxy }) => {
+		cache({
+			edge: {
+				forcePrivateCaching: true,
+				maxAgeSeconds: 60 * 60 * 24 * 365
+			},
+			key: new CustomCacheKey().excludeAllQueryParameters()
+		})
+		proxy('web')
+	})
+	.match('/__data.json', ({ cache, proxy }) => {
+		cache({
 			edge: {
 				maxAgeSeconds: 60,
+				forcePrivateCaching: true,
 				staleWhileRevalidateSeconds: 60 * 60 * 24 * 365
-			}
+			},
+			key: new CustomCacheKey().excludeQueryParameters('x-sveltekit-invalidated')
 		})
-		renderWithApp()
+		proxy('web')
 	})
-	router.match(`${i === '/' ? '' : i}/__data.json`, ({ renderWithApp, removeUpstreamResponseHeader, cache }) => {
-		removeUpstreamResponseHeader('cache-control')
+	.match('/:path*/__data.json', ({ cache, proxy }) => {
 		cache({
-			browser: false,
 			edge: {
 				maxAgeSeconds: 60,
+				forcePrivateCaching: true,
 				staleWhileRevalidateSeconds: 60 * 60 * 24 * 365
-			}
+			},
+			key: new CustomCacheKey().excludeQueryParameters('x-sveltekit-invalidated')
 		})
-		renderWithApp()
+		proxy('web')
 	})
-})
-
-router.fallback(({ renderWithApp, removeUpstreamResponseHeader, cache }) => {
-	removeUpstreamResponseHeader('cache-control')
-	cache({
-		edge: false,
-		browser: false
+	.fallback(({ proxy }) => {
+		proxy('web')
 	})
-	renderWithApp()
-})
-
-export default router

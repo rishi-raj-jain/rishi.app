@@ -6,15 +6,18 @@
 	cursor: pointer;
 	text-decoration: underline;
 }
-.remark-highlight {
+
+pre {
 	width: 75vw;
 }
+
 @media screen and (max-width: 768px) {
-	.remark-highlight {
+	pre {
 		width: 95vw;
 	}
 }
-article > *:not(.remark-highlight) {
+
+article > *:not(pre) {
 	text-align: left;
 	align-self: flex-start;
 	content-visibility: auto;

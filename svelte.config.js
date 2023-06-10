@@ -1,3 +1,4 @@
+import path from 'path'
 import preprocess from 'svelte-preprocess'
 import vercel from '@sveltejs/adapter-vercel'
 
@@ -5,10 +6,12 @@ import vercel from '@sveltejs/adapter-vercel'
 const config = {
 	kit: {
 		adapter: vercel({
-			edge: false,
-			external: [],
+			runtime: 'edge',
 			split: true
-		})
+		}),
+		alias: {
+			'@/src': path.resolve('./src/')
+		}
 	},
 	preprocess: [
 		preprocess({

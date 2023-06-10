@@ -10,7 +10,6 @@ const noTailwindCode = {
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	darkMode: 'class',
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {
@@ -81,5 +80,5 @@ module.exports = {
 			typography: ['dark']
 		}
 	},
-	plugins: [require('@tailwindcss/line-clamp'), require('@tailwindcss/typography')]
+	plugins: [require('@tailwindcss/typography')]
 }

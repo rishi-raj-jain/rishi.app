@@ -1,6 +1,21 @@
 export const storyblok = {
 	Tutorials: [
 		{
+			name: 'Jun 6, 2023',
+			title: 'Build Your Own Showcase Gallery With Storyblok, SvelteKit and Edgio',
+			href: 'https://www.storyblok.com/tp/build-your-own-showcase-gallery-with-storyblok-sveltekit-and-edgio'
+		},
+		{
+			name: 'Apr 12, 2023',
+			title: 'Build Your Own Link Hub With Storyblok, Astro and Edgio',
+			href: 'https://www.storyblok.com/tp/link-hub-with-storyblok-astro-edgio'
+		},
+		{
+			name: 'Mar. 21, 2022',
+			title: 'Establishing Fastest Online Presence with Next.js, Storyblok and Edgio',
+			href: 'https://reactlive.nl/stories/establishing-fastest-online-presence'
+		},
+		{
 			name: 'Sep 27, 2021',
 			title: 'Build Your Personal Blog With Next.js, Storyblok, and Edgio',
 			href: 'https://www.storyblok.com/tp/blog-next-layer0'
@@ -29,6 +44,41 @@ export const storyblok = {
 		}
 	],
 	Repositories: [
+		{
+			name: 'Apr. 2023',
+			title: 'marko.rishi.app',
+			href: 'https://github.com/rishi-raj-jain/marko.rishi.app'
+		},
+		{
+			name: 'Apr. 2023',
+			title: 'solidstart.rishi.app',
+			href: 'https://github.com/rishi-raj-jain/solidstart.rishi.app'
+		},
+		{
+			name: 'Mar. 2023',
+			title: 'qwik.rishi.app',
+			href: 'https://github.com/rishi-raj-jain/qwik.rishi.app'
+		},
+		{
+			name: 'Mar. 2023',
+			title: 'remix.rishi.app',
+			href: 'https://github.com/rishi-raj-jain/remix.rishi.app'
+		},
+		{
+			name: 'Jan. 2023',
+			title: 'next.rishi.app',
+			href: 'https://github.com/rishi-raj-jain/next.rishi.app'
+		},
+		{
+			name: 'Dec. 2022',
+			title: 'sveltekit.rishi.app',
+			href: 'https://github.com/rishi-raj-jain/sveltekit.rishi.app'
+		},
+		{
+			name: 'Sept. 2022',
+			title: 'rishi.app',
+			href: 'https://github.com/rishi-raj-jain/rishi.app'
+		},
 		{
 			name: 'Jul. 2022',
 			title: 'Storyblok Upload Data',

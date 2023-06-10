@@ -1,10 +1,6 @@
-import fetch from 'node-fetch'
-import * as dotenv from 'dotenv'
 import { env } from '$env/dynamic/private'
 
-dotenv.config()
-
-async function fetchAPI(query, { variables, preview } = {}) {
+async function fetchAPI(query: string, { variables, preview }: { variables?: any; preview?: any } = {}) {
 	const res = await fetch('https://gapi.storyblok.com/v1/api', {
 		method: 'POST',
 		headers: {
@@ -25,7 +21,7 @@ async function fetchAPI(query, { variables, preview } = {}) {
 	return json.data
 }
 
-export async function getTagline(slug) {
+export async function getTagline(slug: string) {
 	const data = await fetchAPI(`
     {
       TaglineItem(id: "taglines/${slug}"){
@@ -93,7 +89,7 @@ export async function getRecommendedPosts() {
 	return data?.PostlinkItems.items
 }
 
-export async function getTimelineItems(per_page_items, page) {
+export async function getTimelineItems(per_page_items: string | number, page: string | number) {
 	const data = await fetchAPI(
 		`
       {
@@ -112,7 +108,7 @@ export async function getTimelineItems(per_page_items, page) {
 	return data?.TimelineitemItems.items
 }
 
-export async function getProjectItems(some) {
+export async function getProjectItems(some: string | number) {
 	const data = await fetchAPI(
 		`
       {
@@ -148,7 +144,7 @@ export async function getProjectItems(some) {
 	return data?.ProjectitemItems.items
 }
 
-export async function getOtherBlogs(first_published_at, excluded_slug, items, desc) {
+export async function getOtherBlogs(first_published_at: string | Date, excluded_slug: string, items: string | number, desc: string | boolean) {
 	const data = await fetchAPI(
 		`
       query ($first_published_at:String!, $excluded_slug:String!) {
@@ -178,7 +174,7 @@ export async function getOtherBlogs(first_published_at, excluded_slug, items, de
 	return data?.PostItems.items
 }
 
-export async function getPost(slug) {
+export async function getPost(slug: string) {
 	const data = await fetchAPI(
 		`
     query PostBySlug($slug: ID!) {

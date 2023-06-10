@@ -39,4 +39,4 @@ You can deploy your own hosted version of Rishi's SvelteKit website.
 
 ## Author
 
-- Rishi Raj Jain ([@rishi_raj_jain_](https://twitter.com/rishi_raj_jain_))
+- Rishi Raj Jain ([@rishi*raj_jain*](https://twitter.com/rishi_raj_jain_))

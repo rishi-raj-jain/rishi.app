@@ -1,6 +1,7 @@
-import { getAllPostsForHome, getRecommendedPosts, getTagline } from '../api'
+import type { PageServerLoad } from '../$types'
+import { getAllPostsForHome, getRecommendedPosts, getTagline } from '@/src/lib/storyblok'
 
-export async function load({}) {
+export const load: PageServerLoad = async () => {
 	let data = undefined
 	try {
 		const allPosts = (await getAllPostsForHome()) || new Array(5).fill(0).map((i, _) => _)

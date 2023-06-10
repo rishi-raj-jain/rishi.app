@@ -1,6 +1,7 @@
-import { getTagline, getTimelineItems } from '../api'
+import type { PageServerLoad } from '../$types'
+import { getTagline, getTimelineItems } from '@/src/lib/storyblok'
 
-export async function load({}) {
+export const load: PageServerLoad = async () => {
 	let Timeline = {},
 		aboutTagline = ''
 	try {

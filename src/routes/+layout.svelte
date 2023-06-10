@@ -1,19 +1,40 @@
-<script>
+<script lang="ts">
 	import '../app.css'
-	import Header from './Header.svelte'
+	import { onMount } from 'svelte'
 	import { navigating } from '$app/stores'
+	import Header from '@/src/components/Header.svelte'
+
+	onMount(() => {
+		// Add listener to window.sessionStorage events
+		window.themeChangeListener = () => {
+			let sessionTheme = window.sessionStorage.getItem('theme')
+			if (sessionTheme === 'light') {
+				document.documentElement.classList.remove('dark')
+			} else {
+				document.documentElement.classList.add('dark')
+			}
+		}
+		// Check the theme preferred in the window acc. to the zone
+		window.sessionStorage.getItem('theme') || 'light'
+		if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+			window.sessionStorage.setItem('theme', 'dark')
+		}
+		// Set the theme as light / dark
+		window.sessionStorage.setItem('theme', 'light')
+		window.themeChangeListener()
+	})
 </script>
 
 <Header />
 <main class="flex flex-col items-center text-black dark:text-gray-200">
-	<div class="flex w-full max-w-[90vw] lg:max-w-[75vw] flex-col py-10 sm:px-10">
+	<div class="flex w-full max-w-[90vw] flex-col py-10 sm:px-10 lg:max-w-[75vw]">
 		{#if $navigating && $navigating.to && $navigating.to.url.pathname === '/about'}
 			<h1 class="text-2xl font-bold sm:text-5xl">About Me</h1>
-			<h2 class="w-full py-3 animate-pulse bg-gray-400 mt-5" />
+			<div class="mt-5 w-full animate-pulse bg-gray-400 py-3" />
 			<h1 class="mt-16 text-2xl font-bold sm:text-5xl">My Timeline</h1>
 			{#each new Array(5).fill(0) as item}
 				<div class="mt-8 flex flex-col">
-					<span class="bg-gray-400 animate-pulse text-gray-400 text-lg font-bold">{item}</span>
+					<span class="animate-pulse bg-gray-400 text-lg font-bold text-gray-400">{item}</span>
 					{#each new Array(5).fill(0) as exp}
 						<div class="relative mt-5 flex flex-row items-start space-x-5">
 							<div class="mt-1 h-[12px] w-[12px]">
@@ -21,9 +42,9 @@
 									<path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
 								</svg>
 							</div>
-							<div class="w-full flex flex-col">
-								<span class="w-full bg-gray-400 text-gray-400 animate-pulse text-md font-semibold sm:text-lg">{exp}</span>
-								<span class="mt-3 w-full py-1 bg-gray-400 text-gray-400 animate-pulse">
+							<div class="flex w-full flex-col">
+								<span class="text-md w-full animate-pulse bg-gray-400 font-semibold text-gray-400 sm:text-lg">{exp}</span>
+								<span class="mt-3 w-full animate-pulse bg-gray-400 py-1 text-gray-400">
 									{exp}
 								</span>
 							</div>
@@ -38,3 +59,5 @@
 		{/if}
 	</div>
 </main>
+
+<link rel="stylesheet" href="/css/dark.css" />

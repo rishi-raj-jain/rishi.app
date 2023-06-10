@@ -1,9 +1,10 @@
-<script>
-	export let data
+<script lang="ts">
+	export let data: PageData
 
-	import Seo from './Seo.svelte'
-	import SocialLinks from './SocialLinks.svelte'
-	import RichTextResolver from 'storyblok-js-client/dist/rich-text-resolver.cjs'
+	import type { PageData } from './$types'
+	import renderRichText from '@/src/lib/render'
+	import Seo from '@/src/components/Seo.svelte'
+	import SocialLinks from '@/src/components/SocialLinks.svelte'
 </script>
 
 <Seo />
@@ -19,9 +20,13 @@
 			<SocialLinks />
 		</div>
 		<div class="mt-10 h-[1px] w-full bg-gray-200 dark:bg-gray-700" />
-		<h2 class="text-md mt-10 text-center text-gray-500 dark:text-white sm:text-lg md:text-left">
-			{@html new RichTextResolver().render(data.data)}
-		</h2>
+		{#await data.streamed.tagline}
+			<div class="mt-10 h-[20px] w-full animate-pulse bg-gray-400" />
+		{:then value}
+			<h2 class="text-md mt-10 text-center text-gray-500 dark:text-white sm:text-lg md:text-left">
+				{@html renderRichText.render(value)}
+			</h2>
+		{/await}
 	</div>
 	<div class="hidden flex-col items-end justify-center md:flex md:w-1/2">
 		<div class="grayscale filter">
