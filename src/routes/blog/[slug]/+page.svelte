@@ -11,7 +11,7 @@
 	let comments: any[] = []
 </script>
 
-<Seo title={`${data.blog.post.content.title} - Rishi Raj Jain`} />
+<Seo title={`${data.blog.post.content.title} - Rishi Raj Jain`} image={data.blog.post.content.image} />
 
 <div class="flex w-full flex-col items-center">
 	<div class="w-full md:max-w-2xl">
