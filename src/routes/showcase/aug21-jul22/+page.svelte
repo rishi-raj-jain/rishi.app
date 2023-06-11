@@ -1,3 +1,9 @@
+<script>
+	import Seo from '@/src/components/Seo.svelte'
+</script>
+
+<Seo title="A look back at Rishi's contribution to Edgio from Aug. 21 to Jul. 22 - Rishi Raj Jain" />
+
 <div class="flex w-full flex-col items-center justify-center text-center">
 	<div class="mt-36 flex flex-row items-center gap-x-5 sm:mt-48">
 		<img alt="Rishi Raj Jain" src="/static/favicon-image.jpg" class="w-[25px] rounded grayscale" />
