@@ -1,4 +1,5 @@
 import showdown from 'showdown'
+import { env } from '$env/dynamic/private'
 import type { PageServerLoad } from './$types'
 import showdownHighlight from 'showdown-highlight'
 import { getOtherBlogs, getPost } from '@/src/lib/storyblok'
@@ -20,7 +21,7 @@ export const load: PageServerLoad = async ({ url, params }) => {
 	return {
 		blog,
 		slug: params.slug,
-		domain: url.origin,
+		domain: env.DOMAN ?? url.origin,
 		streamed: {
 			morePosts: new Promise(async (resolve, reject) => {
 				let morePosts: any[] = []

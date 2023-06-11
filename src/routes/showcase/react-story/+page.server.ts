@@ -1,5 +1,6 @@
+import { env } from '$env/dynamic/private'
 import type { PageServerLoad } from './$types'
 
 export const load: PageServerLoad = async ({ url }) => {
-	return { domain: url.origin }
+	return { domain: env.DOMAIN ?? url.origin }
 }

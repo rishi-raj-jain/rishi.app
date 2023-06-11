@@ -1,3 +1,4 @@
+import { env } from '$env/dynamic/private'
 import { load as loadCheerio } from 'cheerio'
 import renderRichText from '@/src/lib/render'
 import type { PageServerLoad } from '../$types'
@@ -29,5 +30,5 @@ export const load: PageServerLoad = async ({ url }) => {
 	$('p').addClass('mt-2 font-light text-slate-600 dark:text-slate-400')
 	// @ts-ignore
 	aboutTaglineHTML = $('p').parent().html()
-	return { aboutTaglineHTML, Timeline, domain: url.origin }
+	return { aboutTaglineHTML, Timeline, domain: env.DOMAIN ?? url.origin }
 }
