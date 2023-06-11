@@ -9,7 +9,7 @@
 <form
 	on:submit={(e) => {
 		e.preventDefault()
-		fetch(`https://comments.rishi.app`, {
+		fetch(`/comments`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'

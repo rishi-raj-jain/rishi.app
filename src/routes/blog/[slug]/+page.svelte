@@ -31,9 +31,7 @@
 			<button
 				on:click={() => {
 					comments = new Array(3).fill(0).map((_) => ({ loading: true, time: new Date().getMilliseconds() }))
-					const commentURL = new URL('https://comments.rishi.app')
-					commentURL.searchParams.set('slug', data.slug)
-					fetch(commentURL.toString())
+					fetch(`/comments?slug=${data.slug}`)
 						.then((res) => res.json())
 						.then((res) => {
 							if (res) {
