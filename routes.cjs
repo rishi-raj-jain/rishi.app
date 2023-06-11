@@ -1,6 +1,16 @@
 import { CustomCacheKey, Router } from '@edgio/core'
 
 export default new Router()
+	.match('/showcase/:path*', ({ cache, proxy }) => {
+		cache({
+			edge: {
+				forcePrivateCaching: true,
+				maxAgeSeconds: 60 * 60 * 24 * 365
+			},
+			key: new CustomCacheKey().excludeAllQueryParameters()
+		})
+		proxy('web')
+	})
 	.match('/fonts/:path*', ({ cache, proxy }) => {
 		cache({
 			edge: {
