@@ -1,5 +1,18 @@
 <script lang="ts">
-	export let post: { content: { author: { name: string; content: { picture: { filename: string } } } } }
+	interface Post {
+		content: {
+			author: {
+				name: string
+				content: {
+					picture: {
+						filename: string
+					}
+				}
+			}
+		}
+	}
+
+	export let post: Post
 </script>
 
 <div class="flex flex-row items-center space-x-3">
