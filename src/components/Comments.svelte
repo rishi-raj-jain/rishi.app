@@ -1,9 +1,9 @@
 <script lang="ts">
 	export let slug: string
 
-	let name = ''
-	let email = ''
-	let content = ''
+	let name: string = ''
+	let email: string = ''
+	let content: string = ''
 </script>
 
 <form
