@@ -11,7 +11,7 @@ export const load: PageServerLoad = async () => {
 	while (arePosts) {
 		let tempTimeline = (await getTimelineItems(5, page)) || []
 		if (tempTimeline.length > 0) {
-			tempTimeline.forEach((a) => {
+			tempTimeline.forEach((a: any) => {
 				if (Timeline.hasOwnProperty(a.content.Year)) {
 					Timeline[a.content.Year].push(a)
 				} else {

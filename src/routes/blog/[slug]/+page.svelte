@@ -4,6 +4,7 @@
 
 	import Seo from '@/src/components/Seo.svelte'
 	import Author from '@/src/components/Author.svelte'
+	import MorePosts from '@/src/components/MorePosts.svelte'
 	import DateString from '@/src/components/DateString.svelte'
 </script>
 
@@ -22,6 +23,8 @@
 		<article class="prose mt-10 flex max-w-none flex-col items-center text-sm dark:prose-light">
 			{@html data.blog.post.content.long_text}
 		</article>
-		<!-- <Comments client:visible data={data} morePosts={morePosts} /> -->
+		{#await data.streamed.morePosts then value}
+			<MorePosts posts={value} />
+		{/await}
 	</div>
 </div>
