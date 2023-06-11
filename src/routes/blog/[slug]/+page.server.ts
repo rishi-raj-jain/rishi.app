@@ -19,6 +19,7 @@ export const load = async ({ params }: { params: RouteParams }) => {
 		.replace(/\<img\>/g, 'img')
 	return {
 		blog,
+		slug: params.slug,
 		streamed: {
 			morePosts: new Promise(async (resolve, reject) => {
 				let morePosts: any[] = []
