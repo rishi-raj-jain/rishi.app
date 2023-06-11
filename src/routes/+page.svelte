@@ -9,15 +9,17 @@
 
 <Seo />
 
-<div class="flex min-h-[90vh] w-full flex-col items-center md:flex-row md:justify-between">
-	<img alt="Rishi Raj Jain in his favourite attire" src="/static/favicon-image.jpg" class="h-[250px] max-w-max transform-gpu rounded object-contain md:h-[500px]" />
-	<div class="flex w-full flex-col items-center justify-center md:w-1/2 md:items-start">
-		<h1 class="mt-5 text-2xl font-bold sm:text-5xl md:mt-0">Rishi Raj Jain</h1>
-		<h2 class="mt-5 text-center text-lg text-gray-500 dark:text-white sm:text-xl md:text-left">Technical Customer Success Manager at Edgio</h2>
-		<Socials />
-		<div class="mt-10 h-[1px] w-full bg-gray-200 dark:bg-gray-700" />
-		<h2 class="text-md mt-10 text-center text-gray-500 dark:text-white sm:text-lg md:text-left">
-			{@html renderRichText.render(data.tagline)}
-		</h2>
+<div class="flex min-h-[90vh] w-full flex-col justify-center">
+	<div class="flex flex-col gap-x-8 lg:flex-row">
+		<img alt="Rishi Raj Jain in his favourite attire" src="/static/favicon-image.jpg" class="h-[300px] w-[225px] transform-gpu rounded lg:h-[450px] lg:w-[337.5px]" />
+		<div class="flex flex-col items-start">
+			<h1 class="mt-8 text-2xl font-bold sm:text-5xl lg:mt-0">Rishi Raj Jain</h1>
+			<h2 class="mt-4 text-lg text-gray-500 dark:text-white sm:text-xl">Technical Customer Success Manager at Edgio</h2>
+			<Socials />
+			<div class="mt-12 h-[1px] w-full bg-gray-200 dark:bg-gray-700" />
+			<h2 class="text-md mt-12 text-gray-500 dark:text-white sm:text-lg">
+				{@html renderRichText.render(data.tagline)}
+			</h2>
+		</div>
 	</div>
 </div>
