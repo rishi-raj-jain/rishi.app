@@ -31,12 +31,14 @@
 			<button
 				on:click={() => {
 					comments = new Array(3).fill(0).map((_) => ({ loading: true, time: new Date().getMilliseconds() }))
-					fetch(`https://comments.rishi.app?slug=${data.slug}`, {
-						method: 'GET'
-					})
+					const commentURL = new URL('/', 'https://comments.rishi.app')
+					commentURL.searchParams.set('slug', data.slug)
+					fetch(commentURL.toString())
 						.then((res) => res.json())
 						.then((res) => {
-							if (res) comments = res
+							if (res) {
+								comments = res
+							}
 						})
 				}}
 				class="w-[200px] appearance-none rounded border px-5 py-2 text-center hover:bg-gray-100 dark:border-gray-500 dark:hover:bg-[#28282B]"
