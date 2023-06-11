@@ -3,6 +3,6 @@ import { getTagline } from '@/src/lib/storyblok'
 
 export const load: PageServerLoad = async () => {
 	return {
-		streamed: { tagline: getTagline('home') }
+		tagline: getTagline('home')
 	}
 }

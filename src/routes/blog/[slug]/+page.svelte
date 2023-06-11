@@ -1,18 +1,13 @@
 <script lang="ts">
+	import type { PageData } from './$types'
 	export let data: PageData
-
-	let slug = '/' + data.slug
-
-	if (!slug.endsWith('/')) {
-		slug += '/'
-	}
 
 	import Seo from '@/src/components/Seo.svelte'
 	import Author from '@/src/components/Author.svelte'
 	import DateString from '@/src/components/DateString.svelte'
 </script>
 
-<Seo title={`${data.blog.post.content.title} - Rishi Raj Jain`} pathname={slug} />
+<Seo title={`${data.blog.post.content.title} - Rishi Raj Jain`} />
 
 <div class="flex w-full flex-col items-center">
 	<div class="w-full md:max-w-2xl">

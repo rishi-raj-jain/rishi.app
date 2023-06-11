@@ -3,7 +3,7 @@
 	import Seo from '@/src/components/Seo.svelte'
 </script>
 
-<Seo title="Storyblok - Rishi Raj Jain" pathname="/storyblok/" />
+<Seo title="Storyblok - Rishi Raj Jain" />
 
 <div class="flex w-full flex-col items-center text-[14px]">
 	<div class="mt-10 flex w-[90vw] max-w-[540px] flex-col">

@@ -58,8 +58,6 @@ export async function getAllPostsForHome() {
             content {
               intro
               title
-              image
-              long_text
             }
           }
         }

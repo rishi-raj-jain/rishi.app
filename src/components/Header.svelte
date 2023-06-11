@@ -1,27 +1,10 @@
+<script lang="ts">
+	import { toggleTheme } from '@/src/lib/theme'
+</script>
+
 <nav class="sticky top-0 z-10 flex w-full flex-col items-center backdrop-blur-xl backdrop-filter dark:bg-black">
 	<div class="flex w-full max-w-[90vw] flex-row items-center justify-between sm:px-10 lg:max-w-[75vw]">
-		<button
-			on:click={() => {
-				if (typeof window !== 'undefined') {
-					// Toggle theme function
-					const toggleTheme = () => {
-						let existingTheme
-						if (typeof window !== 'undefined' && window.sessionStorage.getItem('theme')) {
-							existingTheme = window.sessionStorage.getItem('theme')
-						}
-						if (existingTheme) {
-							window.sessionStorage.setItem('theme', existingTheme === 'dark' ? 'light' : 'dark')
-						} else {
-							window.sessionStorage.setItem('theme', 'light')
-						}
-						// @ts-ignore
-						window.themeChangeListener()
-					}
-					toggleTheme()
-				}
-			}}
-			class="appearance-none focus:outline-none"
-		>
+		<button on:click={toggleTheme} class="appearance-none focus:outline-none">
 			<svg width="12" height="12" fill="black" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" class="block transition-all duration-500 dark:hidden">
 				<title>Turn on the dark mode</title>
 				<path

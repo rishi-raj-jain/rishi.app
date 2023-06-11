@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let post
+	export let post: { content: { author: { name: string; content: { picture: { filename: string } } } } }
 </script>
 
 <div class="flex flex-row items-center space-x-3">

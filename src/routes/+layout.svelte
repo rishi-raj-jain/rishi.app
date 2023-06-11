@@ -3,17 +3,9 @@
 	import { onMount } from 'svelte'
 	import { navigating } from '$app/stores'
 	import Header from '@/src/components/Header.svelte'
+	import { themeChangeListener } from '@/src/lib/theme'
 
 	onMount(() => {
-		// Add listener to window.sessionStorage events
-		window.themeChangeListener = () => {
-			let sessionTheme = window.sessionStorage.getItem('theme')
-			if (sessionTheme === 'light') {
-				document.documentElement.classList.remove('dark')
-			} else {
-				document.documentElement.classList.add('dark')
-			}
-		}
 		// Check the theme preferred in the window acc. to the zone
 		window.sessionStorage.getItem('theme') || 'light'
 		if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -21,7 +13,7 @@
 		}
 		// Set the theme as light / dark
 		window.sessionStorage.setItem('theme', 'light')
-		window.themeChangeListener()
+		themeChangeListener()
 	})
 </script>
 

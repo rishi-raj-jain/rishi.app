@@ -1,33 +1,24 @@
 import showdown from 'showdown'
+import type { RouteParams } from './$types'
 import showdownHighlight from 'showdown-highlight'
-import type { PageServerLoad } from '../../$types'
 import { getOtherBlogs, getPost } from '@/src/lib/storyblok'
 
-export const load: PageServerLoad = async ({ params }) => {
-	let blog: any
-	// @ts-ignore
-	const slug = params.slug
-	try {
-		blog = await getPost(slug)
-		blog['post']['content']['long_text'] = new showdown.Converter({
-			extensions: [
-				showdownHighlight({
-					pre: true,
-					auto_detection: true
-				})
-			]
-		})
-			.makeHtml(blog['post']['content']['long_text'])
-			.toString()
-			.replace(/\<noscript\>/g, 'noscript')
-			.replace(/\<img\>/g, 'img')
-	} catch (e) {
-		// @ts-ignore
-		console.log(e.message || e.toString())
-	}
+export const load = async ({ params }: { params: RouteParams }) => {
+	const blog = await getPost(params.slug)
+	blog['post']['content']['long_text'] = new showdown.Converter({
+		extensions: [
+			showdownHighlight({
+				pre: true,
+				auto_detection: true
+			})
+		]
+	})
+		.makeHtml(blog['post']['content']['long_text'])
+		.toString()
+		.replace(/\<noscript\>/g, 'noscript')
+		.replace(/\<img\>/g, 'img')
 	return {
 		blog,
-		slug,
 		streamed: {
 			morePosts: new Promise(async (resolve, reject) => {
 				let morePosts: any[] = []
