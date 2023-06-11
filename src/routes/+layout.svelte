@@ -18,6 +18,7 @@
 </script>
 
 <Header />
+
 <main class="flex flex-col items-center text-black dark:text-gray-200">
 	<div class="flex w-full max-w-[90vw] flex-col py-10 sm:px-10 lg:max-w-[75vw]">
 		{#if $navigating && $navigating.to}

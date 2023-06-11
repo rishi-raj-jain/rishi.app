@@ -24,6 +24,7 @@
 			<a class="dark:text-white" href="/blogs">Blogs</a>
 			<a class="dark:text-white" href="/cv">CV</a>
 			<a class="dark:text-white" href="/storyblok">Storyblok</a>
+			<a class="dark:text-white" href="/showcase">Showcase</a>
 		</div>
 	</div>
 </nav>

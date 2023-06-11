@@ -199,9 +199,9 @@
 	<span class="mt-5 text-2xl">Talked about: <span class="font-bold">ISG</span> with <span class="font-bold">Nuxt(2)</span> and <span class="font-bold">Layer0</span> </span>
 	<span class="mt-5 text-2xl"> Use Case: <span class="font-bold">Enabling ISG by platform</span></span>
 	<span class="mt-5 text-2xl"> Venue: <span class="font-bold">Conf42</span></span>
-	<h2 class="mt-24 text-4xl font-bold text-gray-400">
+	<!-- <h2 class="mt-24 text-4xl font-bold text-gray-400">
 		1st <span class="bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text text-transparent">React</span> Story 🥹
-	</h2>
+	</h2> -->
 	<!-- <div class="mt-12 flex w-full flex-col">
       {tweets && tweets['data'] && tweets['data'].map((tweet) => <Tweet tweets={tweets} {...tweet} />)}
     </div> -->
