@@ -5,9 +5,9 @@ import { getTagline, getTimelineItems } from '@/src/lib/storyblok'
 
 export const load: PageServerLoad = async () => {
 	let page = 1
-	let Timeline = {}
 	let arePosts = true
 	let aboutTagline = ''
+	let Timeline: any = {}
 	while (arePosts) {
 		let tempTimeline = (await getTimelineItems(5, page)) || []
 		if (tempTimeline.length > 0) {
