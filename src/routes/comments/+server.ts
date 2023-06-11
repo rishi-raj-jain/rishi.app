@@ -19,7 +19,6 @@ export async function POST({ request }) {
 	const upstream = new URL(env.COMMENTS_URL)
 	upstream.searchParams.set('token', env.COMMENTS_TOKEN)
 	const body = await request.json()
-	console.log(body)
 	await fetch(upstream.toString(), {
 		method: 'POST',
 		body: JSON.stringify(body),
