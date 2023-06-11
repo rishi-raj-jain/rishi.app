@@ -11,7 +11,7 @@
 
 <div class="flex min-h-[90vh] w-full flex-col justify-center">
 	<div class="flex flex-col gap-x-8 lg:flex-row">
-		<img alt="Rishi Raj Jain in his favourite attire" src="/static/favicon-image.jpg" class="h-[300px] w-[225px] transform-gpu rounded lg:h-[450px] lg:w-[337.5px]" />
+		<img alt="Rishi Raj Jain in his favourite attire" src="/static/favicon-image.jpg" class="aspect-square h-[300px] w-[300px] transform-gpu rounded" />
 		<div class="flex flex-col items-start">
 			<h1 class="mt-8 text-2xl font-bold sm:text-5xl lg:mt-0">Rishi Raj Jain</h1>
 			<h2 class="mt-4 text-lg text-gray-500 dark:text-white sm:text-xl">Technical Customer Success Manager at Edgio</h2>
