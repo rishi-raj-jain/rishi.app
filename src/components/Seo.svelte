@@ -3,7 +3,7 @@
 
 	export let title: string = 'Rishi Raj Jain - Software Engineer, Developer, Designer, Writer',
 		description: string = 'Currently, I am working as a Technical Customer Success Manager at Edgio.',
-		domain: string = 'https://sveltekit.rishi.app',
+		domain: string = 'https://rishi.app',
 		image: string = '/static/social-media-card.jpg',
 		pathname: string = $page.url.pathname
 
