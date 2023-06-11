@@ -3,7 +3,7 @@ import renderRichText from '@/src/lib/render'
 import type { PageServerLoad } from '../$types'
 import { getTagline, getTimelineItems } from '@/src/lib/storyblok'
 
-export const load: PageServerLoad = async () => {
+export const load: PageServerLoad = async ({ url }) => {
 	let page = 1
 	let arePosts = true
 	let aboutTagline = ''
@@ -29,5 +29,5 @@ export const load: PageServerLoad = async () => {
 	$('p').addClass('mt-2 font-light text-slate-600 dark:text-slate-400')
 	// @ts-ignore
 	aboutTaglineHTML = $('p').parent().html()
-	return { aboutTaglineHTML, Timeline }
+	return { aboutTaglineHTML, Timeline, domain: url.origin }
 }

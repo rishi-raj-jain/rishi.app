@@ -1,7 +1,7 @@
 import type { PageServerLoad } from './$types'
 import { getTagline } from '@/src/lib/storyblok'
 
-export const load: PageServerLoad = async () => {
+export const load: PageServerLoad = async ({ url }) => {
 	const tagline = await getTagline('home')
-	return { tagline }
+	return { tagline, domain: url.origin }
 }

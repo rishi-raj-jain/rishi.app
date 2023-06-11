@@ -1,9 +1,9 @@
 import showdown from 'showdown'
-import type { RouteParams } from './$types'
+import type { PageServerLoad } from './$types'
 import showdownHighlight from 'showdown-highlight'
 import { getOtherBlogs, getPost } from '@/src/lib/storyblok'
 
-export const load = async ({ params }: { params: RouteParams }) => {
+export const load: PageServerLoad = async ({ url, params }) => {
 	const blog = await getPost(params.slug)
 	blog['post']['content']['long_text'] = new showdown.Converter({
 		extensions: [
@@ -20,6 +20,7 @@ export const load = async ({ params }: { params: RouteParams }) => {
 	return {
 		blog,
 		slug: params.slug,
+		domain: url.origin,
 		streamed: {
 			morePosts: new Promise(async (resolve, reject) => {
 				let morePosts: any[] = []
