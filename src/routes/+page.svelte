@@ -7,7 +7,7 @@
 	import Socials from '@/src/components/Socials.svelte'
 </script>
 
-<Seo />
+<Seo preloads={[{ as: 'image', href: 'https://ik.imagekit.io/vjeqenuhn/static/favicon-image.jpg' }]} />
 
 <div class="flex min-h-[90vh] w-full flex-col justify-center">
 	<div class="flex flex-col gap-x-8 lg:flex-row">

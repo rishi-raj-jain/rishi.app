@@ -11,7 +11,11 @@
 	let comments: any[] = []
 </script>
 
-<Seo title={`${data.blog.post.content.title} - Rishi Raj Jain`} image={data.blog.post.content.image} />
+<Seo
+	image={data.blog.post.content.image}
+	title={`${data.blog.post.content.title} - Rishi Raj Jain`}
+	preloads={[{ as: 'image', href: data.blog.post.content.author.content.picture.filename }]}
+/>
 
 <div class="flex w-full flex-col items-center">
 	<div class="w-full md:max-w-2xl">
