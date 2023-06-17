@@ -15,13 +15,14 @@
 	<p class="mt-2 font-light text-slate-600 dark:text-slate-400">
 		{@html renderRichText.render(data.blogsTagline)}
 	</p>
-	<div class="flex flex-row flex-wrap">
-		<div class="mt-10 flex w-full flex-col items-center lg:mt-20 lg:w-2/3 lg:pr-10">
-			<div class="relative columns-1 space-y-8">
+	<div class="flex flex-row flex-wrap md:mt-12">
+		<div class="mt-4 flex w-full flex-col md:mt-0 lg:w-2/3 lg:pr-10">
+			<h4 class="text-md w-full border-b pb-2 font-semibold">Self Published Posts</h4>
+			<div class="relative mt-6 columns-1 space-y-6">
 				{#each data.allPosts as item, _}
 					<a
 						href={`/blog/${item.slug}`}
-						class={['flex', 'flex-col', 'border-gray-200', 'dark:border-gray-800', data.allPosts.length - 1 !== _ && 'border-b'].filter((i) => i).join(' ')}
+						class={['flex', 'flex-col', 'border-gray-200', 'dark:border-gray-800', data.allPosts.length - 1 === _ && 'border-b'].filter((i) => i).join(' ')}
 					>
 						<div class="flex break-inside-avoid flex-col">
 							<div class="text-sm font-light text-slate-600 dark:text-slate-400">
@@ -35,14 +36,14 @@
 				{/each}
 			</div>
 		</div>
-		<div class="mt-0 flex w-full flex-col lg:mt-20 lg:w-1/3">
-			<h4 class="text-md font-bold sm:text-lg">Recommended Posts</h4>
+		<div class="mt-8 flex w-full flex-col md:mt-0 lg:w-1/3">
+			<h4 class="text-md w-full border-b pb-2 font-semibold">Media Posts</h4>
 			{#each data.recommendedPosts as item}
 				<a
 					rel="noopener"
 					target="_blank"
 					href={item.content.Url.url}
-					class="mt-5 truncate border-b pb-2 text-sm font-light text-slate-600 hover:underline dark:border-gray-700 dark:text-slate-400"
+					class="mt-6 truncate border-b pb-2 text-sm font-light text-slate-600 hover:underline dark:border-gray-700 dark:text-slate-400"
 				>
 					{item.content.Title}
 				</a>
