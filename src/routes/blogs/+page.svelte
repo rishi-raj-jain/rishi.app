@@ -11,9 +11,10 @@
 
 <div class="flex flex-col">
 	<h1 class="text-2xl font-bold sm:text-5xl">Blogs</h1>
-	<h2 class="font-regular text-md mt-8 whitespace-pre-line dark:text-gray-400 sm:text-xl">
+	<h2 class="font-regular text-md mt-8 whitespace-pre-line dark:text-gray-400 sm:text-xl">About</h2>
+	<p class="mt-2 font-light text-slate-600 dark:text-slate-400">
 		{@html renderRichText.render(data.blogsTagline)}
-	</h2>
+	</p>
 	<div class="flex flex-row flex-wrap">
 		<div class="mt-10 flex w-full flex-col items-center lg:mt-20 lg:w-2/3 lg:pr-10">
 			<div class="relative columns-1 space-y-8">
