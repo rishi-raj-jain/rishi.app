@@ -7,6 +7,12 @@
 <div class="flex w-full flex-col items-center text-[14px]">
 	<div class="mt-10 flex w-[90vw] max-w-[540px] flex-col">
 		<h2 class="text-3xl font-bold text-zinc-700 dark:text-gray-300">Showcase By Rishi Raj Jain</h2>
+		<a href="/showcase/garg-property-adviser" class="mt-8 flex flex-col rounded border p-5 text-zinc-700 duration-300 hover:border-black hover:text-black dark:text-gray-300">
+			<span> Garg Property Adviser's web presence established by Rishi Raj Jain </span>
+			<p class="mt-2 font-light text-slate-600 dark:text-slate-400">
+				Diving into the case study of Garg Property Adviser's web presence, created by Rishi Raj Jain, and delivering heck fast experience with SvelteKit, TailwindCSS and Edgio.
+			</p>
+		</a>
 		<a href="/showcase/the-ahuja-lab" class="mt-8 flex flex-col rounded border p-5 text-zinc-700 duration-300 hover:border-black hover:text-black dark:text-gray-300">
 			<span> The Ahuja Lab rewrite and redesign by Rishi Raj Jain loads completely in subsecond </span>
 			<p class="mt-2 font-light text-slate-600 dark:text-slate-400">
