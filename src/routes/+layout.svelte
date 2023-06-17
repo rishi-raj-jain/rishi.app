@@ -1,5 +1,5 @@
 <script lang="ts">
-	import '../app.css'
+	import '@/src/app.css'
 	import { onMount } from 'svelte'
 	import { navigating } from '$app/stores'
 	import Header from '@/src/components/Header.svelte'
