@@ -6,7 +6,7 @@
 
 <div class="flex w-full flex-col items-center justify-center text-center">
 	<div class="mt-36 flex flex-row items-center gap-x-5 sm:mt-48">
-		<img alt="Rishi Raj Jain" src="/static/favicon-image.jpg" class="w-[25px] rounded grayscale" />
+		<img alt="Rishi Raj Jain" src="https://ik.imagekit.io/vjeqenuhn/static/favicon-image.jpg" class="w-[25px] rounded grayscale" />
 		<span class="text-3xl font-semibold text-gray-400">Rishi Raj Jain</span>
 	</div>
 	<div class="mt-12 flex w-full flex-col items-center">
@@ -52,10 +52,20 @@
 		it to be <span class="bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text text-transparent">shipped with Edgio</span>.
 	</h2>
 	<div class="mt-12 grid grid-cols-1 items-stretch gap-10 sm:grid-cols-2 md:grid-cols-4">
-		<img loading="lazy" alt="Nuxt3 Logo" src="/showcase/Aug - July/Nuxt3 - Logo.png" class="w-full rounded border border-gray-400 bg-black object-contain px-3" />
-		<img loading="lazy" alt="Oxygen Logo" src="/showcase/Aug - July/Oxygen - Logo.svg" class="w-full rounded border border-gray-400 bg-white object-contain px-3" />
-		<img alt="Swell Logo" class="w-full rounded object-contain px-3" src="/showcase/Aug - July/Swell - Logo.png" loading="lazy" />
-		<img alt="Remix Logo" class="w-full rounded object-contain px-3" src="/showcase/Aug - July/Remix - Logo.png" loading="lazy" />
+		<img
+			loading="lazy"
+			alt="Nuxt3 Logo"
+			src="https://ik.imagekit.io/vjeqenuhn/showcase/Aug_-_July/Nuxt3_-_Logo.png"
+			class="w-full rounded border border-gray-400 bg-black object-contain px-3"
+		/>
+		<img
+			loading="lazy"
+			alt="Oxygen Logo"
+			src="https://ik.imagekit.io/vjeqenuhn/showcase/Aug_-_July/Oxygen_-_Logo.svg"
+			class="w-full rounded border border-gray-400 bg-white object-contain px-3"
+		/>
+		<img alt="Swell Logo" class="w-full rounded object-contain px-3" src="https://ik.imagekit.io/vjeqenuhn/showcase/Aug_-_July/Swell_-_Logo.png" loading="lazy" />
+		<img alt="Remix Logo" class="w-full rounded object-contain px-3" src="https://ik.imagekit.io/vjeqenuhn/showcase/Aug_-_July/Remix_-_Logo.png" loading="lazy" />
 	</div>
 </div>
 <div class="flex w-full flex-col items-start justify-center">
@@ -64,7 +74,7 @@
 		<span class="bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text text-transparent"> deployment button</span>
 		to ship it with one click.
 	</h2>
-	<img alt="Deploy To Layer0 Button" src="/showcase/Aug - July/Deploy To Layer0.png" class="mt-12 h-[64px]" loading="lazy" />
+	<img alt="Deploy To Layer0 Button" src="https://ik.imagekit.io/vjeqenuhn/showcase/Aug_-_July/Deploy_To_Layer0.png" class="mt-12 h-[64px]" loading="lazy" />
 	<div class="mt-12 flex max-w-[512px] flex-row items-center gap-x-8 rounded border border-gray-400 p-5">
 		<span class="w-[150px] bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text text-6xl font-bold text-transparent">#27</span>
 		<div class="flex flex-col items-start">
@@ -91,7 +101,7 @@
 				<a class="border-b border-gray-400 text-2xl" href="https://github.com/edgio-docs/og-image" rel="noreferrer"> edgio-docs/og-image</a>
 			</div>
 			<div class="mt-12 flex flex-row items-center gap-x-5">
-				<img alt="Dev.To Logo" class="h-[32px]" src="/showcase/Aug - July/DEV - Logo.png" loading="lazy" />
+				<img alt="Dev.To Logo" class="h-[32px]" src="https://ik.imagekit.io/vjeqenuhn/showcase/Aug_-_July/DEV_-_Logo.png" loading="lazy" />
 				<a
 					rel="noreferrer"
 					class="border-b border-gray-400 text-2xl"
@@ -111,12 +121,12 @@
 		Still need a <span class="bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text font-extrabold text-transparent">testimonial</span>?
 	</h2>
 	<div class="flex w-full flex-col items-center sm:flex-row">
-		<img alt="Jeff Patzer" src="/showcase/Aug - July/Jeff Patzer.png" loading="lazy" class="mt-12 w-[200px]" />
+		<img alt="Jeff Patzer" src="https://ik.imagekit.io/vjeqenuhn/showcase/Aug_-_July/Jeff_Patzer.png" loading="lazy" class="mt-12 w-[200px]" />
 		<div class="mt-12 flex w-full flex-col px-10 text-xl md:text-2xl">
 			<span>
-				“High5 to @Rishi Raj Jain for showing amazing <span class="bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text font-extrabold text-transparent"
-					>ownership</span
-				>
+				“High5 to @Rishi Raj Jain for showing amazing <span class="bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text font-extrabold text-transparent">
+					ownership
+				</span>
 				in creating and updating 8 demos for the following frameworks: Shopify Hydrogen, Docusaurus, Remix, ecom Static VueJs, Hexo, Hugo, Zola, and ecom Svelte all last week. They
 				are viewable in the docs.layer0.co (some still launching).
 				<span class="bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text font-extrabold text-transparent"> Keep crushing it</span> @Rishi Raj Jain”
@@ -130,8 +140,8 @@
 		He worked with customers and <span class="bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text text-transparent">drove platform adoption</span> on forums!
 	</h2>
 	<div class="grid w-full grid-cols-1 items-stretch gap-5">
-		<img alt="Forum Example - 1" loading="lazy" src="/showcase/Aug - July/Forum - 1.png" class="mt-8 h-full max-w-full rounded object-contain" />
-		<img alt="Forum Example - 2" loading="lazy" src="/showcase/Aug - July/Forum - 2.png" class="mt-8 h-full max-w-full rounded object-contain" />
+		<img loading="lazy" alt="Forum Example - 1" class="mt-8 h-full max-w-full rounded object-contain" src="https://ik.imagekit.io/vjeqenuhn/showcase/Aug_-_July/Forum_-_1.png" />
+		<img loading="lazy" alt="Forum Example - 2" class="mt-8 h-full max-w-full rounded object-contain" src="https://ik.imagekit.io/vjeqenuhn/showcase/Aug_-_July/Forum_-_2.png" />
 	</div>
 </div>
 <div class="flex w-full flex-col items-start justify-center">
@@ -149,35 +159,55 @@
 	>
 		35K+ Impresssions
 	</span>
-	<img alt="Blogs and Tweets Impressions" loading="lazy" src="/showcase/Aug - July/Blog - Impression.png" class="mt-12 w-full rounded object-contain" />
+	<img
+		loading="lazy"
+		alt="Blogs and Tweets Impressions"
+		class="mt-12 w-full rounded object-contain"
+		src="https://ik.imagekit.io/vjeqenuhn/showcase/Aug_-_July/Blog_-_Impression.png"
+	/>
 </div>
 <div class="flex w-full flex-col items-start justify-center">
 	<h2 class="mt-48 text-4xl font-bold text-gray-400 sm:text-6xl">
 		Need a self starter engineer? That’s <span class="bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text text-transparent">him. </span>
 	</h2>
-	<img alt="Self Starter" loading="lazy" src="/showcase/Aug - July/Self - Starter.png" class="mt-12 w-full rounded object-contain" />
+	<img alt="Self Starter" loading="lazy" src="https://ik.imagekit.io/vjeqenuhn/showcase/Aug_-_July/Self_-_Starter.png" class="mt-12 w-full rounded object-contain" />
 </div>
 <div class="flex w-full flex-col items-center justify-center text-center">
 	<h2 class="mt-48 max-w-sm text-4xl font-bold text-gray-400 sm:max-w-xl sm:text-6xl">
 		He collaborated for <span class="bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text text-transparent">many-way</span> growth.
 	</h2>
-	<img alt="Many Way Growth" loading="lazy" src="/showcase/Aug - July/Many - Way.png" class="mt-12 w-full rounded object-contain" />
-	<img alt="Storyblok Rishi Raj Jain" loading="lazy" class="mt-12 w-full rounded border md:w-[80%]" src="/showcase/Aug - July/Search - Storyblok.png" />
+	<img loading="lazy" alt="Many Way Growth" class="mt-12 w-full rounded object-contain" src="https://ik.imagekit.io/vjeqenuhn/showcase/Aug_-_July/Many_-_Way.png" />
+	<img
+		loading="lazy"
+		alt="Storyblok Rishi Raj Jain"
+		class="mt-12 w-full rounded border md:w-[80%]"
+		src="https://ik.imagekit.io/vjeqenuhn/showcase/Aug_-_July/Search_-_Storyblok.png"
+	/>
 	<div class="flex w-full flex-col items-center gap-x-5 sm:flex-row">
-		<img loading="lazy" class="mt-12 w-full border sm:w-1/2" alt="Storyblok Case Study Rishi Raj Jain" src="/showcase/Aug - July/Storyblok CS Rishi Raj Jain.png" />
-		<img alt="Sanity Case Study Rishi Raj Jain" loading="lazy" class="mt-12 w-full border sm:w-1/2" src="/showcase/Aug - July/Sanity Rishi Raj Jain.png" />
+		<img
+			loading="lazy"
+			class="mt-12 w-full border sm:w-1/2"
+			alt="Storyblok Case Study Rishi Raj Jain"
+			src="https://ik.imagekit.io/vjeqenuhn/showcase/Aug_-_July/Storyblok_CS_Rishi_Raj_Jain.png"
+		/>
+		<img
+			loading="lazy"
+			class="mt-12 w-full border sm:w-1/2"
+			alt="Sanity Case Study Rishi Raj Jain"
+			src="https://ik.imagekit.io/vjeqenuhn/showcase/Aug_-_July/Sanity_Rishi_Raj_Jain.png"
+		/>
 	</div>
 </div>
 <div class="flex w-full flex-col items-start justify-center">
 	<h2 class="mt-48 text-4xl font-bold text-gray-400 sm:text-6xl">
-		He spread what he knew and had learnt in <span class="bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text text-transparent"
-			>Conference Talks, Sessions, Guides and Examples.</span
-		>
+		He spread what he knew and had learnt in <span class="bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text text-transparent">
+			Conference Talks, Sessions, Guides and Examples.
+		</span>
 	</h2>
 	<h2 class="mt-24 text-4xl font-bold text-gray-400">
 		1st Session: <span class="bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text text-transparent">Dynamically</span> Static Blogs
 	</h2>
-	<img alt="Dynamically Static Blogs" src="/showcase/Aug - July/Dynamically Static Blogs.png" class="mt-12 w-full rounded" loading="lazy" />
+	<img loading="lazy" class="mt-12 w-full rounded" alt="Dynamically Static Blogs" src="https://ik.imagekit.io/vjeqenuhn/showcase/Aug_-_July/Dynamically_Static_Blogs.png" />
 	<span class="mt-5 text-2xl">Talked about: <span class="font-bold">Next.js</span>, <span class="font-bold">Layer0</span> and <span class="font-bold">Storyblok</span> </span>
 	<span class="mt-5 text-2xl"> Use Case: <span class="font-bold">Portfolio For Beginners</span></span>
 	<span class="mt-5 text-2xl"> Venue: <span class="font-bold">IIIT-Delhi</span></span>
@@ -185,7 +215,7 @@
 		1st Talk: <span class="bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text text-transparent">Dynamically</span> Static Blogs
 	</h2>
 	<a class="mt-12" href="https://youtu.be/6U08V187cpc?t=5173" rel="noreferrer">
-		<img alt="First Talk" src="/showcase/Aug - July/First Talk.png" class="w-full rounded" loading="lazy" />
+		<img alt="First Talk" src="https://ik.imagekit.io/vjeqenuhn/showcase/Aug_-_July/First_Talk.png" class="w-full rounded" loading="lazy" />
 	</a>
 	<span class="mt-5 text-2xl">Talked about: <span class="font-bold">Next.js</span>, <span class="font-bold">Layer0</span> and <span class="font-bold">Storyblok</span> </span>
 	<span class="mt-5 text-2xl"> Use Case: <span class="font-bold">Superfast Blogs!</span></span>
@@ -194,7 +224,7 @@
 		1st Conference: <span class="bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text text-transparent">ISG</span> with Nuxt(2)
 	</h2>
 	<a class="mt-12" href="https://youtu.be/miMm7qGMqLw?t=27" rel="noreferrer">
-		<img alt="First Conference" src="/showcase/Aug - July/His First Conference!.png" class="w-full rounded" loading="lazy" />
+		<img alt="First Conference" src="https://ik.imagekit.io/vjeqenuhn/showcase/Aug_-_July/His_First_Conference_.png" class="w-full rounded" loading="lazy" />
 	</a>
 	<span class="mt-5 text-2xl">Talked about: <span class="font-bold">ISG</span> with <span class="font-bold">Nuxt(2)</span> and <span class="font-bold">Layer0</span> </span>
 	<span class="mt-5 text-2xl"> Use Case: <span class="font-bold">Enabling ISG by platform</span></span>
@@ -211,22 +241,23 @@
 		Created <span class="bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text text-transparent">60+ repositories</span> that showcase Layer0 with
 	</h2>
 	<div class="mt-8 w-full rounded border border-gray-600 bg-black p-5">
-		<img alt="Frameworks Collection" src="/showcase/Aug - July/Frameworks.svg" class="w-full" />
+		<img alt="Frameworks Collection" src="https://ik.imagekit.io/vjeqenuhn/showcase/Aug_-_July/Frameworks.svg" class="w-full" />
 	</div>
 </div>
 <div class="flex w-full flex-col items-center justify-center">
 	<h2 class="mt-48 text-center text-4xl font-bold text-gray-400 sm:text-6xl">
 		<span class="bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text font-extrabold text-transparent"> ~ Wall Of Appreciation ~ </span>
 	</h2>
-	<img alt="Praise on Mail" loading="lazy" src="/showcase/Aug - July/Mail Praise.png" class="mt-8 w-full rounded-t" />
-	<img alt="Vercel's Appreciation" loading="lazy" src="/showcase/Aug - July/Vercel Collection.png" class="w-full" />
-	<img alt="Vercel's Praise" loading="lazy" src="/showcase/Aug - July/Vercel's Praise.png" class="w-full" />
-	<img alt="Layer0's Inclusion" loading="lazy" src="/showcase/Aug - July/Hattip.png" class="w-full rounded-b" />
+	<img alt="Praise on Mail" loading="lazy" src="https://ik.imagekit.io/vjeqenuhn/showcase/Aug_-_July/Mail_Praise.png" class="mt-8 w-full rounded-t" />
+	<img alt="Vercel's Appreciation" loading="lazy" src="https://ik.imagekit.io/vjeqenuhn/showcase/Aug_-_July/Vercel_Collection.png" class="w-full" />
+	<img alt="Vercel's Praise" loading="lazy" src="https://ik.imagekit.io/vjeqenuhn/showcase/Aug_-_July/Vercel_s_Praise.png" class="w-full" />
+	<img alt="Layer0's Inclusion" loading="lazy" src="https://ik.imagekit.io/vjeqenuhn/showcase/Aug_-_July/Hattip.png" class="w-full rounded-b" />
 </div>
 <div class="flex w-full flex-col items-center justify-center">
-	<div class="mt-12 flex w-full flex-col items-center text-center">
+	<div class="mt-24 flex w-full flex-col items-center text-center">
 		<h1 class="max-w-xs text-4xl font-bold text-gray-400 sm:max-w-xl sm:text-6xl">
 			<span class="bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text text-transparent">Thank you! 💚</span>
 		</h1>
 	</div>
+	<div class="mt-12 h-[1px] w-full" />
 </div>

@@ -10,7 +10,7 @@
 
 <Seo title="React Story - Rishi Raj Jain" />
 
-<img alt="Showcase Story" loading="lazy" class="w-full rounded border shadow" src="/showcase/React Story/web.png" />
+<img alt="Showcase Story" loading="lazy" class="w-full rounded border shadow" src="https://ik.imagekit.io/vjeqenuhn/showcase/React_Story/web.png" />
 
 <iframe
 	width="1038"

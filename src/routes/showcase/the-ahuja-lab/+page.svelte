@@ -2,16 +2,24 @@
 	import Seo from '@/src/components/Seo.svelte'
 </script>
 
-<Seo title="The Ahuja Lab - Rishi Raj Jain" />
+<Seo preloads={[{ as: 'image', href: 'https://ik.imagekit.io/vjeqenuhn/showcase/The_Ahuja_Lab/responsive.png' }]} title="The Ahuja Lab - Rishi Raj Jain" />
 
-<h2 class="text-xl font-medium text-gray-400">The Ahuja Lab - Meet the lab that uses a hybrid approach involving Artificial Intelligence and Molecular Biology</h2>
+<h2 class="text-xl font-normal text-gray-400">The Ahuja Lab - Meet the lab that uses a hybrid approach involving Artificial Intelligence and Molecular Biology</h2>
 <h1 class="mt-3 bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text text-4xl font-bold text-transparent sm:text-6xl">
 	Drastically Improved Performance & Enhanced Online Presence
 </h1>
-<a href="#letsbegin" class="mt-8 max-w-max rounded border border-gray-600 bg-white px-4 py-2 text-gray-600 outline-none transition duration-300 hover:bg-black hover:text-gray-200">
+<a
+	href="#letsbegin"
+	class="mt-8 max-w-max rounded border border-gray-600 bg-white px-4 py-2 text-gray-600 outline-none transition duration-300 hover:bg-black hover:text-white dark:bg-black dark:text-gray-400 dark:hover:bg-white dark:hover:text-black"
+>
 	Let's Begin &#8600;
 </a>
-<img alt="Responsive Screenshot of The Ahuja Lab's new website" id="letsbegin" src="/showcase/The Ahuja Lab/responsive.png" class="mt-16 h-auto w-full rounded" />
+<img
+	id="letsbegin"
+	alt="Responsive Screenshot of The Ahuja Lab's new website"
+	class="mt-16 h-auto w-full rounded border dark:border-gray-600"
+	src="https://ik.imagekit.io/vjeqenuhn/showcase/The_Ahuja_Lab/responsive.png"
+/>
 <div class="mt-24 grid grid-cols-1 gap-8 border-b border-t py-8 dark:border-gray-600 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
 	<div class="flex flex-col gap-y-3 border-r dark:border-gray-600">
 		<span class="text-xl font-light text-gray-400">Website</span>
@@ -107,19 +115,39 @@
 	Video Comparison Of <span class="bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text text-transparent">First Page Load(s)</span>
 	Performance
 </span>
-<video class="mt-12 h-[440px] rounded-lg border" controls preload="none" poster="/showcase/The Ahuja Lab/visual-improvement.png">
-	<source src="/showcase/The Ahuja Lab/comparison-old-new-ahuja-lab.mp4" type="video/mp4" />
+<video
+	controls
+	preload="none"
+	class="mt-12 h-[440px] rounded-lg border dark:border-gray-600"
+	poster="https://ik.imagekit.io/vjeqenuhn/showcase/The_Ahuja_Lab/visual-improvement.png"
+>
+	<source src="https://ik.imagekit.io/vjeqenuhn/showcase/The_Ahuja_Lab/comparison-old-new-ahuja-lab.mp4" type="video/mp4" />
 	<track kind="captions" />
 </video>
 <span class="mt-12 text-2xl font-medium text-gray-400 sm:text-4xl">
 	Before &rarr; <span class="bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text text-transparent">4.3s</span> to LCP
 </span>
-<img alt="First Load Filmstrip Old Ahuja Lab" loading="lazy" src="/showcase/The Ahuja Lab/old-ahuja-lab-first-load-filmstrip.png" class="mt-12 h-auto w-full rounded border" />
+<img
+	loading="lazy"
+	alt="First Load Filmstrip Old Ahuja Lab"
+	class="mt-12 h-auto w-full rounded border"
+	src="https://ik.imagekit.io/vjeqenuhn/showcase/The_Ahuja_Lab/old-ahuja-lab-first-load-filmstrip.png"
+/>
 <span class="mt-12 text-2xl font-medium text-gray-400 sm:text-4xl">
 	After &rarr; <span class="bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text text-transparent">1s</span> to LCP
 </span>
-<img alt="First Load Filmstrip New Ahuja Lab" loading="lazy" src="/showcase/The Ahuja Lab/new-ahuja-lab-first-load-filmstrip.png" class="mt-12 h-auto w-full rounded border" />
-<img alt="The Ahuja Lab Preview" loading="lazy" src="/showcase/The Ahuja Lab/preview.png" class="mt-24 h-auto w-full rounded" />
+<img
+	loading="lazy"
+	alt="First Load Filmstrip New Ahuja Lab"
+	class="mt-12 h-auto w-full rounded border"
+	src="https://ik.imagekit.io/vjeqenuhn/showcase/The_Ahuja_Lab/new-ahuja-lab-first-load-filmstrip.png"
+/>
+<img
+	loading="lazy"
+	alt="The Ahuja Lab Preview"
+	class="mt-24 h-auto w-full rounded border dark:border-gray-600"
+	src="https://ik.imagekit.io/vjeqenuhn/showcase/The_Ahuja_Lab/preview.png"
+/>
 <div class="mt-24 grid grid-cols-1 gap-y-8 sm:grid-cols-2">
 	<span class="max-w-[500px] text-2xl font-medium leading-loose text-gray-400 sm:text-4xl">
 		Results that I delivered to
@@ -176,12 +204,12 @@
 		<br />
 		<div class="flex flex-row items-center gap-x-5">
 			<img
-				alt="Mr. Gaurav Ahuja Close Up"
 				width="60"
 				height="60"
 				loading="lazy"
-				src="/showcase/The Ahuja Lab/gaurav-ahuja.jpeg"
+				alt="Mr. Gaurav Ahuja Close Up"
 				class="h-[60px] w-[60px] rounded-full object-cover object-top"
+				src="https://ik.imagekit.io/vjeqenuhn/showcase/The_Ahuja_Lab/gaurav-ahuja.jpeg"
 			/>
 			<div class="flex flex-col">
 				<span class="font-medium text-gray-600 dark:text-gray-200">Gaurav Ahuja</span>
