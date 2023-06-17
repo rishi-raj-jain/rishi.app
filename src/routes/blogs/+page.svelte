@@ -11,7 +11,7 @@
 
 <div class="flex flex-col">
 	<h1 class="text-2xl font-bold sm:text-5xl">Blogs</h1>
-	<h2 class="font-regular text-md mt-5 whitespace-pre-line dark:text-gray-400 sm:text-xl">
+	<h2 class="font-regular text-md mt-8 whitespace-pre-line dark:text-gray-400 sm:text-xl">
 		{@html renderRichText.render(data.blogsTagline)}
 	</h2>
 	<div class="flex flex-row flex-wrap">
