@@ -3,7 +3,6 @@
 	export let data: PageData
 
 	import Seo from '@/src/components/Seo.svelte'
-	import renderRichText from '@/src/lib/render'
 	import DateString from '@/src/components/DateString.svelte'
 </script>
 
@@ -12,9 +11,7 @@
 <div class="flex flex-col">
 	<h1 class="text-2xl font-bold sm:text-5xl">Blogs</h1>
 	<h2 class="font-regular text-md mt-8 whitespace-pre-line dark:text-gray-200 sm:text-xl">About</h2>
-	<p class="mt-2 font-light text-slate-600 dark:text-slate-400">
-		{@html renderRichText.render(data.blogsTagline)}
-	</p>
+	{@html data.tagline}
 	<div class="flex flex-row flex-wrap md:mt-12">
 		<div class="mt-4 flex w-full flex-col md:mt-0 lg:w-2/3 lg:pr-10">
 			<h4 class="text-md w-full border-b pb-2 font-semibold dark:border-gray-800">Self Published Posts</h4>
