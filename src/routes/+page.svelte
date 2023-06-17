@@ -19,7 +19,7 @@
 		/>
 		<div class="flex flex-col items-start">
 			<h1 class="mt-8 text-2xl font-bold sm:text-5xl lg:mt-0">Rishi Raj Jain</h1>
-			<h2 class="mt-4 text-lg text-gray-500 dark:text-white sm:text-xl">Technical Customer Success Manager at Edgio</h2>
+			<div class="mt-6 h-[1px] w-full" />
 			<Socials />
 			<div class="mt-6 h-[1px] w-full bg-gray-200 dark:bg-gray-700" />
 			{@html data.tagline}

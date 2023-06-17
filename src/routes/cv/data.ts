@@ -1,7 +1,7 @@
 export const cv = {
 	'Work Experience': [
 		{
-			name: '2022 — Now',
+			name: '2022 — 2023',
 			title: 'Technical Customer Success Manager at Edgio',
 			href: 'https://www.linkedin.com/feed/update/urn:li:activity:6971820122961268737/'
 		},

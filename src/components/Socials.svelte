@@ -1,4 +1,4 @@
-<div class="mt-5 flex flex-row items-center space-x-5 text-gray-400">
+<div class="flex flex-row items-center space-x-5 text-gray-400">
 	<a rel="noopener noreferrer" href="https://github.com/rishi-raj-jain" target="_blank">
 		<svg class="fill-black dark:fill-white" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 499.36" role="img">
 			<title>Rishi Raj Jain's Github Repository Link</title>
