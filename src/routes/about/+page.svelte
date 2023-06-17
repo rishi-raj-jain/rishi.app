@@ -9,10 +9,12 @@
 <Seo title="About - Rishi Raj Jain" />
 
 <div class="flex flex-col">
-	<h1 class="text-2xl font-bold sm:text-5xl">About Me</h1>
-	<h2 class="font-regular text-md mt-8 whitespace-pre-line dark:text-gray-400 sm:text-xl">
+	<h1 class="text-2xl font-bold sm:text-5xl">Rishi Raj Jain</h1>
+	<h2 class="font-regular text-md mt-8 whitespace-pre-line dark:text-gray-200 sm:text-xl">About</h2>
+	<p class="mt-2 font-light text-slate-600 dark:text-slate-400">
 		{@html data.aboutTaglineHTML}
-	</h2>
+	</p>
+	<h2 class="font-regular text-md mt-8 whitespace-pre-line dark:text-gray-200 sm:text-xl">Timeline</h2>
 	{#each Object.keys(data.Timeline).sort((a, b) => (a > b ? -1 : 1)) as item}
 		<div class="mt-8 flex flex-col">
 			<span class="text-xl font-bold dark:text-gray-400">{item}</span>
