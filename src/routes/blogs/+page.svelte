@@ -17,7 +17,7 @@
 	</p>
 	<div class="flex flex-row flex-wrap md:mt-12">
 		<div class="mt-4 flex w-full flex-col md:mt-0 lg:w-2/3 lg:pr-10">
-			<h4 class="text-md w-full border-b pb-2 font-semibold">Self Published Posts</h4>
+			<h4 class="text-md w-full border-b pb-2 font-semibold dark:border-gray-800">Self Published Posts</h4>
 			<div class="relative mt-6 columns-1 space-y-6">
 				{#each data.allPosts as item, _}
 					<a
@@ -37,7 +37,7 @@
 			</div>
 		</div>
 		<div class="mt-8 flex w-full flex-col md:mt-0 lg:w-1/3">
-			<h4 class="text-md w-full border-b pb-2 font-semibold">Media Posts</h4>
+			<h4 class="text-md w-full border-b pb-2 font-semibold dark:border-gray-800">Media Posts</h4>
 			{#each data.recommendedPosts as item}
 				<a
 					rel="noopener"
