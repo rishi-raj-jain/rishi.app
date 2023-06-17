@@ -73,7 +73,8 @@ export default new Router()
 		})
 		proxy('web')
 	})
-	.fallback(({ proxy, cache }) => {
+	.fallback(({ proxy, cache, removeUpstreamResponseHeader }) => {
+		removeUpstreamResponseHeader('cache-control')
 		cache({
 			edge: false,
 			browser: false
