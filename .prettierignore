@@ -1,17 +1,14 @@
-.DS_Store
-node_modules
-/build
-/.svelte-kit
-/package
 .env
 .env.*
+/build
+.edgio
+.vercel
+/package
+.DS_Store
+README.md
+yarn.lock
+node_modules
+/.svelte-kit
 !.env.example
-
-# Ignore files for PNPM, NPM and YARN
 pnpm-lock.yaml
 package-lock.json
-yarn.lock
-
-.edgio
-,edgio_temp
-.vercel
