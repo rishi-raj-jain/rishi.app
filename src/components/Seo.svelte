@@ -5,7 +5,8 @@
 		description: string = 'Currently, I am working as a Technical Customer Success Manager at Edgio.',
 		domain: string = $page.data?.domain ?? 'https://sveltekit.rishi.app',
 		image: string = '/static/social-media-card.jpg',
-		pathname: string = $page.url.pathname
+		pathname: string = $page.url.pathname,
+		preloads: any[] = []
 
 	let seoImage = ''
 
@@ -22,6 +23,9 @@
 </script>
 
 <svelte:head>
+	{#each preloads as preload}
+		<link rel="preload" href={preload.href} as={preload.as} />
+	{/each}
 	<!-- Global Metadata -->
 	<meta charset="utf-8" />
 	<meta property="og:type" content="website" />
