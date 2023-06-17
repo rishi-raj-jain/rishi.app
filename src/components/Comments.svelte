@@ -36,7 +36,7 @@
 			on:change={(e) => {
 				name = e.target.value
 			}}
-			class="mt-5 w-full appearance-none rounded border px-5 py-2 text-black outline-none ring-0 hover:border-black hover:shadow dark:border-gray-500 dark:bg-black dark:text-gray-300 dark:hover:border-white sm:w-1/2"
+			class="mt-5 w-full appearance-none rounded border px-5 py-2 text-black outline-none ring-0 duration-200 hover:border-black hover:shadow focus:border-black dark:border-gray-500 dark:bg-black dark:text-gray-300 dark:hover:border-white dark:focus:border-white sm:w-1/2"
 		/>
 		<div class="mt-5 flex w-full flex-col space-y-1 sm:w-1/2">
 			<input
@@ -45,7 +45,7 @@
 				on:change={(e) => {
 					email = e.target.value
 				}}
-				class="w-full appearance-none rounded border px-5 py-2 text-black outline-none ring-0 hover:border-black hover:shadow dark:border-gray-500 dark:bg-black dark:text-gray-300 dark:hover:border-white"
+				class="w-full appearance-none rounded border px-5 py-2 text-black outline-none ring-0 duration-200 hover:border-black hover:shadow focus:border-black dark:border-gray-500 dark:bg-black dark:text-gray-300 dark:hover:border-white dark:focus:border-white"
 			/>
 			<span class="text-sm text-gray-400">Email will remain confidential.</span>
 		</div>
@@ -57,7 +57,7 @@
 			content = e.target.value
 		}}
 		placeholder={`Comment*\nMaximum of 500 characters.`}
-		class="mt-5 appearance-none rounded border px-5 pb-10 pt-5 text-black outline-none ring-0 hover:border-black hover:shadow dark:border-gray-500 dark:bg-black dark:text-gray-300 dark:hover:border-white"
+		class="mt-5 appearance-none rounded border px-5 pb-10 pt-5 text-black outline-none ring-0 duration-200 hover:border-black hover:shadow focus:border-black dark:border-gray-500 dark:bg-black dark:text-gray-300 dark:hover:border-white dark:focus:border-white"
 	/>
 	<button type="submit" class="mt-5 w-[200px] appearance-none rounded border px-5 py-2 text-center hover:bg-gray-100 dark:border-gray-500 dark:hover:bg-[#28282B]">
 		Post a comment

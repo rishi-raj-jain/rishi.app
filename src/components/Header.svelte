@@ -2,7 +2,7 @@
 	import { toggleTheme } from '@/src/lib/theme'
 </script>
 
-<nav class="sticky top-0 z-10 flex w-full flex-col items-center backdrop-blur-xl backdrop-filter dark:bg-black">
+<nav class="sticky top-0 z-10 flex w-full flex-col items-center border-b bg-white dark:border-gray-600 dark:bg-black">
 	<div class="flex w-full max-w-[90vw] flex-row items-center justify-between sm:px-10 lg:max-w-[75vw]">
 		<button on:click={toggleTheme} class="appearance-none focus:outline-none">
 			<svg width="12" height="12" fill="black" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" class="block transition-all duration-500 dark:hidden">
