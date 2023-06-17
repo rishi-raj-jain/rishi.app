@@ -18,7 +18,10 @@
 		<div class="mt-10 flex w-full flex-col items-center lg:mt-20 lg:w-2/3 lg:pr-10">
 			<div class="relative columns-1 space-y-8">
 				{#each data.allPosts as item, _}
-					<a href={`/blog/${item.slug}`} class="flex flex-col border-b border-gray-200 dark:border-gray-800">
+					<a
+						href={`/blog/${item.slug}`}
+						class={['flex', 'flex-col', 'border-gray-200', 'dark:border-gray-800', data.allPosts.length - 1 !== _ && 'border-b'].filter((i) => i).join(' ')}
+					>
 						<div class="flex break-inside-avoid flex-col">
 							<div class="text-sm font-light text-slate-600 dark:text-slate-400">
 								<DateString date={new Date(item.first_published_at)} />
