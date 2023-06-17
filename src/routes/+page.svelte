@@ -15,6 +15,7 @@
 			alt="Rishi Raj Jain in his favourite attire"
 			src="https://ik.imagekit.io/vjeqenuhn/static/favicon-image.jpg"
 			class="aspect-square h-[300px] w-[300px] transform-gpu rounded"
+			style={`background-image: url(${data.blurImage}); background-repeat: no-repeat; background-position: 50% 50%; background-size: cover;`}
 		/>
 		<div class="flex flex-col items-start">
 			<h1 class="mt-8 text-2xl font-bold sm:text-5xl lg:mt-0">Rishi Raj Jain</h1>
