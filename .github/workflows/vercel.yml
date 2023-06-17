@@ -1,10 +1,10 @@
-name: Deploy To Edgio (sveltekit.rishi.app)
+name: Deploy To Vercel
 
 on:
   workflow_dispatch:
 
 jobs:
-  deploy-to-edgio:
+  deploy-to-vercel:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
