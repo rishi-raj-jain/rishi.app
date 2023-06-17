@@ -20,11 +20,11 @@
 				{#each data.allPosts as item, _}
 					<a href={`/blog/${item.slug}`} class="flex flex-col border-b border-gray-200 dark:border-gray-800">
 						<div class="flex break-inside-avoid flex-col">
-							<div class="text-sm text-gray-800 dark:text-gray-400">
+							<div class="text-sm font-light text-slate-600 dark:text-slate-400">
 								<DateString date={new Date(item.first_published_at)} />
 							</div>
 							<span class="mt-1 text-xl font-semibold hover:underline">{item.content.title}</span>
-							<span class="mt-3 line-clamp-2 text-sm text-gray-700 dark:text-gray-400">{item.content.intro}</span>
+							<span class="mt-3 line-clamp-2 text-sm font-light text-slate-600 dark:text-slate-400">{item.content.intro}</span>
 							<span class="mb-5 mt-5 text-sm uppercase text-blue-500 hover:underline">Read More &rarr;</span>
 						</div>
 					</a>
@@ -38,7 +38,7 @@
 					rel="noopener"
 					target="_blank"
 					href={item.content.Url.url}
-					class="mt-5 truncate border-b pb-2 text-sm text-gray-500 hover:underline dark:border-gray-700 dark:text-gray-400"
+					class="mt-5 truncate border-b pb-2 text-sm font-light text-slate-600 hover:underline dark:border-gray-700 dark:text-slate-400"
 				>
 					{item.content.Title}
 				</a>
