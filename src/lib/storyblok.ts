@@ -87,6 +87,28 @@ export async function getRecommendedPosts() {
 	return data?.PostlinkItems.items
 }
 
+export async function getVideoItems(per_page_items: string | number, page: string | number) {
+	const data = await fetchAPI(
+		`
+      {
+        VideoItems (per_page: ${per_page_items}, page: ${page}){
+          items {
+            content {
+              name
+              description
+              video
+              thumbnail {
+                filename
+              }
+            }
+          }
+        }
+      }
+    `
+	)
+	return data?.VideoItems.items
+}
+
 export async function getTimelineItems(per_page_items: string | number, page: string | number) {
 	const data = await fetchAPI(
 		`
