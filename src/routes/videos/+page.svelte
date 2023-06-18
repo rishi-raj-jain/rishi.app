@@ -31,7 +31,13 @@
 		<div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2">
 			{#each data.videos as video, _}
 				<div class="relative flex w-full flex-col">
-					<img id={`overlay-${_}`} alt={video.content.name} src={video.content.thumbnail.filename} class="absolute left-0 top-0 aspect-video h-[300px] w-full" />
+					<img
+						id={`overlay-${_}`}
+						alt={video.content.name}
+						loading={_ === 0 ? 'eager' : 'lazy'}
+						src={video.content.thumbnail.filename}
+						class="absolute left-0 top-0 aspect-video h-[300px] w-full"
+					/>
 					{#if video.content.video.includes('youtu')}
 						<iframe
 							allowfullscreen
