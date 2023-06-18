@@ -17,10 +17,7 @@
 			<h4 class="text-md w-full border-b pb-2 font-light dark:border-gray-800">Self Published Posts</h4>
 			<div class="relative mt-6 columns-1 space-y-6">
 				{#each data.allPosts as item, _}
-					<a
-						href={`/blog/${item.slug}`}
-						class={['flex', 'flex-col', 'border-gray-200', 'dark:border-gray-800', data.allPosts.length - 1 === _ && 'border-b'].filter((i) => i).join(' ')}
-					>
+					<a href={`/blog/${item.slug}`} class="flex flex-col border-gray-200 dark:border-gray-800">
 						<div class="flex break-inside-avoid flex-col">
 							<div class="text-sm font-light text-slate-600 dark:text-slate-400">
 								<DateString date={new Date(item.first_published_at)} />
