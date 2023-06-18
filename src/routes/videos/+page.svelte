@@ -19,7 +19,7 @@
 							src={video.content.video}
 							title={video.content.name}
 							loading={_ === 0 ? 'eager' : 'lazy'}
-							class="aspect-video h-[300px] w-full rounded-lg border hover:shadow-2xl"
+							class="aspect-video h-[300px] w-full rounded-lg border hover:shadow-2xl dark:border-gray-600"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 						/>
 					{:else}
