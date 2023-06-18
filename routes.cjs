@@ -73,6 +73,17 @@ export default new Router()
 		})
 		proxy('web')
 	})
+	.match('/sitemap.xml', ({ cache, proxy }) => {
+		cache({
+			edge: {
+				maxAgeSeconds: 86400,
+				forcePrivateCaching: true,
+				staleWhileRevalidateSeconds: 60 * 60 * 24 * 365
+			},
+			key: new CustomCacheKey().excludeQueryParameters('x-sveltekit-invalidated')
+		})
+		proxy('web')
+	})
 	.fallback(({ proxy, cache, removeUpstreamResponseHeader }) => {
 		removeUpstreamResponseHeader('cache-control')
 		cache({
