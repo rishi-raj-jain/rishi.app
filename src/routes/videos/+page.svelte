@@ -2,7 +2,25 @@
 	import type { PageData } from './$types'
 	export let data: PageData
 
+	import { onMount } from 'svelte'
 	import Seo from '@/src/components/Seo.svelte'
+
+	onMount(() => {
+		document.querySelectorAll('iframe').forEach((i, _) => {
+			const dataSrc = i.getAttribute('data-src')
+			if (dataSrc) i.setAttribute('src', dataSrc)
+			i.addEventListener('load', () => {
+				document.getElementById(`overlay-${_}`)?.remove()
+			})
+		})
+		return () => {
+			document.querySelectorAll('iframe').forEach((i, _) => {
+				i.removeEventListener('load', () => {
+					document.getElementById(`overlay-${_}`)?.remove()
+				})
+			})
+		}
+	})
 </script>
 
 <Seo title="Talks and Video Tutorials - Rishi Raj Jain" />
@@ -12,12 +30,13 @@
 	{#if data.videos}
 		<div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2">
 			{#each data.videos as video, _}
-				<div class="flex w-full flex-col">
+				<div class="relative flex w-full flex-col">
+					<img id={`overlay-${_}`} alt={video.content.name} src={video.content.thumbnail.filename} class="absolute left-0 top-0 aspect-video h-[300px] w-full" />
 					{#if video.content.video.includes('youtu')}
 						<iframe
 							allowfullscreen
-							src={video.content.video}
 							title={video.content.name}
+							data-src={video.content.video}
 							loading={_ === 0 ? 'eager' : 'lazy'}
 							class="aspect-video h-[300px] w-full rounded-lg border hover:shadow-2xl dark:border-gray-600"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

@@ -4,7 +4,7 @@
 
 <Seo preloads={[{ as: 'image', href: 'https://ik.imagekit.io/vjeqenuhn/showcase/The_Ahuja_Lab/responsive.png' }]} title="The Ahuja Lab - Rishi Raj Jain" />
 
-<h2 class="text-xl font-normal text-gray-400">The Ahuja Lab - Meet the lab that uses a hybrid approach involving Artificial Intelligence and Molecular Biology</h2>
+<h2 class="text-xl font-light text-gray-400">The Ahuja Lab - Meet the lab that uses a hybrid approach involving Artificial Intelligence and Molecular Biology</h2>
 <h1 class="mt-3 bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text text-4xl font-bold text-transparent sm:text-6xl">
 	Drastically Improved Performance & Enhanced Online Presence
 </h1>
