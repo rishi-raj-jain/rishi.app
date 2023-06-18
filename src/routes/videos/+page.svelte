@@ -23,7 +23,7 @@
 	})
 </script>
 
-<Seo title="Talks and Video Tutorials - Rishi Raj Jain" />
+<Seo preloads={[{ as: 'image', href: data.videos[0].content.thumbnail.filename }]} title="Talks and Video Tutorials - Rishi Raj Jain" />
 
 <div class="flex flex-col">
 	<h1 class="text-2xl font-bold sm:text-5xl">Talks and Video Tutorials</h1>
