@@ -6,7 +6,19 @@ export async function GET({ url }) {
 	const domain = env.DOMAIN ?? url.origin
 	const allPosts = (await getAllPostsForHome()) || []
 	const postsString = allPosts.map((i) => `<url><loc>${new URL(`/blog/${i.slug}`, domain).toString()}</loc></url>`).join('')
-	const pages = ['/', '/about/', '/cv/', '/storyblok/', '/blogs/', '/videos/', '/showcase/']
+	const pages = [
+		'/',
+		'/cv/',
+		'/about/',
+		'/blogs/',
+		'/videos/',
+		'/showcase/',
+		'/storyblok/',
+		'/showcase/react-story/',
+		'/showcase/aug21-jul22/',
+		'/showcase/the-ahuja-lab/',
+		'/showcase/garg-property-adviser/'
+	]
 	const pagesString = pages.map((i) => `<url><loc>${new URL(i, domain).toString()}</loc></url>`).join('')
 	return new Response(
 		`<?xml version="1.0" encoding="UTF-8" ?>
