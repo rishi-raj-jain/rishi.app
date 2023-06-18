@@ -3,9 +3,11 @@ import { getAllPostsForHome } from '@/src/lib/storyblok'
 
 /** @type {import('./$types').RequestHandler} */
 export async function GET({ url }) {
-	const allPosts = (await getAllPostsForHome()) || []
 	const domain = env.DOMAIN ?? url.origin
+	const allPosts = (await getAllPostsForHome()) || []
+	const postsString = allPosts.map((i) => `<url><loc>${new URL(`/blog/${i.slug}`, domain).toString()}</loc></url>`).join('')
 	const pages = ['/', '/about/', '/cv/', '/storyblok/', '/blogs/', '/videos/', '/showcase/']
+	const pagesString = pages.map((i) => `<url><loc>${new URL(i, domain).toString()}</loc></url>`).join('')
 	return new Response(
 		`<?xml version="1.0" encoding="UTF-8" ?>
                 <urlset
@@ -16,28 +18,8 @@ export async function GET({ url }) {
                     xmlns:video="https://www.google.com/schemas/sitemap-video/1.1"
                     xmlns:mobile="https://www.google.com/schemas/sitemap-mobile/1.0"
                 >
-                ${pages
-									.map(
-										(i) => `
-                    <url>
-                        <loc>
-                            ${new URL(i, domain).toString()}
-                        </loc>
-                    </url>
-                `
-									)
-									.join('')}
-                ${allPosts
-									.map(
-										(i) => `
-                <url>
-                    <loc>
-                        ${new URL(`/blog/${i.slug}`, domain).toString()}
-                    </loc>
-                </url>
-                `
-									)
-									.join('')}
+                ${pagesString}
+                ${postsString}
             </urlset>`,
 		{
 			headers: {
