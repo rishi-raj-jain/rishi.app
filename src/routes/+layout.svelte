@@ -17,6 +17,10 @@
 	})
 </script>
 
+<svelte:head>
+	<link rel="icon" href="https://ik.imagekit.io/vjeqenuhn/static/icon.png" />
+</svelte:head>
+
 <Header />
 
 <main class="flex flex-col items-center text-black dark:text-gray-200">
