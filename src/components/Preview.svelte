@@ -31,7 +31,7 @@
 	<div class="mt-4 h-[1px] w-full lg:hidden" />
 	{#if content.link && content.link.href && content.link.name}
 		<a class="mt-auto max-w-min border-b hover:border-black" href={content.link.href} target="_blank">
-			{content.link.name}
+			{content.link.name} &#8599;
 		</a>
 	{/if}
 </a>
