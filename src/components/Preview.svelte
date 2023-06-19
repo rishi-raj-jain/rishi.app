@@ -30,8 +30,15 @@
 	{/if}
 	<div class="mt-4 h-[1px] w-full lg:hidden" />
 	{#if content.link && content.link.href && content.link.name}
-		<a class="mt-auto max-w-min border-b hover:border-black" href={content.link.href} target="_blank">
-			{content.link.name} &#8599;
+		<a
+			target="_blank"
+			href={content.link.href}
+			class="group mt-auto flex max-w-min flex-row items-end gap-x-2 border-b border-white hover:border-black dark:border-black dark:hover:border-white"
+		>
+			<span>
+				{content.link.name}
+			</span>
+			<span class="text-sm text-gray-400 group-hover:text-black dark:group-hover:text-white">&#8599;</span>
 		</a>
 	{/if}
 </a>
