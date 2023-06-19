@@ -1,5 +1,5 @@
 module.exports = {
-	connector: './node_modules',
+	connector: './',
 	backends: {
 		web: {
 			domainOrIp: 'sveltekit-rishi-app.vercel.app',
