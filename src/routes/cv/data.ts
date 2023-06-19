@@ -53,8 +53,8 @@ export const cv = {
 		},
 		{
 			name: 'Email',
-			title: 'rjain@edg.io',
-			href: 'mailto:rjain@edg.io'
+			title: 'rishi18304@iiitd.ac.in',
+			href: 'mailto:rishi18304@iiitd.ac.in'
 		}
 	]
 }
