@@ -1,30 +1,37 @@
 <script lang="ts">
 	export let full_slug: string
+	export let gap: boolean = true
 	export let className: string = ''
-	export let content: { date?: string; name?: string; intro?: string }
+	export let content: { date?: string; name?: string; intro?: string; link?: { name?: string; href?: string } }
 
 	$: display = content?.date ? new Date(content.date).toLocaleDateString() : null
 </script>
 
-<div
-	class={['group relative overflow-hidden rounded-xl border duration-200 hover:border-black dark:border-gray-600 dark:hover:border-white md:gap-8', className]
+<a
+	href={full_slug}
+	class={['flex flex-col rounded-xl border p-4 duration-200 hover:border-black dark:border-gray-600 dark:hover:border-white md:p-8', className]
 		.map((i) => i.trim())
 		.join(' ')
 		.trim()}
 >
-	<a href={full_slug}>
-		<article class="p-4 md:p-8">
-			{#if display}
-				<div class="flex items-center justify-between gap-2">
-					<span class="text-xs text-slate-600 duration-200 dark:text-slate-400">
-						<time datetime={content.date}>
-							{display}
-						</time>
-					</span>
-				</div>
-			{/if}
-			<h2 class="mt-2 text-xl font-medium lg:text-3xl">{content.name}</h2>
-			<p class="mt-4 font-light text-gray-400">{content.intro}</p>
-		</article>
-	</a>
-</div>
+	{#if display}
+		<div class="flex items-center justify-between gap-2">
+			<span class="text-xs text-slate-600 duration-200 dark:text-slate-400">
+				<time datetime={content.date}>
+					{display}
+				</time>
+			</span>
+		</div>
+	{/if}
+	<h2 class="mt-2 text-xl font-medium lg:text-3xl">{content.name}</h2>
+	<p class="mt-4 font-light text-gray-400">{content.intro}</p>
+	{#if gap}
+		<div class="mt-4 hidden h-[1px] w-full lg:block" />
+	{/if}
+	<div class="mt-4 h-[1px] w-full lg:hidden" />
+	{#if content.link && content.link.href && content.link.name}
+		<a class="mt-auto max-w-min border-b hover:border-black" href={content.link.href} target="_blank">
+			{content.link.name}
+		</a>
+	{/if}
+</a>

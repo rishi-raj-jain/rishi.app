@@ -238,6 +238,7 @@ export async function getShowcaseItems(per_page_items: string | number, page: st
               name
               date
               intro
+              links
             }
             full_slug
           }

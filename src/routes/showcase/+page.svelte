@@ -10,7 +10,7 @@
 
 <h1 class="text-2xl font-bold sm:text-5xl">Showcase</h1>
 <div class="mt-8 grid grid-cols-1 gap-4 lg:grid-cols-2">
-	<Preview {...data.items[0]} />
+	<Preview gap={false} {...data.items[0]} />
 	{#if data.items.length > 1}
 		<div class="flex w-full flex-col gap-4">
 			<Preview {...data.items[1]} />
