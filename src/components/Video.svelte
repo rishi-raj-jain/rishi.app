@@ -36,7 +36,7 @@
 			alt={video.content.name}
 			src={video.content.thumbnail.filename}
 			loading={index === 0 ? 'eager' : 'lazy'}
-			class="absolute left-0 top-0 aspect-video h-[300px] w-full object-cover"
+			class="absolute left-0 top-0 aspect-video h-[300px] w-full rounded-lg object-cover"
 		/>
 	{/if}
 	{#if video.content.video && video.content.video.includes('youtu')}
