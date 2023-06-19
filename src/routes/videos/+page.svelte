@@ -36,7 +36,7 @@
 						alt={video.content.name}
 						loading={_ === 0 ? 'eager' : 'lazy'}
 						src={video.content.thumbnail.filename}
-						class="absolute left-0 top-0 aspect-video h-[300px] w-full"
+						class="absolute left-0 top-0 aspect-video h-[300px] w-full object-cover"
 					/>
 					{#if video.content.video.includes('youtu')}
 						<iframe

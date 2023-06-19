@@ -9,9 +9,7 @@ export const load: PageServerLoad = async ({ url }) => {
 	while (areVideos) {
 		let temp = (await getVideoItems(5, page)) || []
 		if (temp.length > 0) {
-			temp.forEach((a: any) => {
-				videos.push(a)
-			})
+			videos = [...videos, ...temp]
 			page += 1
 		} else {
 			areVideos = false
