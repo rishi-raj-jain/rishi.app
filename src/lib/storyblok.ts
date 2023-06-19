@@ -227,3 +227,23 @@ export async function getPost(slug: string) {
 		post: data?.PostItem
 	}
 }
+
+export async function getShowcaseItems(per_page_items: string | number, page: string | number) {
+	const data = await fetchAPI(
+		`
+      {
+        ShowcaseItems (sort_by:"content.date:desc", per_page: ${per_page_items}, page: ${page}) {
+          items {
+            content {
+              name
+              date
+              intro
+            }
+            full_slug
+          }
+        }
+      }
+    `
+	)
+	return data?.ShowcaseItems.items
+}
