@@ -29,8 +29,8 @@
 			<Preview gap={false} {...data.items[group]} />
 		{/if}
 	{/each}
-	{#if data.items.length > countGroups * 2}
-		{#each data.items.slice(countGroups * 2) as item}
+	{#if data.items.length > countGroups * 3}
+		{#each data.items.slice(countGroups * 3) as item}
 			<Preview {...item} />
 		{/each}
 	{/if}
