@@ -4,6 +4,7 @@
 
 	import { storyblok } from './data'
 	import Seo from '@/src/components/Seo.svelte'
+	import Pointer from '@/src/components/Pointer.svelte'
 </script>
 
 <Seo title="Storyblok - Rishi Raj Jain" />
@@ -20,9 +21,7 @@
 			{#each storyblok[i] as j}
 				<div class="flex flex-col gap-x-10 gap-y-2 md:flex-row md:gap-y-0">
 					<p class="min-w-[100px] font-light text-gray-400">{j.name}</p>
-					<a target="_blank" rel="noreferrer" href={j.href || '#'} class="flex flex-row items-center justify-start font-light text-black hover:underline dark:text-slate-200">
-						{j.title} &#x2197;
-					</a>
+					<Pointer {j} />
 				</div>
 			{/each}
 		{/if}

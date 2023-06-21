@@ -26,6 +26,7 @@
 			<a class="font-light dark:text-white" href="/storyblok">Storyblok</a>
 			<a class="font-light dark:text-white" href="/showcase">Showcase</a>
 			<a class="font-light dark:text-white" href="/videos">Talks</a>
+			<a class="font-light dark:text-white" href="/uses">Uses</a>
 		</div>
 	</div>
 </nav>

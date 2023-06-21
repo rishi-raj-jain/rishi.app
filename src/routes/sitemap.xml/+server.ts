@@ -9,6 +9,7 @@ export async function GET({ url }) {
 	const pages = [
 		'/',
 		'/cv/',
+		'/uses/',
 		'/about/',
 		'/blogs/',
 		'/videos/',

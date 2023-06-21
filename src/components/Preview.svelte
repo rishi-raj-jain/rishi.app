@@ -9,7 +9,7 @@
 
 <a
 	href={full_slug}
-	class={['flex flex-col rounded-xl border p-4 duration-200 hover:border-black dark:border-gray-600 dark:hover:border-white md:p-8', className]
+	class={[className, 'flex flex-col rounded border border-black/25 p-4 duration-200 hover:border-black dark:border-white/25 dark:hover:border-white md:p-8']
 		.map((i) => i.trim())
 		.join(' ')
 		.trim()}

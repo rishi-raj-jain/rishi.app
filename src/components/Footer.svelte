@@ -17,6 +17,7 @@
 			<a class="mt-3 font-light dark:text-gray-400" href="/storyblok">Storyblok</a>
 			<a class="mt-3 font-light dark:text-gray-400" href="/showcase">Showcase</a>
 			<a class="mt-3 font-light dark:text-gray-400" href="/videos">Talks</a>
+			<a class="mt-3 font-light dark:text-gray-400" href="/uses">Uses</a>
 			<a class="mt-3 font-light dark:text-gray-400" href="/sitemap.xml">Sitemap</a>
 			<a class="mt-3 font-light dark:text-gray-400" href="/robots.txt">Robots</a>
 		</div>
