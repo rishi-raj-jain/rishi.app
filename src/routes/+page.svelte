@@ -40,7 +40,7 @@
 					<a
 						target="_blank"
 						rel="noopener noreferrer"
-						href="https://substack.com/@rishirajjain"
+						href="https://rishirajjain.substack.com"
 						class="flex items-center transition-all hover:text-neutral-700 dark:hover:text-neutral-200"
 					>
 						<svg class="mr-2" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
