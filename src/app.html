@@ -5,5 +5,18 @@
 	</head>
 	<body class="min-h-screen bg-white font-display dark:bg-black" data-sveltekit-preload-data="hover">
 		<div class="contents">%sveltekit.body%</div>
+		<script defer="defer">
+			function initXdnRum() {
+				new Layer0.Metrics({
+					token: '16dbca52-84e4-4087-96d7-1d0aab0c4421'
+				}).collect()
+			}
+			var rumScriptTag = document.createElement('script')
+			rumScriptTag.src = 'https://rum.layer0.co/latest.js'
+			rumScriptTag.setAttribute('defer', '')
+			rumScriptTag.type = 'text/javascript'
+			rumScriptTag.onload = initXdnRum
+			document.body.appendChild(rumScriptTag)
+		</script>
 	</body>
 </html>

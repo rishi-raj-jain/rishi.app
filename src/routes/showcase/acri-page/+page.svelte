@@ -70,18 +70,16 @@
 			</svg>
 			<svg height="25" viewBox="0 0 45 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				<title>Storyblok</title>
-				<g id="storyblok-logo-kit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-					<g id="storyblok-partner-logo" transform="translate(-59.000000, -169.000000)" fill-rule="nonzero">
-						<g id="storyblok-symbol" transform="translate(59.000000, 169.000000)">
+				<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+					<g transform="translate(-59.000000, -169.000000)" fill-rule="nonzero">
+						<g transform="translate(59.000000, 169.000000)">
 							<path
-								d="M2.32662261,0 C1.03405449,0 0,1.0331384 0,2.27290448 L0,42.8752437 C0,44.1150097 1.03405449,44.8898635 2.27491989,44.8898635 L8.27243596,44.8898635 L8.27243596,53 L15.7176283,44.9415205 L42.9132615,44.9415205 C44.1541269,44.9415205 44.9296678,44.1666667 44.9296678,42.8752437 L44.9296678,2.3245614 C44.9296678,1.08479532 44.2058296,0 42.9132615,0 L2.32662261,0 Z"
-								id="Shape-path-Copy"
 								fill="#0AB3AF"
+								d="M2.32662261,0 C1.03405449,0 0,1.0331384 0,2.27290448 L0,42.8752437 C0,44.1150097 1.03405449,44.8898635 2.27491989,44.8898635 L8.27243596,44.8898635 L8.27243596,53 L15.7176283,44.9415205 L42.9132615,44.9415205 C44.1541269,44.9415205 44.9296678,44.1666667 44.9296678,42.8752437 L44.9296678,2.3245614 C44.9296678,1.08479532 44.2058296,0 42.9132615,0 L2.32662261,0 Z"
 							/>
 							<path
-								d="M29.1016723,8.11483254 C30.1351059,8.11483254 31.0135245,8.32132604 31.8402713,8.78593643 C32.6153465,9.19892344 33.33875,9.76678059 33.9071385,10.4378845 C35.0647615,11.8482391 35.6869248,13.6215753 35.6639755,15.445352 C35.6639755,16.7875598 35.3022738,18.0781442 34.630542,19.3171053 C33.9341248,20.5632996 32.8438147,21.5436614 31.5302412,22.1047676 C33.183735,22.569378 34.4755269,23.395352 35.4572888,24.5826897 C36.387379,25.8216507 36.8524241,27.4219754 36.8524241,29.4352871 C36.8524241,30.7258715 36.6168825,31.8756998 36.1290206,32.7391832 C35.6123039,33.668404 34.8372287,34.4427546 33.9071385,35.0106118 C32.9253766,35.6300923 31.8402713,36.1979494 30.600151,36.4560663 C29.3600307,36.7658066 28.0165671,37.0239234 26.6214318,37.0239234 L8.32965751,37.0239234 L8.32965751,8.11483254 L29.1016723,8.11483254 Z M26.1340815,24.271851 L15.77813,24.271851 L15.77813,29.1552028 L25.8851404,29.1552028 C26.4825991,29.1552028 27.0302696,28.9110352 27.4783637,28.5203671 C27.8766695,28.1296989 28.1256107,27.5436967 28.1256107,26.811194 C28.140051,26.1827412 27.948041,25.5663945 27.5779401,25.0531873 C27.1796343,24.5648522 26.7315403,24.271851 26.1340815,24.271851 Z M25.2876816,14.5051475 L15.77813,14.5051475 L15.77813,18.9001641 L25.0885287,18.9001641 C25.586411,18.9001641 26.0842933,18.6559965 26.4825991,18.3629954 C26.9306932,18.0699943 27.1298461,17.4351586 27.1298461,16.6049888 C27.1298461,15.872486 26.9306932,15.3353173 26.5821756,14.9934827 C26.233658,14.7004816 25.7855639,14.5051475 25.2876816,14.5051475 Z"
-								id="Combined-Shape-Copy-3"
 								fill="#FFFFFF"
+								d="M29.1016723,8.11483254 C30.1351059,8.11483254 31.0135245,8.32132604 31.8402713,8.78593643 C32.6153465,9.19892344 33.33875,9.76678059 33.9071385,10.4378845 C35.0647615,11.8482391 35.6869248,13.6215753 35.6639755,15.445352 C35.6639755,16.7875598 35.3022738,18.0781442 34.630542,19.3171053 C33.9341248,20.5632996 32.8438147,21.5436614 31.5302412,22.1047676 C33.183735,22.569378 34.4755269,23.395352 35.4572888,24.5826897 C36.387379,25.8216507 36.8524241,27.4219754 36.8524241,29.4352871 C36.8524241,30.7258715 36.6168825,31.8756998 36.1290206,32.7391832 C35.6123039,33.668404 34.8372287,34.4427546 33.9071385,35.0106118 C32.9253766,35.6300923 31.8402713,36.1979494 30.600151,36.4560663 C29.3600307,36.7658066 28.0165671,37.0239234 26.6214318,37.0239234 L8.32965751,37.0239234 L8.32965751,8.11483254 L29.1016723,8.11483254 Z M26.1340815,24.271851 L15.77813,24.271851 L15.77813,29.1552028 L25.8851404,29.1552028 C26.4825991,29.1552028 27.0302696,28.9110352 27.4783637,28.5203671 C27.8766695,28.1296989 28.1256107,27.5436967 28.1256107,26.811194 C28.140051,26.1827412 27.948041,25.5663945 27.5779401,25.0531873 C27.1796343,24.5648522 26.7315403,24.271851 26.1340815,24.271851 Z M25.2876816,14.5051475 L15.77813,14.5051475 L15.77813,18.9001641 L25.0885287,18.9001641 C25.586411,18.9001641 26.0842933,18.6559965 26.4825991,18.3629954 C26.9306932,18.0699943 27.1298461,17.4351586 27.1298461,16.6049888 C27.1298461,15.872486 26.9306932,15.3353173 26.5821756,14.9934827 C26.233658,14.7004816 25.7855639,14.5051475 25.2876816,14.5051475 Z"
 							/>
 						</g>
 					</g>
@@ -90,10 +88,10 @@
 			<svg height="25" viewBox="0 0 50 35" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				<title>TailwindCSS</title>
 				<path
+					fill="#38bdf8"
 					fill-rule="evenodd"
 					clip-rule="evenodd"
 					d="M25.517 0C18.712 0 14.46 3.382 12.758 10.146c2.552-3.382 5.529-4.65 8.931-3.805 1.941.482 3.329 1.882 4.864 3.432 2.502 2.524 5.398 5.445 11.722 5.445 6.804 0 11.057-3.382 12.758-10.145-2.551 3.382-5.528 4.65-8.93 3.804-1.942-.482-3.33-1.882-4.865-3.431C34.736 2.92 31.841 0 25.517 0zM12.758 15.218C5.954 15.218 1.701 18.6 0 25.364c2.552-3.382 5.529-4.65 8.93-3.805 1.942.482 3.33 1.882 4.865 3.432 2.502 2.524 5.397 5.445 11.722 5.445 6.804 0 11.057-3.381 12.758-10.145-2.552 3.382-5.529 4.65-8.931 3.805-1.941-.483-3.329-1.883-4.864-3.432-2.502-2.524-5.398-5.446-11.722-5.446z"
-					fill="#38bdf8"
 				/>
 			</svg>
 			<svg width="25" viewBox="0 0 148 178" xmlns="http://www.w3.org/2000/svg">
@@ -130,9 +128,9 @@
 	Performance
 </span>
 <video
-	class="mt-12 h-[440px] rounded-lg border dark:border-gray-600"
 	controls
 	preload="none"
+	class="mt-12 h-[440px] rounded-lg border dark:border-gray-600"
 	poster="https://ik.imagekit.io/vjeqenuhn/showcase/Garg_Property_Adviser/first-load-performance.png"
 >
 	<source src="https://ik.imagekit.io/vjeqenuhn/showcase/Garg_Property_Adviser/first-load.mp4" type="video/mp4" />
@@ -142,10 +140,10 @@
 	LCP &rarr; <span class="bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text text-transparent">0.9s</span>
 </span>
 <img
-	alt="First Load Filmstrip Garg Property Adviser"
 	loading="lazy"
-	src="https://ik.imagekit.io/vjeqenuhn/showcase/Garg_Property_Adviser/load-filmstrip.png"
 	class="mt-12 h-auto w-full rounded border"
+	alt="First Load Filmstrip Garg Property Adviser"
+	src="https://ik.imagekit.io/vjeqenuhn/showcase/Garg_Property_Adviser/load-filmstrip.png"
 />
 <img
 	loading="lazy"
@@ -153,6 +151,12 @@
 	class="mt-24 h-auto w-full rounded border dark:border-gray-600"
 	src="https://ik.imagekit.io/vjeqenuhn/showcase/Garg_Property_Adviser/preview.png"
 />
+<span class="mt-12 bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text text-2xl font-medium text-transparent sm:text-4xl"> Logo & Mark </span>
+<span class="mt-4 text-xl font-light text-black dark:text-white">
+	The logo and symbol, aim to encapsulate the growth associated with the business, while maintaining the unique touch to the client's identity. An abstract of pyramid inclusive of
+	an stable growth *upwards*, with the color combination of the contrasting, black and near gold, emphasize the variety of persona and use cases, the client can adhere to.
+</span>
+<img loading="lazy" class="mt-8 rounded" alt="Logo Branding Garg Property Adviser" src="https://ik.imagekit.io/vjeqenuhn/showcase/Garg_Property_Adviser/logo-branding.png" />
 <div class="mt-24 grid grid-cols-1 gap-y-8 sm:grid-cols-2">
 	<span class="max-w-[500px] text-2xl font-medium leading-loose text-gray-400 sm:text-4xl">
 		Results that I delivered to
@@ -176,22 +180,22 @@
 					fill="#E7B900"
 				/>
 			</svg>
-			<svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg"
-				><title>Star</title>
+			<svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<title>Star</title>
 				<path
 					d="M11 0L13.7156 7.26234L21.4616 7.60081L15.3939 12.4277L17.4656 19.8992L11 15.62L4.53436 19.8992L6.60612 12.4277L0.538379 7.60081L8.28443 7.26234L11 0Z"
 					fill="#E7B900"
 				/>
 			</svg>
-			<svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg"
-				><title>Star</title>
+			<svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<title>Star</title>
 				<path
 					d="M11 0L13.7156 7.26234L21.4616 7.60081L15.3939 12.4277L17.4656 19.8992L11 15.62L4.53436 19.8992L6.60612 12.4277L0.538379 7.60081L8.28443 7.26234L11 0Z"
 					fill="#E7B900"
 				/>
 			</svg>
-			<svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg"
-				><title>Star</title>
+			<svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<title>Star</title>
 				<path
 					d="M11 0L13.7156 7.26234L21.4616 7.60081L15.3939 12.4277L17.4656 19.8992L11 15.62L4.53436 19.8992L6.60612 12.4277L0.538379 7.60081L8.28443 7.26234L11 0Z"
 					fill="#E7B900"
@@ -212,8 +216,8 @@
 				height="60"
 				loading="lazy"
 				alt="Mr. Sukesh Chand Jain Close Up"
-				src="https://ik.imagekit.io/vjeqenuhn/showcase/Garg_Property_Adviser/sukesh-chand-jain.jpeg"
 				class="h-[60px] w-[60px] rounded-full object-cover object-top"
+				src="https://ik.imagekit.io/vjeqenuhn/showcase/Garg_Property_Adviser/sukesh-chand-jain.jpeg"
 			/>
 			<div class="flex flex-col">
 				<span class="font-medium text-gray-600 dark:text-gray-200">Sukesh Chand Jain</span>
