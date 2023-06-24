@@ -1,7 +1,4 @@
 <script lang="ts">
-	import type { PageData } from './$types'
-	export let data: PageData
-
 	import { uses } from './data'
 	import Seo from '@/src/components/Seo.svelte'
 	import Pointer from '@/src/components/Pointer.svelte'
