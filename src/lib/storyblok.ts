@@ -248,3 +248,27 @@ export async function getShowcaseItems(per_page_items: string | number, page: st
 	)
 	return data?.ShowcaseItems.items
 }
+
+export async function getShowcaseItem(slug: string) {
+	const data = await fetchAPI(
+		`
+      {
+        ShowcaseItem (id:"showcase/${slug}") {
+          slug
+          full_slug
+          published_at
+          first_published_at
+          id
+          content {
+            name
+            date
+            intro
+            links
+            description
+          }
+        }
+      }
+    `
+	)
+	return { post: data?.ShowcaseItem }
+}
