@@ -2,7 +2,6 @@
 https://prismjs.com/download.html#themes=prism-tomorrow&languages=css */
 code[class*='language-'],
 pre[class*='language-'] {
-	color: #ccc;
 	background: 0 0;
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 	font-size: 1em;
@@ -28,7 +27,12 @@ pre[class*='language-'] {
 }
 :not(pre) > code[class*='language-'],
 pre[class*='language-'] {
+	background: white;
+	border: 1px solid #d0d0d0;
+}
+html.dark pre[class*='language-'] {
 	background: #2d2d2d;
+	border: 0px solid black;
 }
 :not(pre) > code[class*='language-'] {
 	padding: 0.1em;
@@ -97,15 +101,14 @@ pre[class*='language-'] {
 .token.inserted {
 	color: green;
 }
-
+/* Light Background Theme */
 .hljs {
-	background: #2b2b2b;
-	color: #f8f8f2;
+	background: #fefefe;
+	color: #545454;
 }
-
 .hljs-comment,
 .hljs-quote {
-	color: #d4d0ab;
+	color: #696969;
 }
 .hljs-deletion,
 .hljs-name,
@@ -115,8 +118,9 @@ pre[class*='language-'] {
 .hljs-tag,
 .hljs-template-variable,
 .hljs-variable {
-	color: #ffa07a;
+	color: #d91e18;
 }
+.hljs-attribute,
 .hljs-built_in,
 .hljs-link,
 .hljs-literal,
@@ -124,24 +128,21 @@ pre[class*='language-'] {
 .hljs-number,
 .hljs-params,
 .hljs-type {
-	color: #f5ab35;
-}
-.hljs-attribute {
-	color: gold;
+	color: #aa5d00;
 }
 .hljs-addition,
 .hljs-bullet,
 .hljs-string,
 .hljs-symbol {
-	color: #abe338;
+	color: green;
 }
 .hljs-section,
 .hljs-title {
-	color: #00e0e0;
+	color: #007faa;
 }
 .hljs-keyword,
 .hljs-selector-tag {
-	color: #dcc6e0;
+	color: #7928a1;
 }
 .hljs-emphasis {
 	font-style: italic;
@@ -149,7 +150,6 @@ pre[class*='language-'] {
 .hljs-strong {
 	font-weight: 700;
 }
-
 @media screen and (-ms-high-contrast: active) {
 	.hljs-addition,
 	.hljs-attribute,
@@ -169,6 +169,91 @@ pre[class*='language-'] {
 	}
 	.hljs-keyword,
 	.hljs-selector-tag {
+		font-weight: 700;
+	}
+}
+
+/* Dark Background Theme */
+html.dark .hljs {
+	background: #2b2b2b;
+	color: #f8f8f2;
+}
+
+html.dark .hljs-comment,
+html.dark .hljs-quote {
+	color: #d4d0ab;
+}
+
+html.dark .hljs-deletion,
+html.dark .hljs-name,
+html.dark .hljs-regexp,
+html.dark .hljs-selector-class,
+html.dark .hljs-selector-id,
+html.dark .hljs-tag,
+html.dark .hljs-template-variable,
+html.dark .hljs-variable {
+	color: #ffa07a;
+}
+
+html.dark .hljs-built_in,
+html.dark .hljs-link,
+html.dark .hljs-literal,
+html.dark .hljs-meta,
+html.dark .hljs-number,
+html.dark .hljs-params,
+html.dark .hljs-type {
+	color: #f5ab35;
+}
+
+html.dark .hljs-attribute {
+	color: gold;
+}
+
+html.dark .hljs-addition,
+html.dark .hljs-bullet,
+html.dark .hljs-string,
+html.dark .hljs-symbol {
+	color: #abe338;
+}
+
+html.dark .hljs-section,
+html.dark .hljs-title {
+	color: #00e0e0;
+}
+
+html.dark .hljs-keyword,
+html.dark .hljs-selector-tag {
+	color: #dcc6e0;
+}
+
+html.dark .hljs-emphasis {
+	font-style: italic;
+}
+
+html.dark .hljs-strong {
+	font-weight: 700;
+}
+
+@media screen and (-ms-high-contrast: active) {
+	html.dark .hljs-addition,
+	html.dark .hljs-attribute,
+	html.dark .hljs-built_in,
+	html.dark .hljs-bullet,
+	html.dark .hljs-comment,
+	html.dark .hljs-link,
+	html.dark .hljs-literal,
+	html.dark .hljs-meta,
+	html.dark .hljs-number,
+	html.dark .hljs-params,
+	html.dark .hljs-quote,
+	html.dark .hljs-string,
+	html.dark .hljs-symbol,
+	html.dark .hljs-type {
+		color: highlight;
+	}
+
+	html.dark .hljs-keyword,
+	html.dark .hljs-selector-tag {
 		font-weight: 700;
 	}
 }
