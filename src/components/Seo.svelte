@@ -13,12 +13,15 @@
 	function updateSEOImage(src: string) {
 		if (!src || src.length < 1) {
 			seoImage = domain + '/static/social-media-card.jpg'
+			return
 		}
 		const temp = src.replace('https://', '//').replace('//', 'https://')
 		if (temp.startsWith('https')) {
 			seoImage = temp
+			return
 		} else {
 			seoImage = domain + temp
+			return
 		}
 	}
 
