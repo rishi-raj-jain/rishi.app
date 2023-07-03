@@ -264,6 +264,7 @@ export async function getShowcaseItem(slug: string) {
             date
             intro
             links
+            image
             description
           }
         }

@@ -11,6 +11,9 @@
 	let seoImage = ''
 
 	function updateSEOImage(src: string) {
+		if (!src || src.length < 1) {
+			seoImage = domain + '/static/social-media-card.jpg'
+		}
 		const temp = src.replace('https://', '//').replace('//', 'https://')
 		if (temp.startsWith('https')) {
 			seoImage = temp
