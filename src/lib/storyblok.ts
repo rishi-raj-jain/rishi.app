@@ -114,8 +114,9 @@ export async function getTimelineItems(per_page_items: string | number, page: st
 		`
       {
         TimelineitemItems (per_page: ${per_page_items}, page: ${page}){
-          items{
-            content{
+          items {
+            first_published_at
+            content {
               Year
               Title
               Description

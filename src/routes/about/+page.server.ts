@@ -24,6 +24,9 @@ export const load: PageServerLoad = async ({ url }) => {
 			arePosts = false
 		}
 	}
+	Object.keys(Timeline).forEach((i) => {
+		Timeline[i] = Timeline[i].sort((a, b) => (new Date(a.first_published_at).getTime() < new Date(b.first_published_at).getTime() ? 1 : -1))
+	})
 	aboutTagline = await getTagline('about')
 	let aboutTaglineHTML = renderRichText.render(aboutTagline)
 	const $ = loadCheerio(aboutTaglineHTML)
