@@ -1,4 +1,15 @@
 {
+	"headers": [
+		{
+			"source": "/:path*",
+			"headers": [
+				{
+					"key": "Vercel-CDN-Cache-Control",
+					"value": "public, max-age=86400, stale-while-revalidate=3600"
+				}
+			]
+		}
+	],
 	"git": {
 		"deploymentEnabled": false
 	}
