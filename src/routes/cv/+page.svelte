@@ -23,7 +23,7 @@
 		{#if cv.hasOwnProperty(i)}
 			{#each cv[i] as j}
 				<div class="flex flex-col gap-x-10 gap-y-2 md:flex-row md:gap-y-0">
-					<p class="min-w-[100px] font-light text-gray-400">{j.name}</p>
+					<p class="min-w-[125px] font-light text-gray-400">{j.name}</p>
 					<Pointer {j} />
 				</div>
 			{/each}
