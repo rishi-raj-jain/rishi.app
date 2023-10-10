@@ -2,7 +2,7 @@
 	import { page } from '$app/stores'
 
 	export let title: string = 'Rishi Raj Jain - Software Engineer, Developer, Designer, Writer',
-		description: string = 'Currently, I am looking currently looking for new full time roles (was last seen as Technical Customer Success Manager at Edgio).',
+		description: string = 'Currently, I am looking for a full time role (was last seen as Technical Support Engineer at Lemon Squeezy).',
 		domain: string = $page.data?.domain ?? 'https://sveltekit.rishi.app',
 		image: string = '/static/social-media-card.jpg',
 		pathname: string = $page.url.pathname,
