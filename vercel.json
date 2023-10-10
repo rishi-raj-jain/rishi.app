@@ -6,6 +6,10 @@
 				{
 					"key": "Cache-Control",
 					"value": "no-store, s-maxage=86400, stale-while-revalidate=3600"
+				},
+				{
+					"key": "Vercel-CDN-Cache-Control",
+					"value": "maxage=86400, stale-while-revalidate=3600"
 				}
 			]
 		}
