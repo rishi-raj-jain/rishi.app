@@ -9,7 +9,7 @@
 				},
 				{
 					"key": "Vercel-CDN-Cache-Control",
-					"value": "maxage=86400, stale-while-revalidate=3600"
+					"value": "max-age=86400, stale-while-revalidate=3600"
 				}
 			]
 		}
