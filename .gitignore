@@ -4,7 +4,6 @@
 .env.*
 .vercel
 .output
-.edgio
 /package
 README.md
 /.svelte-kit

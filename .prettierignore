@@ -1,7 +1,6 @@
 .env
 .env.*
 /build
-.edgio
 .vercel
 /package
 .DS_Store
