@@ -12,7 +12,7 @@
 
 ## Introduction
 
-Rishi's portfolio is built with [SvelteKit](https://kit.svelte.dev), [Storyblok](https://storyblok.com), [TailwindCSS](https://tailwindcss.com), [Vercel](https://vercel.com) and [Edgio](https://edg.io).
+Rishi's portfolio is built with [SvelteKit](https://kit.svelte.dev), [Storyblok](https://storyblok.com), [TailwindCSS](https://tailwindcss.com), and [Vercel](https://vercel.com).
 
 ## Tech Stack
 
@@ -20,7 +20,6 @@ Rishi's portfolio is built with [SvelteKit](https://kit.svelte.dev), [Storyblok]
 - [Storyblok](https://storyblok.com) - CMS
 - [TailwindCSS](https://tailwindcss.com) – styling
 - [Vercel](https://vercel.com) – hosting
-- [Edgio](https://edg.io) – caching
 
 ## Author
 
