@@ -5,8 +5,8 @@
 </p>
 
 <p align="center">
-  <a href="#introduction"><strong>Introduction</strong></a>·
-  <a href="#tech-stack"><strong>Tech Stack</strong></a>·
+  <a href="#introduction"><strong>Introduction</strong></a> ·
+  <a href="#tech-stack"><strong>Tech Stack</strong></a> ·
   <a href="#author"><strong>Author</strong></a>
 </p>
 
