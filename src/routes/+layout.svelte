@@ -22,6 +22,13 @@
 	<link rel="icon" href="https://ik.imagekit.io/vjeqenuhn/static/icon.png" />
 </svelte:head>
 
+<a href="https://launchfa.st#demo" class="flex flex-row items-center justify-center gap-x-3 border-b bg-purple-800/10 py-1 shadow-2xl">
+	<img loading="lazy" alt="LaunchFast Logo" height="20" width="20" src="https://www.launchfa.st/purple-icon.png" />
+	<span class="md:hidden">Introducing LaunchFa.st - Astro boilerplate</span>
+	<span class="hidden md:block">Introducing LaunchFa.st - Astro boilerplate to launch your SaaS in a day</span>
+	<button class="hidden rounded border border-purple-800 px-3 py-1 text-sm transition duration-300 hover:scale-105 md:block">Checkout Now &rarr;</button>
+</a>
+
 <Header />
 
 <main class="flex flex-col items-center text-black dark:text-gray-200">
