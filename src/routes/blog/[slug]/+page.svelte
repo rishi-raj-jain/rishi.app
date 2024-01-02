@@ -14,6 +14,7 @@
 <Seo
 	image={data.blog.post.content.image}
 	title={`${data.blog.post.content.title} - Rishi Raj Jain`}
+	description={`${data.blog.post.content.intro}`}
 	preloads={[{ as: 'image', href: data.blog.post.content.author.content.picture.filename }]}
 />
 
