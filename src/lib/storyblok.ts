@@ -71,7 +71,7 @@ export async function getRecommendedPosts() {
 	const data = await fetchAPI(
 		`
       {
-        PostlinkItems (sort_by: "first_published_at:desc"){
+        PostlinkItems (sort_by: "first_published_at:desc", per_page: 100){
           items{
             content{
               Title
