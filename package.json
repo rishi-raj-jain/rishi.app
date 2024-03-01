@@ -11,6 +11,7 @@
 		"@storyblok/svelte": "^4.0.4",
 		"@sveltejs/adapter-vercel": "^5.1.0",
 		"@sveltejs/kit": "^2.5.2",
+		"@sveltejs/vite-plugin-svelte": "^3.0.2",
 		"@tailwindcss/typography": "^0.5.10",
 		"autoprefixer": "^10.4.17",
 		"cheerio": "1.0.0-rc.12",
