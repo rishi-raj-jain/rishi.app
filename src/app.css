@@ -4,8 +4,8 @@
 
 @font-face {
 	font-style: normal;
+	font-display: swap;
 	font-family: 'Inter';
-	font-display: optional;
 	src: url('/fonts/inter-var.woff2') format('woff2');
 }
 

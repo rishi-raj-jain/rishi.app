@@ -4,15 +4,18 @@ export const cv = {
 			name: 'Oct 23 — Now',
 			title: 'Creator of LaunchFa.st',
 			href: 'https://twitter.com/rishi_raj_jain_/status/1708534109474378080'
-		}, {
+		},
+		{
 			name: 'Jul 23 — Oct 23',
 			title: 'Technical Support Engineer at Lemon Squeezy',
 			href: 'https://twitter.com/rishi_raj_jain_/status/1700116622390743437'
-		}, {
+		},
+		{
 			name: 'Sept. 2023',
 			title: 'Freelance Web Developer at Tripinfox',
 			href: 'https://tripinfox.com'
-		}, {
+		},
+		{
 			name: '2022 — 2023',
 			title: 'Technical Customer Success Manager at Edgio',
 			href: 'https://www.linkedin.com/feed/update/urn:li:activity:6971820122961268737/'

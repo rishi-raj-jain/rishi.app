@@ -4,12 +4,8 @@
 			"source": "/:path*",
 			"headers": [
 				{
-					"key": "Cache-Control",
-					"value": "no-store, s-maxage=86400, stale-while-revalidate=3600"
-				},
-				{
 					"key": "Vercel-CDN-Cache-Control",
-					"value": "max-age=86400, stale-while-revalidate=3600"
+					"value": "max-age=1, stale-while-revalidate=3600"
 				}
 			]
 		}
