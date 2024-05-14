@@ -10,7 +10,6 @@ export async function GET({ url }) {
 		'/',
 		'/cv/',
 		'/uses/',
-		'/about/',
 		'/blogs/',
 		'/videos/',
 		'/showcase/',

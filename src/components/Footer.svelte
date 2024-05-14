@@ -11,7 +11,6 @@
 		</div>
 		<div class="flex w-full flex-col">
 			<span class="mt-6 font-normal dark:text-white"> Learn More </span>
-			<a class="mt-3 font-light dark:text-gray-400" href="/about">About</a>
 			<a class="mt-3 font-light dark:text-gray-400" href="/blogs">Blogs</a>
 			<a class="mt-3 font-light dark:text-gray-400" href="/cv">CV</a>
 			<a class="mt-3 font-light dark:text-gray-400" href="/storyblok">Storyblok</a>
