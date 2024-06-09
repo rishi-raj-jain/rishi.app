@@ -10,7 +10,7 @@ export const load: PageServerLoad = async ({ url }) => {
 	let tagline = await getTagline('blogs')
 	tagline = renderRichText.render(tagline)
 	const $ = loadCheerio(tagline)
-	$('p').addClass('mt-2 font-light text-slate-600 dark:text-slate-400')
+	$('p').addClass('mt-2 font-light text-slate-600')
 	// @ts-ignore
 	tagline = $('p').parent().html()
 	const domain = env.DOMAIN ?? url.origin

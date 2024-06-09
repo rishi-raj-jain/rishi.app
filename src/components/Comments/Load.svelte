@@ -4,7 +4,7 @@
 	export let data: { slug: string }
 </script>
 
-<div class="mt-10 w-full border-t pt-10 dark:border-gray-500">
+<div class="mt-10 w-full border-t pt-10">
 	<button
 		on:click={() => {
 			comments.set(new Array(3).fill(0).map((_) => ({ loading: true, time: new Date().getMilliseconds() })))
@@ -14,7 +14,7 @@
 					if (res) comments.set(res)
 				})
 		}}
-		class="w-[200px] appearance-none rounded border px-5 py-2 text-center hover:bg-gray-100 dark:border-gray-500 dark:hover:bg-[#28282B]"
+		class="w-[200px] appearance-none rounded border px-5 py-2 text-center hover:bg-gray-100"
 	>
 		Load Comments
 	</button>

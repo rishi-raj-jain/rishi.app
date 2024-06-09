@@ -10,32 +10,29 @@
 <h1 class="mt-3 bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text pb-1 text-4xl font-bold text-transparent sm:text-6xl">
 	Crafting Garg Property Adviser's Online Identity and Web Presence
 </h1>
-<a
-	href="#letsbegin"
-	class="mt-8 max-w-max rounded border border-gray-600 bg-white px-4 py-2 text-gray-600 outline-none transition duration-300 hover:bg-black hover:text-white dark:bg-black dark:text-gray-400 dark:hover:bg-white dark:hover:text-black"
->
+<a href="#letsbegin" class="hover:text-whit mt-8 max-w-max rounded border border-gray-600 bg-white px-4 py-2 text-gray-600 outline-none transition duration-300 hover:bg-black">
 	Let's Begin &#8600;
 </a>
 <img
 	id="letsbegin"
-	class="mt-16 h-auto w-full rounded border dark:border-gray-600"
+	class="mt-16 h-auto w-full rounded border"
 	alt="Responsive Screenshot of Garg Property Adviser's new website"
 	src="https://ik.imagekit.io/vjeqenuhn/showcase/Garg_Property_Adviser/responsive.png"
 />
-<div class="mt-24 grid grid-cols-1 gap-8 border-b border-t py-8 dark:border-gray-600 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
-	<div class="flex flex-col gap-y-3 border-r dark:border-gray-600">
+<div class="mt-24 grid grid-cols-1 gap-8 border-b border-t py-8 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
+	<div class="flex flex-col gap-y-3 border-r">
 		<span class="text-xl font-light text-gray-400">Website</span>
 		<a rel="noopener" target="_blank" class="text-2xl text-blue-400 underline" href="https://acri.page">acri.page</a>
 	</div>
-	<div class="flex flex-col gap-y-3 border-r dark:border-gray-600">
+	<div class="flex flex-col gap-y-3 border-r">
 		<span class="text-xl font-light text-gray-400">Founded In</span>
 		<span class="text-2xl text-blue-400">2023</span>
 	</div>
-	<div class="flex flex-col gap-y-3 border-r dark:border-gray-600">
+	<div class="flex flex-col gap-y-3 border-r">
 		<span class="text-xl font-light text-gray-400">Industry</span>
 		<span class="text-2xl text-blue-400">Real Estate</span>
 	</div>
-	<div class="flex flex-col gap-y-3 border-r dark:border-gray-600">
+	<div class="flex flex-col gap-y-3 border-r">
 		<span class="text-xl font-light text-gray-400">Location</span>
 		<span class="text-2xl text-blue-400">New Delhi</span>
 	</div>
@@ -119,7 +116,7 @@
 	<span class="text-2xl font-medium text-gray-400 sm:text-4xl">
 		About <span class="bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text text-transparent">Garg Property Adviser</span>
 	</span>
-	<span class="text-xl font-light text-black dark:text-white">
+	<span class="text-xl font-light text-black">
 		Garg Property Adviser is a real estate company. We help all kind of individuals, by offering personalised real estate services in West Delhi.
 	</span>
 </div>
@@ -127,12 +124,7 @@
 	Video <span class="bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text text-transparent">First Page Load</span>
 	Performance
 </span>
-<video
-	controls
-	preload="none"
-	class="mt-12 h-[440px] rounded-lg border dark:border-gray-600"
-	poster="https://ik.imagekit.io/vjeqenuhn/showcase/Garg_Property_Adviser/first-load-performance.png"
->
+<video controls preload="none" class="mt-12 h-[440px] rounded-lg border" poster="https://ik.imagekit.io/vjeqenuhn/showcase/Garg_Property_Adviser/first-load-performance.png">
 	<source src="https://ik.imagekit.io/vjeqenuhn/showcase/Garg_Property_Adviser/first-load.mp4" type="video/mp4" />
 	<track kind="captions" />
 </video>
@@ -148,11 +140,11 @@
 <img
 	loading="lazy"
 	alt="Garg Property Adviser Preview"
-	class="mt-24 h-auto w-full rounded border dark:border-gray-600"
+	class="mt-24 h-auto w-full rounded border"
 	src="https://ik.imagekit.io/vjeqenuhn/showcase/Garg_Property_Adviser/preview.png"
 />
 <span class="mt-12 bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text text-2xl font-medium text-transparent sm:text-4xl"> Logo & Mark </span>
-<span class="mt-4 text-xl font-light text-black dark:text-white">
+<span class="mt-4 text-xl font-light text-black">
 	The logo and symbol, aim to encapsulate the growth associated with the business, while maintaining the unique touch to the client's identity. An abstract of pyramid inclusive of
 	an stable growth *upwards*, with the color combination of the contrasting, black and near gold, emphasize the variety of persona and use cases, the client can adhere to.
 </span>
@@ -162,14 +154,14 @@
 		Results that I delivered to
 		<span class="bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text text-transparent"> Garg Property Adviser </span>
 	</span>
-	<span class="text-xl font-light text-black dark:text-white">
+	<span class="text-xl font-light text-black">
 		The logo and symbol designed perfectly encapsulate the essence of Garg Property Adviser. With every page loading in an instant, the visitors can access information effortlessly
 		and enjoy a seamless browsing experience. Your optimization techniques have truly optimized our website's performance to the highest degree.
 	</span>
 </div>
 <div class="mt-24 grid grid-cols-1 gap-y-8 sm:grid-cols-2">
 	<span class="text-2xl font-medium text-gray-400 sm:text-4xl">Testimonial</span>
-	<span class="rounded border border-gray-200 p-5 text-xl font-light text-black dark:border-gray-600 dark:text-white">
+	<span class="rounded border border-gray-200 p-5 text-xl font-light text-black">
 		I want to express my gratitude for your invaluable contribution in establishing our web presence with the latest tech within a week. Your expertise and the remarkable speed of
 		the site are truly impressive!
 		<div class="mt-3 flex flex-row items-center gap-x-2">
@@ -220,7 +212,7 @@
 				src="https://ik.imagekit.io/vjeqenuhn/showcase/Garg_Property_Adviser/sukesh-chand-jain.jpeg"
 			/>
 			<div class="flex flex-col">
-				<span class="font-medium text-gray-600 dark:text-gray-200">Sukesh Chand Jain</span>
+				<span class="font-medium text-gray-600">Sukesh Chand Jain</span>
 				<span class="text-gray-400">Director - Garg Property Adviser</span>
 			</div>
 		</div>

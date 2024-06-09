@@ -1,37 +1,17 @@
 <script lang="ts">
 	import '@/src/app.css'
-	import { onMount } from 'svelte'
 	import { navigating } from '$app/stores'
 	import Footer from '@/src/components/Footer.svelte'
 	import Header from '@/src/components/Header.svelte'
-	import { themeChangeListener } from '@/src/lib/theme'
-
-	onMount(() => {
-		// Check the theme preferred in the window acc. to the zone
-		window.sessionStorage.getItem('theme') || 'light'
-		if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-			window.sessionStorage.setItem('theme', 'dark')
-		}
-		// Set the theme as light / dark
-		window.sessionStorage.setItem('theme', 'light')
-		themeChangeListener()
-	})
 </script>
 
 <svelte:head>
 	<link rel="icon" href="https://ik.imagekit.io/vjeqenuhn/static/icon.png" />
 </svelte:head>
 
-<a target="_blank" href="https://www.launchfa.st" class="flex flex-row items-center justify-center gap-x-3 border-b bg-purple-800/10 py-1 shadow-2xl">
-	<img loading="lazy" alt="LaunchFast Logo" height="20" width="20" src="https://ik.imagekit.io/vjeqenuhn/launchfast-website/purple-icon.png" />
-	<span class="md:hidden">Introducing LaunchFa.st - Astro boilerplate</span>
-	<span class="hidden md:block">Introducing LaunchFa.st - Astro boilerplate to launch your SaaS in a day</span>
-	<button class="hidden rounded border border-purple-800 px-3 py-1 text-sm transition duration-300 hover:scale-105 md:block">Checkout Now &rarr;</button>
-</a>
-
 <Header />
 
-<main class="flex flex-col items-center text-black dark:text-gray-200">
+<main class="flex flex-col items-center text-black">
 	<div class="flex w-full max-w-[90vw] flex-col py-10 sm:px-10 lg:max-w-[75vw]">
 		{#if $navigating && $navigating.to}
 			<div class="flex min-h-[90vh] w-full flex-col items-center justify-center">
@@ -44,5 +24,3 @@
 </main>
 
 <Footer />
-
-<link rel="stylesheet" href="/css/dark.css" />

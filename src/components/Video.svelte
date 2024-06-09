@@ -46,7 +46,7 @@
 			title={video.content.name}
 			{...iframeSrc && { src: iframeSrc }}
 			loading={index === 0 ? 'eager' : 'lazy'}
-			class="aspect-video h-[300px] w-full rounded-lg border hover:shadow-2xl dark:border-gray-600"
+			class="aspect-video h-[300px] w-full rounded-lg border hover:shadow-2xl"
 			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 		/>
 	{:else}

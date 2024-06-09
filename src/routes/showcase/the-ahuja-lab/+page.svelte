@@ -8,39 +8,36 @@
 <h1 class="mt-3 bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text text-4xl font-bold text-transparent sm:text-6xl">
 	Drastically Improved Performance & Enhanced Online Presence
 </h1>
-<a
-	href="#letsbegin"
-	class="mt-8 max-w-max rounded border border-gray-600 bg-white px-4 py-2 text-gray-600 outline-none transition duration-300 hover:bg-black hover:text-white dark:bg-black dark:text-gray-400 dark:hover:bg-white dark:hover:text-black"
->
+<a href="#letsbegin" class="mt-8 max-w-max rounded border border-gray-600 bg-white px-4 py-2 text-gray-600 outline-none transition duration-300 hover:bg-black hover:text-white">
 	Let's Begin &#8600;
 </a>
 <img
 	id="letsbegin"
 	alt="Responsive Screenshot of The Ahuja Lab's new website"
-	class="mt-16 h-auto w-full rounded border dark:border-gray-600"
+	class="mt-16 h-auto w-full rounded border"
 	src="https://ik.imagekit.io/vjeqenuhn/showcase/The_Ahuja_Lab/responsive.png"
 />
-<div class="mt-24 grid grid-cols-1 gap-8 border-b border-t py-8 dark:border-gray-600 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
-	<div class="flex flex-col gap-y-3 border-r dark:border-gray-600">
+<div class="mt-24 grid grid-cols-1 gap-8 border-b border-t py-8 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
+	<div class="flex flex-col gap-y-3 border-r">
 		<span class="text-xl font-light text-gray-400">Website</span>
 		<a rel="noopener" target="_blank" class="text-2xl text-blue-400 underline" href="https://new-ahuja.vercel.app">ahuja-lab.in</a>
 	</div>
-	<div class="flex flex-col gap-y-3 border-r dark:border-gray-600">
+	<div class="flex flex-col gap-y-3 border-r">
 		<span class="text-xl font-light text-gray-400">Founded In</span>
 		<span class="text-2xl text-blue-400">2023</span>
 	</div>
-	<div class="flex flex-col gap-y-3 border-r dark:border-gray-600">
+	<div class="flex flex-col gap-y-3 border-r">
 		<span class="text-xl font-light text-gray-400">Industry</span>
 		<span class="text-2xl text-blue-400">Research</span>
 	</div>
-	<div class="flex flex-col gap-y-3 border-r dark:border-gray-600">
+	<div class="flex flex-col gap-y-3 border-r">
 		<span class="text-xl font-light text-gray-400">Location</span>
 		<span class="text-2xl text-blue-400">New Delhi</span>
 	</div>
 	<div class="flex flex-col gap-y-3">
 		<span class="text-xl font-light text-gray-400">Technology</span>
 		<div class="flex flex-row items-center gap-x-5">
-			<svg class="fill-black dark:fill-white" height="25" viewBox="0 0 76 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<svg class="fill-black" height="25" viewBox="0 0 76 65" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<title>Vercel</title>
 				<path d="M37.5274 0L75.0548 65H0L37.5274 0Z" />
 			</svg>
@@ -72,7 +69,7 @@
 					fill="#38bdf8"
 				/>
 			</svg>
-			<svg class="fill-black dark:fill-white" height="25" viewBox="0 0 1200 1280" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<svg class="fill-black" height="25" viewBox="0 0 1200 1280" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<title>Astro</title>
 				<path
 					fill-rule="evenodd"
@@ -105,7 +102,7 @@
 	<span class="text-2xl font-medium text-gray-400 sm:text-4xl">
 		About <span class="bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text text-transparent">The Ahuja Lab</span>
 	</span>
-	<span class="text-xl font-light text-black dark:text-white">
+	<span class="text-xl font-light text-black">
 		The Ahuja Lab uses a hybrid approach involving Artificial Intelligence and Molecular Biology. The Ahuja lab is supported by the Ramalingaswami Re-entry Fellowship, a re-entry
 		scheme of the Department of Biotechnology (DBT), Ministry of Science & Technology, Govt. of India, and an Intramural Start-up grant from Indraprastha Institute of Information
 		Technology-Delhi (IIIT-Delhi).
@@ -115,12 +112,7 @@
 	Video Comparison Of <span class="bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text text-transparent">First Page Load(s)</span>
 	Performance
 </span>
-<video
-	controls
-	preload="none"
-	class="mt-12 h-[440px] rounded-lg border dark:border-gray-600"
-	poster="https://ik.imagekit.io/vjeqenuhn/showcase/The_Ahuja_Lab/visual-improvement.png"
->
+<video controls preload="none" class="mt-12 h-[440px] rounded-lg border" poster="https://ik.imagekit.io/vjeqenuhn/showcase/The_Ahuja_Lab/visual-improvement.png">
 	<source src="https://ik.imagekit.io/vjeqenuhn/showcase/The_Ahuja_Lab/comparison-old-new-ahuja-lab.mp4" type="video/mp4" />
 	<track kind="captions" />
 </video>
@@ -142,24 +134,17 @@
 	class="mt-12 h-auto w-full rounded border"
 	src="https://ik.imagekit.io/vjeqenuhn/showcase/The_Ahuja_Lab/new-ahuja-lab-first-load-filmstrip.png"
 />
-<img
-	loading="lazy"
-	alt="The Ahuja Lab Preview"
-	class="mt-24 h-auto w-full rounded border dark:border-gray-600"
-	src="https://ik.imagekit.io/vjeqenuhn/showcase/The_Ahuja_Lab/preview.png"
-/>
+<img loading="lazy" alt="The Ahuja Lab Preview" class="mt-24 h-auto w-full rounded border" src="https://ik.imagekit.io/vjeqenuhn/showcase/The_Ahuja_Lab/preview.png" />
 <div class="mt-24 grid grid-cols-1 gap-y-8 sm:grid-cols-2">
 	<span class="max-w-[500px] text-2xl font-medium leading-loose text-gray-400 sm:text-4xl">
 		Results that I delivered to
 		<span class="bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text text-transparent"> The Ahuja Lab</span>
 	</span>
-	<span class="text-xl font-light text-black dark:text-white">
-		The website loads almost instantly influencing SEO efforts positively. The website looks beautiful with seamless navigation.
-	</span>
+	<span class="text-xl font-light text-black"> The website loads almost instantly influencing SEO efforts positively. The website looks beautiful with seamless navigation. </span>
 </div>
 <div class="mt-24 grid grid-cols-1 gap-y-8 sm:grid-cols-2">
 	<span class="text-2xl font-medium text-gray-400 sm:text-4xl">Testimonial</span>
-	<span class="rounded border border-gray-200 p-5 text-xl font-light text-black dark:border-gray-600 dark:text-white">
+	<span class="rounded border border-gray-200 p-5 text-xl font-light text-black">
 		It's very fast 🤣 <br />
 		Thanks man <br />
 		Let me check from laptop <br />
@@ -212,7 +197,7 @@
 				src="https://ik.imagekit.io/vjeqenuhn/showcase/The_Ahuja_Lab/gaurav-ahuja.jpeg"
 			/>
 			<div class="flex flex-col">
-				<span class="font-medium text-gray-600 dark:text-gray-200">Gaurav Ahuja</span>
+				<span class="font-medium text-gray-600">Gaurav Ahuja</span>
 				<span class="text-gray-400">Principal Investigator - The Ahuja Lab</span>
 			</div>
 		</div>

@@ -11,13 +11,13 @@
 
 <h1 class="text-2xl font-bold sm:text-5xl">Storyblok x Rishi</h1>
 
-<h2 class="font-regular text-md mt-8 whitespace-pre-line dark:text-gray-200 sm:text-xl">About</h2>
+<h2 class="font-regular text-md mt-8 whitespace-pre-line sm:text-xl">About</h2>
 
 {@html data.tagline}
 
 {#each Object.keys(storyblok) as i}
 	<div class="mt-8 flex flex-col gap-y-4">
-		<a href={`#${i}`} id={i} class="font-regular text-md mt-5 whitespace-pre-line dark:text-gray-200 sm:text-xl">
+		<a href={`#${i}`} id={i} class="font-regular text-md mt-5 whitespace-pre-line sm:text-xl">
 			{i}
 		</a>
 		{#if storyblok.hasOwnProperty(i)}

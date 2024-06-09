@@ -152,14 +152,10 @@
 		He kept <span class="bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text text-transparent">writing</span> and
 		<span class="bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text text-transparent">vouching</span> for Layer0 (even before he contracted).
 	</h2>
-	<span
-		class="mt-12 border-b border-gray-200 bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text pb-2 text-4xl font-extrabold text-transparent dark:border-gray-600 sm:text-6xl"
-	>
+	<span class="mt-12 border-b border-gray-200 bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text pb-2 text-4xl font-extrabold text-transparent sm:text-6xl">
 		15+ Blogs
 	</span>
-	<span
-		class="mt-12 border-b border-gray-200 bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text pb-2 text-4xl font-extrabold text-transparent dark:border-gray-600 sm:text-6xl"
-	>
+	<span class="mt-12 border-b border-gray-200 bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text pb-2 text-4xl font-extrabold text-transparent sm:text-6xl">
 		35K+ Impresssions
 	</span>
 	<img

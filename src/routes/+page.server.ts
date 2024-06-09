@@ -8,7 +8,7 @@ export const load: PageServerLoad = async ({ url, fetch }) => {
 	let tagline = await getTagline('home')
 	tagline = renderRichText.render(tagline)
 	const $ = loadCheerio(tagline)
-	$('p').addClass('mt-6 text-lg font-light text-slate-600 dark:text-slate-400')
+	$('p').addClass('mt-6 text-lg font-light text-slate-600')
 	// @ts-ignore
 	tagline = $('p').parent().html()
 	// Use ImageKit transformation to blur the URL and convert the blurred image to a string

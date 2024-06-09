@@ -28,7 +28,7 @@
 			<Author post={data.blog.post} />
 		</div>
 		<div class="mt-7 h-[1px] w-full bg-gray-200" />
-		<article class="prose mt-10 flex max-w-none flex-col items-center text-sm dark:prose-light">
+		<article class="prose mt-10 flex max-w-none flex-col items-center text-sm">
 			{@html data.blog.post.content.long_text}
 		</article>
 		<Comments slug={data.slug} />

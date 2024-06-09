@@ -8,13 +8,13 @@
 
 <h1 class="text-2xl font-bold sm:text-5xl">Uses</h1>
 
-<a href="#About" class="font-regular text-md mt-8 whitespace-pre-line dark:text-gray-200 sm:text-xl">About</a>
+<a href="#About" class="font-regular text-md mt-8 whitespace-pre-line sm:text-xl">About</a>
 
-<p class="mt-2 font-light text-slate-600 dark:text-slate-400">Here's what tech I'm currently using for coding, videos, and music.</p>
+<p class="mt-2 font-light text-slate-600">Here's what tech I'm currently using for coding, videos, and music.</p>
 
 {#each Object.keys(uses) as i}
 	<div class="mt-8 flex flex-col gap-y-4">
-		<a href={`#${i}`} id={i} class="font-regular text-md mt-5 whitespace-pre-line dark:text-gray-200 sm:text-xl">
+		<a href={`#${i}`} id={i} class="font-regular text-md mt-5 whitespace-pre-line sm:text-xl">
 			{i}
 		</a>
 		{#if uses.hasOwnProperty(i)}
