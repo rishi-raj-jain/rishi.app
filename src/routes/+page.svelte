@@ -5,11 +5,12 @@
 	import '@/src/routes/home.css'
 	import Seo from '@/src/components/Seo.svelte'
 	import Socials from '@/src/components/Socials.svelte'
+	import LinkIcon from '~icons/ph/arrow-up'
 </script>
 
 <Seo preloads={[{ as: 'image', href: 'https://ik.imagekit.io/vjeqenuhn/static/favicon-image.jpg' }]} />
 
-<div class="flex min-h-[90vh] w-full flex-col justify-center">
+<div class="flex w-full flex-col justify-center">
 	<div class="flex flex-col gap-x-8 lg:flex-row">
 		<img
 			alt="Rishi Raj Jain in his favourite attire"
@@ -28,20 +29,16 @@
 						target="_blank"
 						rel="noopener noreferrer"
 						href="https://twitter.com/intent/follow?screen_name=rishi_raj_jain_"
-						class="flex items-center transition-all hover:text-neutral-700"
+						class="flex items-center gap-x-1 transition-all hover:text-neutral-700"
 					>
-						<svg class="mr-2" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M2.07102 11.3494L0.963068 10.2415L9.2017 1.98864H2.83807L2.85227 0.454545H11.8438V9.46023H10.2955L10.3097 3.09659L2.07102 11.3494Z" fill="currentColor" />
-						</svg>
-						<p class="h-7">follow me on twitter</p>
+						<LinkIcon class="h-[50px] rotate-45" />
+						<span>follow me on X</span>
 					</a>
 				</li>
 				<li>
-					<a target="_blank" rel="noopener noreferrer" href="https://rishirajjain.substack.com" class="flex items-center transition-all hover:text-neutral-700">
-						<svg class="mr-2" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M2.07102 11.3494L0.963068 10.2415L9.2017 1.98864H2.83807L2.85227 0.454545H11.8438V9.46023H10.2955L10.3097 3.09659L2.07102 11.3494Z" fill="currentColor" />
-						</svg>
-						<p class="h-7">get email updates</p>
+					<a target="_blank" rel="noopener noreferrer" href="https://rishirajjain.substack.com" class="flex items-center gap-x-1 transition-all hover:text-neutral-700">
+						<LinkIcon class="h-[50px] rotate-45" />
+						<span>get email updates</span>
 					</a>
 				</li>
 			</ul>
