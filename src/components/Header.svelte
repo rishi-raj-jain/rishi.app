@@ -1,13 +1,13 @@
-<nav class="sticky top-0 z-10 flex w-full flex-col items-center py-8">
-	<div class="flex w-full max-w-[90vw] flex-row items-center justify-between sm:px-10 lg:max-w-[75vw]">
-		<div class="relative flex max-w-[258px] flex-row items-center space-x-5 overflow-x-scroll sm:max-w-none sm:overflow-x-hidden">
-			<a class="font-light" href="/">Home</a>
-			<a class="font-light" href="/blogs">Blogs</a>
-			<a class="font-light" href="/cv">CV</a>
-			<a class="font-light" href="/storyblok">Storyblok</a>
-			<a class="font-light" href="/showcase">Showcase</a>
-			<a class="font-light" href="/videos">Talks</a>
-			<a class="font-light" href="/uses">Uses</a>
-		</div>
-	</div>
+<script lang="ts">
+	import { page } from '$app/stores'
+</script>
+
+<nav class="py-8 sticky flex flex-row items-center space-x-5 bg-white overflow-x-scroll">
+	<a class={`font-light ${$page.url.pathname === '/' && 'border-b'}`} href="/">Home</a>
+	<a class={`font-light ${$page.url.pathname.includes('/blog') && 'border-b'}`} href="/blogs">Blogs</a>
+	<a class={`font-light ${$page.url.pathname.includes('/cv') && 'border-b'}`} href="/cv">CV</a>
+	<a class={`font-light ${$page.url.pathname.includes('/storyblok') && 'border-b'}`} href="/storyblok">Storyblok</a>
+	<a class={`font-light ${$page.url.pathname.includes('/showcase') && 'border-b'}`} href="/showcase">Showcase</a>
+	<a class={`font-light ${$page.url.pathname.includes('/videos') && 'border-b'}`} href="/videos">Talks</a>
+	<a class={`font-light ${$page.url.pathname.includes('/uses') && 'border-b'}`} href="/uses">Uses</a>
 </nav>

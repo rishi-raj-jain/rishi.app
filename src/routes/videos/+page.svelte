@@ -11,9 +11,7 @@
 <h1 class="text-2xl font-bold sm:text-5xl">Talks and Video Tutorials</h1>
 
 {#if data.videos}
-	<div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2">
-		{#each data.videos as video, _}
-			<Video index={_} {video} />
-		{/each}
-	</div>
+	{#each data.videos as video, _}
+		<Video className="mt-8" index={_} {video} />
+	{/each}
 {/if}

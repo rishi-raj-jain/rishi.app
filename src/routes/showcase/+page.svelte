@@ -10,10 +10,8 @@
 
 <h1 class="text-2xl font-bold sm:text-5xl">Showcase</h1>
 
-<div class="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2">
-	{#if data.items.length > 0}
-		{#each data.items as item}
-			<Preview {...item} />
-		{/each}
-	{/if}
-</div>
+{#if data.items.length > 0}
+	{#each data.items as item}
+		<Preview className="mt-8" {...item} />
+	{/each}
+{/if}

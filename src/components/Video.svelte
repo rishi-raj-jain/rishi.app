@@ -10,21 +10,11 @@
 
 	onMount(() => {
 		if (video.content.video) iframeSrc = video.content.video
-
 		const selector = document.getElementById(`video-${index}`)
-
-		if (selector) {
-			selector.addEventListener('load', () => {
-				document.getElementById(`overlay-${index}`)?.remove()
-			})
-		}
-
+		const removeElement = () => document.getElementById(`overlay-${index}`)?.remove()
+		selector?.addEventListener('load', removeElement)
 		return () => {
-			if (selector) {
-				selector.removeEventListener('load', () => {
-					document.getElementById(`overlay-${index}`)?.remove()
-				})
-			}
+			selector?.removeEventListener('load', removeElement)
 		}
 	})
 </script>
@@ -36,7 +26,9 @@
 			alt={video.content.name}
 			src={video.content.thumbnail.filename}
 			loading={index === 0 ? 'eager' : 'lazy'}
-			class="absolute left-0 top-0 aspect-video h-[300px] w-full rounded-lg object-cover"
+			width={video.content.thumbnail.filename.split('/')[5].split('x')[1]}
+			height={video.content.thumbnail.filename.split('/')[5].split('x')[1]}
+			class="absolute left-0 top-0 h-[300px] w-full rounded-lg object-cover"
 		/>
 	{/if}
 	{#if video.content.video && video.content.video.includes('youtu')}

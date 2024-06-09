@@ -8,7 +8,7 @@
 
 <h1 class="text-2xl font-bold sm:text-5xl">Uses</h1>
 
-<a href="#About" class="font-regular text-md mt-8 whitespace-pre-line sm:text-xl">About</a>
+<a href="#About" class="font-regular text-md mt-12 whitespace-pre-line sm:text-xl">About</a>
 
 <p class="mt-2 font-light text-slate-600">Here's what tech I'm currently using for coding, videos, and music.</p>
 
