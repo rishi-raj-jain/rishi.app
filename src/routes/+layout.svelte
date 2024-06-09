@@ -22,5 +22,3 @@
 		{/if}
 	</div>
 </main>
-
-<Footer />
