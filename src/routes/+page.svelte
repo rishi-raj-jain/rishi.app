@@ -1,5 +1,4 @@
 <script lang="ts">
-	import '@/src/routes/home.css'
 	import Seo from '@/src/components/Seo.svelte'
 	import Socials from '@/src/components/Socials.svelte'
 	import LinkIcon from '~icons/ph/arrow-up'
