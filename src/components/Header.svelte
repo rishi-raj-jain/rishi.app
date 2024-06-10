@@ -2,7 +2,7 @@
 	import { page } from '$app/stores'
 </script>
 
-<nav class="py-8 sticky flex flex-row items-center space-x-5 bg-white overflow-x-scroll">
+<nav class="py-8 sticky flex flex-row items-center space-x-5 bg-white">
 	<a class={`font-light ${$page.url.pathname === '/' && 'border-b'}`} href="/">Home</a>
 	<a class={`font-light ${$page.url.pathname.includes('/blog') && 'border-b'}`} href="/blogs">Blogs</a>
 	<a class={`font-light ${$page.url.pathname.includes('/cv') && 'border-b'}`} href="/cv">CV</a>
