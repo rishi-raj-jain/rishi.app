@@ -3,13 +3,13 @@
 </script>
 
 <Seo
-	preloads={[{ as: 'image', href: 'https://ik.imagekit.io/vjeqenuhn/static/favicon-image.jpg' }]}
+	preloads={[{ as: 'image', href: 'https://ik.imagekit.io/vjeqenuhn/static/headshot.jpeg' }]}
 	title="A look back at Rishi's contribution to Edgio from Aug. 21 to Jul. 22 - Rishi Raj Jain"
 />
 
 <div class="flex w-full flex-col items-center justify-center text-center">
 	<div class="mt-36 flex flex-row items-center gap-x-5 sm:mt-48">
-		<img alt="Rishi Raj Jain" src="https://ik.imagekit.io/vjeqenuhn/static/favicon-image.jpg" class="w-[25px] rounded grayscale" />
+		<img alt="Rishi Raj Jain" src="https://ik.imagekit.io/vjeqenuhn/static/headshot.jpeg" class="w-[25px] rounded grayscale" />
 		<span class="text-3xl font-semibold text-gray-400">Rishi Raj Jain</span>
 	</div>
 	<div class="mt-12 flex w-full flex-col items-center">

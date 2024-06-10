@@ -5,10 +5,10 @@
 	import LinkIcon from '~icons/ph/arrow-up'
 </script>
 
-<Seo preloads={[{ as: 'image', href: 'https://ik.imagekit.io/vjeqenuhn/1677584426725_O0mYlJuu_.jpeg' }]} />
+<Seo preloads={[{ as: 'image', href: 'https://ik.imagekit.io/vjeqenuhn/static/headshot.jpeg' }]} />
 
 <div class="flex flex-col gap-8 lg:flex-row">
-	<img loading="eager" width="100" height="100" class="size-[100px] rounded-full" alt="Rishi Raj Jain in his favourite attire" src="https://ik.imagekit.io/vjeqenuhn/1677584426725_O0mYlJuu_.jpeg?tr=w-100" />
+	<img loading="eager" width="100" height="100" class="size-[100px] rounded-full" alt="Rishi Raj Jain in his favourite attire" src="https://ik.imagekit.io/vjeqenuhn/static/headshot.jpeg?tr=w-100" />
 	<div class="flex flex-col">
 		<h1 class="text-2xl font-bold sm:text-5xl">Rishi Raj Jain</h1>
 		<p class="mt-6 text-lg font-light text-slate-600">

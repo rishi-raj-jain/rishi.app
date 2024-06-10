@@ -4,7 +4,7 @@
 	export let title: string = 'Rishi Raj Jain - Software Engineer, Developer, Designer, Writer',
 		description: string = 'Currently, I am looking for a full time role (was last seen as Technical Support Engineer at Lemon Squeezy).',
 		domain: string = $page.data?.domain ?? 'https://sveltekit.rishi.app',
-		image: string = '/static/social-media-card.jpg',
+		image: string = 'https://ik.imagekit.io/vjeqenuhn/static/social-media-card.jpg?updatedAt=1686855754988',
 		pathname: string = $page.url.pathname,
 		preloads: any[] = []
 
@@ -12,7 +12,7 @@
 
 	function updateSEOImage(src: string) {
 		if (!src || src.length < 1) {
-			seoImage = domain + '/static/social-media-card.jpg'
+			seoImage = 'https://ik.imagekit.io/vjeqenuhn/static/social-media-card.jpg?updatedAt=1686855754988'
 			return
 		}
 		const temp = src.replace('https://', '//').replace('//', 'https://')
