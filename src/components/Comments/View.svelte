@@ -21,7 +21,7 @@
 		{:else}
 			<div class="mt-5 flex w-full flex-col rounded border p-5">
 				<span class="text-lg font-medium text-gray-500">
-					{item.name} &middot; {new Date(1000 * item.time).toLocaleDateString()}
+					{item.name} &middot; {new Date(item.time).toLocaleDateString()}
 				</span>
 				<span class="text-md mt-3 text-gray-500">{item.content}</span>
 			</div>

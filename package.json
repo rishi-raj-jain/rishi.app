@@ -9,6 +9,7 @@
 	},
 	"devDependencies": {
 		"@iconify/json": "^2.2.217",
+		"@neondatabase/serverless": "^0.9.3",
 		"@storyblok/svelte": "^4.0.4",
 		"@sveltejs/adapter-vercel": "^5.1.0",
 		"@sveltejs/kit": "^2.5.2",

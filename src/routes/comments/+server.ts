@@ -1,32 +1,18 @@
+import { json } from '@sveltejs/kit'
 import { env } from '$env/dynamic/private'
+import { neon } from '@neondatabase/serverless'
+
+const sql = neon(env.DATABASE_URL!)
 
 /** @type {import('./$types').RequestHandler} */
 export async function GET({ url }) {
-	const upstream = new URL(env.COMMENTS_URL)
-	upstream.searchParams.set('token', env.COMMENTS_TOKEN)
-	upstream.searchParams.set('slug', url.searchParams.get('slug'))
-	const res = await fetch(upstream.toString())
-	const { posts } = await res.json()
-	return new Response(JSON.stringify(posts), {
-		headers: {
-			'Content-Type': 'application/json'
-		}
-	})
+	const slug = url.searchParams.get('slug')
+	const posts = await sql`SELECT * FROM comments WHERE slug = ${slug}`
+	return json(posts)
 }
 
 /** @type {import('./$types').RequestHandler} */
 export async function POST({ request }) {
-	const upstream = new URL(env.COMMENTS_URL)
-	upstream.searchParams.set('token', env.COMMENTS_TOKEN)
-	const body = await request.json()
-	await fetch(upstream.toString(), {
-		method: 'POST',
-		body: JSON.stringify(body),
-		headers: {
-			'Content-Type': 'application/json'
-		}
-	})
-	new Response(null, {
-		status: 200
-	})
+	const { name, slug, email, content } = await request.json()
+	await sql`INSERT INTO comments (name, slug, email, content, time) VALUES (${name}, ${slug}, ${email}, ${content}, ${new Date().toString()})`
 }
