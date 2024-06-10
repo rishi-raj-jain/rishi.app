@@ -14,7 +14,7 @@
 		<p class="mt-6 text-lg font-light text-slate-600">
 			Hey 👋🏻 <br />I am a software engineer and a technical writer. On the side, I'm developing and marketing
 			<a class="text-[#8714bd]" href="https://www.launchfa.st" target="_blank"><u>LaunchFast</u></a>. Feel free to go through my
-			<a class="text-[#ff6719]" href="https://rishirajjain.substack.com" target="_blank"><u>newsletters</u></a>
+			<a class="text-[#ff6719]" href="https://rishirajjain.substack.com" target="_blank"><u>newsletter</u></a>
 			or read my <a class="text-black" href="/blogs"><u>blogs</u></a>.
 		</p>
 		<div class="mt-8 h-[1px] w-full" />
