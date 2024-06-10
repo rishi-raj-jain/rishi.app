@@ -1,9 +1,8 @@
 <script lang="ts">
 	import type { PageData } from './$types'
+	import Seo from '@/src/components/Seo.svelte'
 
 	export let data: PageData
-
-	import Seo from '@/src/components/Seo.svelte'
 </script>
 
 <Seo title="Blogs - Rishi Raj Jain" />
@@ -14,13 +13,13 @@
 	{#each data.posts as item}
 		<li>
 			{#if item.slug}
-			<a href={`/blog/${item.slug}`} class="mt-1 hover:underline">
-				{item.content.title}
-			</a>
+				<a href={`/blog/${item.slug}`} class="mt-1 hover:underline">
+					{item.content.title}
+				</a>
 			{:else}
-			<a rel="noopener" target="_blank" href={item.content.Url.url} class="mt-1 hover:underline">
-				{item.content.Title}
-			</a>
+				<a rel="noopener" target="_blank" href={item.content.Url.url} class="mt-1 hover:underline">
+					{item.content.Title}
+				</a>
 			{/if}
 		</li>
 	{/each}

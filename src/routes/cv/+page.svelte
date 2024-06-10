@@ -1,7 +1,4 @@
 <script lang="ts">
-	import type { PageData } from './$types'
-	export let data: PageData
-
 	import { cv } from './data'
 	import Seo from '@/src/components/Seo.svelte'
 	import Pointer from '@/src/components/Pointer.svelte'
@@ -10,10 +7,6 @@
 <Seo title="CV - Rishi Raj Jain" />
 
 <h1 class="text-2xl font-bold sm:text-5xl">CV</h1>
-
-<h2 class="font-regular text-md mt-8 whitespace-pre-line sm:text-xl">About</h2>
-
-{@html data.tagline}
 
 {#each Object.keys(cv) as i}
 	<div class="mt-8 flex flex-col gap-y-4">
