@@ -73,6 +73,7 @@ export async function getRecommendedPosts() {
       {
         PostlinkItems (sort_by: "first_published_at:desc", per_page: 100){
           items{
+            first_published_at
             content{
               Title
               Url {
