@@ -24,3 +24,16 @@
 		</li>
 	{/each}
 </ol>
+
+<style>
+	ol {
+		-moz-transform: rotate(180deg);
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+	ol > li {
+		-moz-transform: rotate(-180deg);
+		-webkit-transform: rotate(-180deg);
+		transform: rotate(-180deg);
+	}
+</style>
