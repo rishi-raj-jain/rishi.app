@@ -21,6 +21,6 @@ export const load: PageServerLoad = async ({ url, params }) => {
 	return {
 		blog,
 		slug: params.slug,
-		domain: env.DOMAN ?? url.origin
+		domain: env.DOMAIN ?? url.origin
 	}
 }
