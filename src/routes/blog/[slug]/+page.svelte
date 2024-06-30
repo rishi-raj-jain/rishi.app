@@ -21,9 +21,7 @@
 <div class="flex w-full flex-col items-center">
 	<div class="w-full md:max-w-2xl">
 		<div class="flex w-full flex-col items-center">
-			<span>
-				<DateString date={new Date(data.blog.post.first_published_at)} />
-			</span>
+			<DateString date={new Date(data.blog.post.first_published_at)} />
 			<h1 class="mb-7 mt-3 text-center text-2xl font-bold sm:text-4xl">{data.blog.post.content.title}</h1>
 			<Author post={data.blog.post} />
 		</div>

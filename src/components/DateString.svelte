@@ -25,4 +25,6 @@
 	month[11] = 'December'
 </script>
 
-{`${weekday[date.getDay()]}, ${month[date.getMonth()]} ${date.getDate()} ${date.getFullYear()}`}
+<span>
+	{`${weekday[date.getDay()]}, ${month[date.getMonth()]} ${date.getDate()} ${date.getFullYear()}`}
+</span>

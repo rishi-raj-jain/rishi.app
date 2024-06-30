@@ -21,7 +21,7 @@ pre[class*='language-'] {
 	hyphens: none;
 }
 pre[class*='language-'] {
-	padding: 50px;
+	padding: 48px;
 	margin: 0.5em 0;
 	overflow: auto;
 }
@@ -251,7 +251,6 @@ html.dark .hljs-strong {
 	html.dark .hljs-type {
 		color: highlight;
 	}
-
 	html.dark .hljs-keyword,
 	html.dark .hljs-selector-tag {
 		font-weight: 700;

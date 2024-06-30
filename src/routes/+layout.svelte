@@ -8,8 +8,9 @@
 	<link rel="icon" href="https://ik.imagekit.io/vjeqenuhn/static/icon.png" />
 </svelte:head>
 
-<div class="px-12 flex w-full max-w-3xl flex-col">
+<div class="p-12 flex w-full max-w-3xl flex-col">
 	<Header />
+	<div class="mt-8" />
 	{#if $navigating && $navigating.to}
 		<div class="flex min-h-[90vh] w-full flex-col items-center justify-center">
 			<img class="animate-pulse" alt="Rishi's Icon" src="https://ik.imagekit.io/vjeqenuhn/static/icon.png" height="50" width="50" />

@@ -10,8 +10,10 @@
 
 <h1 class="text-2xl font-bold sm:text-5xl">Talks and Video Tutorials</h1>
 
-{#if data.videos}
-	{#each data.videos as video, _}
-		<Video className="mt-8" index={_} {video} />
-	{/each}
-{/if}
+<div class="grid md:grid-cols-2 md:gap-8">
+	{#if data.videos}
+		{#each data.videos as video, _}
+			<Video className="mt-8" index={_} {video} />
+		{/each}
+	{/if}
+</div>

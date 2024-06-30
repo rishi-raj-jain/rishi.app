@@ -28,7 +28,7 @@
 			loading={index === 0 ? 'eager' : 'lazy'}
 			width={video.content.thumbnail.filename.split('/')[5].split('x')[1]}
 			height={video.content.thumbnail.filename.split('/')[5].split('x')[1]}
-			class="absolute left-0 top-0 h-[300px] w-full rounded-lg object-cover"
+			class="absolute left-0 top-0 h-[300px] md:h-[200px] w-full rounded-lg object-cover"
 		/>
 	{/if}
 	{#if video.content.video && video.content.video.includes('youtu')}
@@ -38,7 +38,7 @@
 			title={video.content.name}
 			{...iframeSrc && { src: iframeSrc }}
 			loading={index === 0 ? 'eager' : 'lazy'}
-			class="aspect-video h-[300px] w-full rounded-lg border hover:shadow-2xl"
+			class="aspect-video h-[300px] md:h-[200px] w-full rounded-lg border hover:shadow-2xl"
 			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 		/>
 	{:else}
@@ -55,12 +55,12 @@
 		</video>
 	{/if}
 	{#if video.content.name && hide.name === 0}
-		<span class="text-md mt-4 font-medium sm:text-xl">
+		<span class="mt-4 font-medium">
 			{video.content.name}
 		</span>
 	{/if}
 	{#if video.content.description && hide.description === 0}
-		<div class="mt-2 w-full font-light">
+		<div class="mt-2 w-full text-xs font-light">
 			{@html video.content.description}
 		</div>
 	{/if}

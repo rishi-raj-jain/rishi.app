@@ -8,12 +8,12 @@
 }
 
 pre {
-	width: 900px;
+	width: 660px;
 }
 
 @media screen and (max-width: 768px) {
 	pre {
-		width: 95vw;
+		width: 78vw;
 	}
 }
 
@@ -21,4 +21,13 @@ article > *:not(pre) {
 	text-align: left;
 	align-self: flex-start;
 	content-visibility: auto;
+}
+
+.scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+.scrollbar {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
 }
