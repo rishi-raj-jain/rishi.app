@@ -4,10 +4,10 @@
 
 <Seo preloads={[{ as: 'image', href: 'https://ik.imagekit.io/vjeqenuhn/showcase/Garg_Property_Adviser/responsive.png' }]} title="Garg Property Adviser - Rishi Raj Jain" />
 
-<h2 class="text-xl font-light text-gray-400">
+<h2 class="text-md font-light text-gray-400 sm:text-xl">
 	Garg Property Adviser - Meet the real estate company that helps all kind of individuals, by offering personalised real estate services in West Delhi
 </h2>
-<h1 class="mt-3 bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text pb-1 text-4xl font-bold text-transparent sm:text-6xl">
+<h1 class="mt-3 bg-gradient-to-br from-blue-400 via-pink-700 to-teal-600 bg-clip-text text-3xl font-bold text-transparent sm:text-4xl">
 	Crafting Garg Property Adviser's Online Identity and Web Presence
 </h1>
 <a href="#letsbegin" class="hover:text-whit mt-8 max-w-max rounded border border-gray-600 bg-white px-4 py-2 text-gray-600 outline-none transition duration-300 hover:bg-black">

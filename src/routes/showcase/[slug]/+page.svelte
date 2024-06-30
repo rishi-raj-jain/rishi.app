@@ -17,8 +17,7 @@
 			<DateString date={new Date(data.blog.post.first_published_at)} />
 			<h1 class="mb-7 mt-3 text-2xl font-bold sm:text-4xl">{data.blog.post.content.name}</h1>
 		</div>
-		<div class="mt-7 h-[1px] w-full bg-gray-200" />
-		<article class="prose mt-10 flex max-w-none flex-col items-center text-sm">
+		<article class="prose flex max-w-none flex-col items-center text-sm">
 			{@html data.blog.post.content.description}
 		</article>
 		<Comments slug={data.slug} />

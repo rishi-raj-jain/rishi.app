@@ -10,11 +10,11 @@ const config = {
 			'@/src': path.resolve('./src/')
 		},
 		prerender: {
-		  handleHttpError: ({ path, referrer, message }) => {
-			console.log(path, referrer, message)
-		  },
-		  handleMissingId: 'ignore',
-		},
+			handleHttpError: ({ path, referrer, message }) => {
+				console.log(path, referrer, message)
+			},
+			handleMissingId: 'ignore'
+		}
 	},
 	preprocess: [
 		preprocess({

@@ -12,6 +12,6 @@
 
 {#if data.items.length > 0}
 	{#each data.items as item}
-		<Preview className="mt-8" {...item} />
+		<Preview className="border-b py-8" {...item} />
 	{/each}
 {/if}
