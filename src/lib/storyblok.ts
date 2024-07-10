@@ -67,11 +67,11 @@ export async function getAllPostsForHome() {
 	return data?.PostItems.items
 }
 
-export async function getRecommendedPosts() {
+export async function getRecommendedPosts(per_page_items: string | number, page: string | number) {
 	const data = await fetchAPI(
 		`
       {
-        PostlinkItems (sort_by: "first_published_at:desc", per_page: 100){
+        PostlinkItems (sort_by: "first_published_at:desc", per_page: ${per_page_items}, page: ${page}){
           items{
             first_published_at
             content{
