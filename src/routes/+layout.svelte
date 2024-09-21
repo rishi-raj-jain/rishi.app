@@ -1,5 +1,6 @@
 <script lang="ts">
 	import '@/src/app.css'
+	import '@fontsource-variable/inter'
 	import { navigating } from '$app/stores'
 	import Header from '@/src/components/Header.svelte'
 </script>
