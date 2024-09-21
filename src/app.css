@@ -31,3 +31,7 @@ article > *:not(pre) {
 	-ms-overflow-style: none;
 	scrollbar-width: none;
 }
+
+html {
+	font-family: 'Inter Variable';
+}
