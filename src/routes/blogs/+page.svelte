@@ -33,11 +33,11 @@
 		<span class="text-xs"> Upstash </span>
 	</div>
 </div>
-<div class="hidden mt-4 flex-row items-start gap-x-3 rounded border px-3 py-5 shadow-md">
+<div class="mt-4 flex-row items-start gap-x-3 rounded border px-3 py-5 shadow-md">
 	<img loading="lazy" decoding="async" height="40" width="40" alt="Edouard Bonlieu" src="https://avatars.githubusercontent.com/u/2520463" class="size-[40px] rounded-full" />
 	<div class="flex flex-col">
 		<span class="text-sm">
-			TODO
+			Rishi collaborated with us to create educational and technical articles showcasing the Koyeb serverless GPU offering. He is an exceptional individual, highly responsive, with great technical writing skills, able to tackle a wide range of topics. Working with Rishi was a fantastic experience, and his contributions really helped us scale our content production.
 		</span>
 		<span class="mt-2 text-xs"> Edouard Bonlieu </span>
 		<span class="text-xs"> Co-Founder and CPO </span>
