@@ -33,7 +33,7 @@
 		<span class="text-xs"> Upstash </span>
 	</div>
 </div>
-<div class="mt-4 flex-row items-start gap-x-3 rounded border px-3 py-5 shadow-md">
+<div class="mt-4 flex flex-row items-start gap-x-3 rounded border px-3 py-5 shadow-md">
 	<img loading="lazy" decoding="async" height="40" width="40" alt="Edouard Bonlieu" src="https://avatars.githubusercontent.com/u/2520463" class="size-[40px] rounded-full" />
 	<div class="flex flex-col">
 		<span class="text-sm">
