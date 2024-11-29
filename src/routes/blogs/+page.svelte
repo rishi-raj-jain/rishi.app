@@ -33,6 +33,17 @@
 		<span class="text-xs"> Upstash </span>
 	</div>
 </div>
+<div class="hidden mt-4 flex-row items-start gap-x-3 rounded border px-3 py-5 shadow-md">
+	<img loading="lazy" decoding="async" height="40" width="40" alt="Edouard Bonlieu" src="https://avatars.githubusercontent.com/u/2520463" class="size-[40px] rounded-full" />
+	<div class="flex flex-col">
+		<span class="text-sm">
+			TODO
+		</span>
+		<span class="mt-2 text-xs"> Edouard Bonlieu </span>
+		<span class="text-xs"> Co-Founder and CPO </span>
+		<span class="text-xs"> Koyeb </span>
+	</div>
+</div>
 <ol class="mt-4 flex w-full list-decimal flex-col">
 	{#each data.posts as item}
 		<li>
