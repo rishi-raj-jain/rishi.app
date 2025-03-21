@@ -26,7 +26,9 @@
 	<img loading="lazy" decoding="async" height="40" width="40" alt="Enes Akar" src="https://avatars.githubusercontent.com/u/234086" class="size-[40px] rounded-full" />
 	<div class="flex flex-col">
 		<span class="text-sm">
-			I have been working with Rishi for about two years now. He assists us with developer relations and content creation activities. Rishi possesses excellent communication skills and technical understanding. Typically, I briefly explain a project, and he builds it impressively in a short period. I highly recommend him for engineering and software development projects.
+			I have been working with Rishi for about two years now. He assists us with developer relations and content creation activities. Rishi possesses excellent communication skills
+			and technical understanding. Typically, I briefly explain a project, and he builds it impressively in a short period. I highly recommend him for engineering and software
+			development projects.
 		</span>
 		<span class="mt-2 text-xs"> Enes Akar </span>
 		<span class="text-xs"> CEO </span>
@@ -37,7 +39,9 @@
 	<img loading="lazy" decoding="async" height="40" width="40" alt="Edouard Bonlieu" src="https://avatars.githubusercontent.com/u/2520463" class="size-[40px] rounded-full" />
 	<div class="flex flex-col">
 		<span class="text-sm">
-			Rishi collaborated with us to create educational and technical articles showcasing the Koyeb serverless GPU offering. He is an exceptional individual, highly responsive, with great technical writing skills, able to tackle a wide range of topics. Working with Rishi was a fantastic experience, and his contributions really helped us scale our content production.
+			Rishi collaborated with us to create educational and technical articles showcasing the Koyeb serverless GPU offering. He is an exceptional individual, highly responsive, with
+			great technical writing skills, able to tackle a wide range of topics. Working with Rishi was a fantastic experience, and his contributions really helped us scale our content
+			production.
 		</span>
 		<span class="mt-2 text-xs"> Edouard Bonlieu </span>
 		<span class="text-xs"> Co-Founder and CPO </span>

@@ -8,6 +8,6 @@
 	<a class={`font-light ${$page.url.pathname.includes('/cv') && 'border-b'}`} href="/cv">CV</a>
 	<a class={`font-light ${$page.url.pathname.includes('/storyblok') && 'border-b'}`} href="/storyblok">Storyblok</a>
 	<a class={`font-light ${$page.url.pathname.includes('/showcase') && 'border-b'}`} href="/showcase">Showcase</a>
-	<a class={`font-light ${$page.url.pathname.includes('/videos') && 'border-b'}`} href="/videos">Talks</a>
+	<a class={`font-light ${$page.url.pathname.includes('/videos') && 'border-b'}`} href="/videos">Videos</a>
 	<a class={`font-light ${$page.url.pathname.includes('/uses') && 'border-b'}`} href="/uses">Uses</a>
 </nav>

@@ -26,7 +26,7 @@ export const cv = {
 		{ name: '2019 — 2021', title: 'Developer Evangelist, Freelance at Edgio', href: 'https://edg.io' },
 		{ name: '2021 — 2021', title: 'Software Engineer at Digital Product School, Germany', href: 'https://digitalproductschool.io/' },
 		{ name: '2020 — 2020', title: 'UI Engineer, Freelance at Arian Architects', href: 'https://arian-architects.github.io' },
-		{ name: '2019 — 2020', title: 'UI Engineer, Intern at Wellowise', href: 'https://wellowise.com' }
+		{ name: '2019 — 2020', title: 'UI Engineer, Intern at Wellowise', href: 'https://web.archive.org/web/20240527065933/https://wellowise.com' }
 	],
 	Education: [
 		{

@@ -1,4 +1,4 @@
-export const storyblok = {
+export const storyblok: { [k: string]: { name: string; title: string; href: string }[] } = {
 	Tutorials: [
 		{
 			name: 'Jun 6, 2023',
