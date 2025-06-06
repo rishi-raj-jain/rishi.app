@@ -23,7 +23,6 @@
 	}
 
 	afterNavigate(() => {
-		setTimeout(attachImgListener, 1000)
 		setTimeout(attachImgListener, 2000)
 	})
 </script>
