@@ -1,8 +1,31 @@
 <script lang="ts">
-	import '@/src/app.css'
-	import '@fontsource-variable/inter'
+	import { afterNavigate } from '$app/navigation'
 	import { navigating } from '$app/stores'
+	import '@/src/app.css'
 	import Header from '@/src/components/Header.svelte'
+	import '@fontsource-variable/inter'
+
+	const attachImgListener = () => {
+		document.querySelectorAll('img').forEach((img) => {
+			img.addEventListener('click', () => {
+				const popover = document.createElement('div')
+				popover.classList = 'w-screen h-screen bg-black/50 fixed top-0 left-0 z-[1000] flex flex-col items-center justify-center'
+				const enlargedImg = document.createElement('img')
+				enlargedImg.src = img.src
+				enlargedImg.classList = 'w-[90%] h-[auto] object-contain max-h-[95%] border bg-white/10'
+				popover.appendChild(enlargedImg)
+				document.body.appendChild(popover)
+				popover.addEventListener('click', (e) => {
+					if (e.target === popover) document.body.removeChild(popover)
+				})
+			})
+		})
+	}
+
+	afterNavigate(() => {
+		setTimeout(attachImgListener, 1000)
+		setTimeout(attachImgListener, 2000)
+	})
 </script>
 
 <svelte:head>
