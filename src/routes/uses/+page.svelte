@@ -6,15 +6,15 @@
 
 <Seo title="Uses - Rishi Raj Jain" />
 
-<h1 class="text-2xl font-bold sm:text-5xl">Uses</h1>
+<h1 class="text-2xl font-bold sm:text-4xl">Uses</h1>
 
-<a href="#About" class="font-regular text-md mt-4 whitespace-pre-line sm:text-xl">About</a>
+<a href="#About" class="font-regular text-md mt-4 whitespace-pre-line sm:text-lg">About</a>
 
 <p class="mt-2 font-light text-slate-600">Here's what tech I'm currently using for coding, videos, and music.</p>
 
 {#each Object.keys(uses) as i}
 	<div class="flex flex-col gap-y-4">
-		<a href={`#${i}`} id={i} class="font-regular text-md mt-5 whitespace-pre-line sm:text-xl">
+		<a href={`#${i}`} id={i} class="font-regular text-md mt-5 whitespace-pre-line sm:text-lg">
 			{i}
 		</a>
 		{#if uses.hasOwnProperty(i)}

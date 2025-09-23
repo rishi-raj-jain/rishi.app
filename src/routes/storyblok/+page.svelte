@@ -6,11 +6,11 @@
 
 <Seo title="Storyblok - Rishi Raj Jain" />
 
-<h1 class="text-2xl font-bold sm:text-5xl">Storyblok x Rishi</h1>
+<h1 class="text-2xl font-bold sm:text-4xl">Storyblok x Rishi</h1>
 
 {#each Object.keys(storyblok) as i}
 	<div class="flex flex-col gap-y-4">
-		<a href={`#${i}`} id={i} class="font-regular text-md mt-5 whitespace-pre-line sm:text-xl">
+		<a href={`#${i}`} id={i} class="font-regular text-md mt-5 whitespace-pre-line sm:text-lg">
 			{i}
 		</a>
 		{#if storyblok.hasOwnProperty(i)}

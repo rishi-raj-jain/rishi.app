@@ -8,16 +8,41 @@
 
 <Seo preloads={[{ as: 'image', href: data.videos[0].content.thumbnail.filename }]} title="Technical Videos - Rishi Raj Jain" />
 
-<h1 class="text-2xl font-bold sm:text-5xl">Videos</h1>
+<h1 class="text-2xl font-bold sm:text-4xl">Videos</h1>
 
-<a href="#About" class="font-regular text-md mt-4 whitespace-pre-line sm:text-xl">About</a>
+<a href="#About" class="font-regular text-md mt-4 whitespace-pre-line sm:text-lg">About</a>
 
 <p class="mt-2 font-light text-slate-600">Here's a collection of my technical videos and presentations.</p>
 
 <div class="grid md:grid-cols-2 md:gap-8">
+	<div class="relative flex w-full flex-col mt-6 [&>iframe]:h-[300px]">
+		<blockquote class="m-0 p-0 twitter-tweet" data-media-max-width="560">
+			<a href="https://twitter.com/rishi_raj_jain_/status/1970523768112972003" />
+		</blockquote>
+		<span class="mt-4 font-medium">
+			An overview of Subscription Trials in Polar
+		</span>
+	</div>
+	<div class="relative flex w-full flex-col mt-6 [&>iframe]:h-[300px]">
+		<blockquote class="m-0 p-0 twitter-tweet" data-media-max-width="560">
+			<a href="https://twitter.com/rishi_raj_jain_/status/1970253494872354987" />
+		</blockquote>
+		<span class="mt-4 font-medium">
+			Use Polar to receive payments for your Framer templates
+		</span>
+	</div>
+	<div class="relative flex w-full flex-col mt-6 [&>iframe]:h-[300px]">
+		<blockquote class="m-0 p-0 twitter-tweet" data-media-max-width="560">
+			<a href="https://twitter.com/rishi_raj_jain_/status/1969086240499597608" />
+		</blockquote>
+		<span class="mt-4 font-medium">
+			Use Dub to to shorten and empower your Polar checkout links with analytics
+		</span>
+	</div>
 	{#if data.videos}
 		{#each data.videos as video, _}
 			<Video className="mt-8" index={_} {video} />
 		{/each}
 	{/if}
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>

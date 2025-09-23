@@ -8,9 +8,9 @@
 
 <Seo title="Showcase - Rishi Raj Jain" />
 
-<h1 class="text-2xl font-bold sm:text-5xl">Showcase</h1>
+<h1 class="text-2xl font-bold sm:text-4xl">Showcase</h1>
 
-<a href="#About" class="font-regular text-md mt-4 whitespace-pre-line sm:text-xl">About</a>
+<a href="#About" class="font-regular text-md mt-4 whitespace-pre-line sm:text-lg">About</a>
 
 <p class="mt-2 font-light text-slate-600">Here's a collection of my work and the projects I've built.</p>
 

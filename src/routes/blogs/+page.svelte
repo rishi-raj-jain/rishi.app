@@ -7,7 +7,7 @@
 
 <Seo title="Blogs - Rishi Raj Jain" />
 
-<h1 class="text-2xl font-bold sm:text-5xl">Blogs</h1>
+<h1 class="text-2xl font-bold sm:text-4xl">Blogs</h1>
 <span class="mt-4 text-lg font-light text-slate-600">I've been writing since 13<sup>th</sup> March, 2020 around web development and design ✍🏻</span>
 <div class="mt-4 flex flex-row items-start gap-x-3 rounded border px-3 py-5 shadow-md">
 	<img loading="lazy" decoding="async" height="40" width="40" alt="Enes Akar" src="https://avatars.githubusercontent.com/u/234086" class="size-[40px] rounded-full" />
