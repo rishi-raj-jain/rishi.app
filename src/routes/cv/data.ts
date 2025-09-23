@@ -2,7 +2,7 @@ export const cv = {
 	'Work Experience': [
 		{
 			name: 'Aug 25 — Now',
-			title: 'Customer Solutions Engineer @ Polar',
+			title: 'Customer Success Engineer @ Polar',
 			href: 'https://x.com/rishi_raj_jain_/status/1968987180694434172'
 		},
 		{
