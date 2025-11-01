@@ -31,7 +31,7 @@
 	<link rel="icon" href="https://ik.imagekit.io/vjeqenuhn/static/icon.png" />
 </svelte:head>
 
-<div class="flex w-full max-w-3xl flex-col p-12">
+<div class="flex w-full max-w-2xl flex-col p-12">
 	<Header />
 	<div class="mt-8" />
 	{#if $navigating && $navigating.to}

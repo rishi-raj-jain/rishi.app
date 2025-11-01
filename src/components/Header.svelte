@@ -2,12 +2,12 @@
 	import { page } from '$app/stores'
 </script>
 
-<nav class="scrollbar sticky flex flex-row items-center space-x-5 overflow-x-scroll bg-white">
-	<a class={`font-light ${$page.url.pathname === '/' && 'border-b'}`} href="/">Home</a>
-	<a class={`font-light ${$page.url.pathname.includes('/blog') && 'border-b'}`} href="/blogs">Blogs</a>
-	<a class={`font-light ${$page.url.pathname.includes('/cv') && 'border-b'}`} href="/cv">CV</a>
-	<a class={`font-light ${$page.url.pathname.includes('/storyblok') && 'border-b'}`} href="/storyblok">Storyblok</a>
-	<a class={`font-light ${$page.url.pathname.includes('/showcase') && 'border-b'}`} href="/showcase">Showcase</a>
-	<a class={`font-light ${$page.url.pathname.includes('/videos') && 'border-b'}`} href="/videos">Videos</a>
-	<a class={`font-light ${$page.url.pathname.includes('/uses') && 'border-b'}`} href="/uses">Uses</a>
+<nav class="scrollbar sticky flex flex-row flex-wrap items-center gap-x-4 gap-y-2 text-gray-400 bg-white text-sm">
+	<a class={`font-light ${$page.url.pathname === '/' && 'border-b text-black'}`} href="/">Home</a>
+	<a class={`font-light ${$page.url.pathname.includes('/blog') && 'border-b text-black'}`} href="/blogs">Blogs</a>
+	<a class={`font-light ${$page.url.pathname.includes('/cv') && 'border-b text-black'}`} href="/cv">CV</a>
+	<a class={`font-light ${$page.url.pathname.includes('/storyblok') && 'border-b text-black'}`} href="/storyblok">Storyblok</a>
+	<a class={`font-light ${$page.url.pathname.includes('/showcase') && 'border-b text-black'}`} href="/showcase">Showcase</a>
+	<a class={`font-light ${$page.url.pathname.includes('/videos') && 'border-b text-black'}`} href="/videos">Videos</a>
+	<a class={`font-light ${$page.url.pathname.includes('/uses') && 'border-b text-black'}`} href="/uses">Uses</a>
 </nav>

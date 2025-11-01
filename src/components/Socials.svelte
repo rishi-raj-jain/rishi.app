@@ -9,23 +9,17 @@
 </script>
 
 <div class="flex flex-row items-center space-x-5 text-gray-400">
-	<a href="https://github.com/rishi-raj-jain" target="_blank">
-		<GitHubIcon height="20px" width="20px" />
-	</a>
 	<a href="https://twitter.com/rishi_raj_jain_" target="_blank">
 		<TwitterIcon font-size="13px" />
-	</a>
-	<a href="https://medium.com/@rishi-raj-jain" target="_blank">
-		<MediumIcon height="20px" width="20px" color="black" />
-	</a>
-	<a href="https://behance.net/rishi-raj-jain" target="_blank">
-		<BehanceIcon height="20px" width="20px" color="#0057ff" />
 	</a>
 	<a href="https://linkedin.com/in/rishi-raj-jain" target="_blank">
 		<LinkedInIcon height="20px" width="20px" />
 	</a>
-	<a href="https://polywork.rishi.app" target="_blank">
-		<PolyworkIcon height="20px" width="20px" />
+	<a href="https://github.com/rishi-raj-jain" target="_blank">
+		<GitHubIcon height="20px" width="20px" />
+	</a>
+	<a href="https://behance.net/rishi-raj-jain" target="_blank">
+		<BehanceIcon height="20px" width="20px" color="#0057ff" />
 	</a>
 	<a href="https://peerlist.io/rishi_raj_jain_" target="_blank">
 		<PeerlistIcon height="20px" width="20px" color="#219653" />
