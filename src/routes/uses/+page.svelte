@@ -16,7 +16,7 @@
 		</a>
 		{#if uses.hasOwnProperty(i)}
 			{#each uses[i] as j}
-				<div class="text-sm flex flex-row items-center gap-x-2 gap-y-2 md:flex-row md:gap-y-0">
+				<div class="flex flex-row items-center gap-x-2 gap-y-2 text-sm md:flex-row md:gap-y-0">
 					<p class="mb-0.5 scale-[2] font-light text-gray-400">&middot;</p>
 					<Pointer {j} />
 				</div>

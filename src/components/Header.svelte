@@ -2,7 +2,7 @@
 	import { page } from '$app/stores'
 </script>
 
-<nav class="scrollbar sticky flex flex-row flex-wrap items-center gap-x-4 gap-y-2 text-gray-400 bg-white text-sm">
+<nav class="scrollbar sticky flex flex-row flex-wrap items-center gap-x-4 gap-y-2 bg-white text-sm text-gray-400">
 	<a class={`font-light ${$page.url.pathname === '/' && 'border-b text-black'}`} href="/">Home</a>
 	<a class={`font-light ${$page.url.pathname.includes('/blog') && 'border-b text-black'}`} href="/blogs">Blogs</a>
 	<a class={`font-light ${$page.url.pathname.includes('/cv') && 'border-b text-black'}`} href="/cv">CV</a>

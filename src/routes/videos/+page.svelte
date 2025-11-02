@@ -12,29 +12,23 @@
 <p class="mt-2 font-light">Here's a collection of my technical videos and presentations.</p>
 
 <div class="grid md:grid-cols-2 md:gap-8">
-	<div class="relative flex w-full flex-col mt-6 [&>iframe]:h-[300px]">
-		<blockquote class="m-0 p-0 twitter-tweet" data-media-max-width="560">
+	<div class="relative mt-6 flex w-full flex-col [&>iframe]:h-[300px]">
+		<blockquote class="twitter-tweet m-0 p-0" data-media-max-width="560">
 			<a href="https://twitter.com/rishi_raj_jain_/status/1970523768112972003" />
 		</blockquote>
-		<span class="mt-4 font-medium">
-			An overview of Subscription Trials in Polar
-		</span>
+		<span class="mt-4 font-medium"> An overview of Subscription Trials in Polar </span>
 	</div>
-	<div class="relative flex w-full flex-col mt-6 [&>iframe]:h-[300px]">
-		<blockquote class="m-0 p-0 twitter-tweet" data-media-max-width="560">
+	<div class="relative mt-6 flex w-full flex-col [&>iframe]:h-[300px]">
+		<blockquote class="twitter-tweet m-0 p-0" data-media-max-width="560">
 			<a href="https://twitter.com/rishi_raj_jain_/status/1970253494872354987" />
 		</blockquote>
-		<span class="mt-4 font-medium">
-			Use Polar to receive payments for your Framer templates
-		</span>
+		<span class="mt-4 font-medium"> Use Polar to receive payments for your Framer templates </span>
 	</div>
-	<div class="relative flex w-full flex-col mt-6 [&>iframe]:h-[300px]">
-		<blockquote class="m-0 p-0 twitter-tweet" data-media-max-width="560">
+	<div class="relative mt-6 flex w-full flex-col [&>iframe]:h-[300px]">
+		<blockquote class="twitter-tweet m-0 p-0" data-media-max-width="560">
 			<a href="https://twitter.com/rishi_raj_jain_/status/1969086240499597608" />
 		</blockquote>
-		<span class="mt-4 font-medium">
-			Use Dub to to shorten and empower your Polar checkout links with analytics
-		</span>
+		<span class="mt-4 font-medium"> Use Dub to to shorten and empower your Polar checkout links with analytics </span>
 	</div>
 	{#if data.videos}
 		{#each data.videos as video, _}
