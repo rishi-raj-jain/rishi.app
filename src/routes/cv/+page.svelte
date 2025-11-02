@@ -6,11 +6,10 @@
 
 <Seo title="CV - Rishi Raj Jain" />
 
-<h1 class="text-2xl font-bold sm:text-4xl">CV</h1>
-
+<h1 class="text-2xl font-bold">CV</h1>
 {#each Object.keys(cv) as i}
 	<div class="flex flex-col gap-y-4">
-		<a href={`#${i}`} id={i} class="font-regular text-md mt-5 whitespace-pre-line sm:text-lg">
+		<a href={`#${i}`} id={i} class="font-regular text-md mt-5 whitespace-pre-line">
 			{i}
 		</a>
 		{#if cv.hasOwnProperty(i)}
