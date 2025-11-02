@@ -8,11 +8,8 @@
 
 <Seo preloads={[{ as: 'image', href: data.videos[0].content.thumbnail.filename }]} title="Technical Videos - Rishi Raj Jain" />
 
-<h1 class="text-2xl font-bold sm:text-4xl">Videos</h1>
-
-<a href="#About" class="font-regular text-md mt-4 whitespace-pre-line sm:text-lg">About</a>
-
-<p class="mt-2 font-light text-slate-600">Here's a collection of my technical videos and presentations.</p>
+<h1 class="text-2xl font-bold">Videos</h1>
+<p class="mt-2 font-light">Here's a collection of my technical videos and presentations.</p>
 
 <div class="grid md:grid-cols-2 md:gap-8">
 	<div class="relative flex w-full flex-col mt-6 [&>iframe]:h-[300px]">
