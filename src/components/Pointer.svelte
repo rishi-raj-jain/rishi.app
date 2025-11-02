@@ -3,11 +3,11 @@
 </script>
 
 {#if j && j.href}
-	<a target="_blank" rel="noreferrer" href={j.href || '#'} class="flex flex-row items-center justify-start font-light text-black border-b">
+	<a target="_blank" rel="noreferrer" href={j.href || '#'} class="flex flex-row items-center justify-start border-b font-light">
 		{j.title}
 	</a>
 {:else}
-	<span class="flex flex-row items-center justify-start font-light text-black">
+	<span class="flex flex-row items-center justify-start font-light">
 		{j.title}
 	</span>
 {/if}
