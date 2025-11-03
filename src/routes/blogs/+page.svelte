@@ -50,7 +50,7 @@
 </div>
 <ol class="mt-4 flex w-full ml-4 gap-y-1 flex-col text-sm">
 	{#each data.posts as item}
-		<li class="list-disc text-gray-400 hover:underline">
+		<li class="list-decimal text-gray-400 hover:underline">
 			{#if item.slug}
 				<a href={`/blog/${item.slug}`} class="text-black">
 					{item.content.title}
