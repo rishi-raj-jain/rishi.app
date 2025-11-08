@@ -6,9 +6,9 @@
 	import Author from '@/src/components/Author.svelte'
 	import MorePosts from '@/src/components/MorePosts.svelte'
 	import DateString from '@/src/components/DateString.svelte'
-	import Comments from '@/src/components/Comments/Post.svelte'
-	import ViewComments from '@/src/components/Comments/View.svelte'
-	import LoadComments from '@/src/components/Comments/Load.svelte'
+	// import Comments from '@/src/components/Comments/Post.svelte'
+	// import ViewComments from '@/src/components/Comments/View.svelte'
+	// import LoadComments from '@/src/components/Comments/Load.svelte'
 </script>
 
 <Seo
@@ -20,19 +20,20 @@
 
 <div class="flex w-full flex-col items-center">
 	<div class="w-full md:max-w-2xl">
-		<div class="flex w-full flex-col items-center">
+		<div class="flex w-full flex-col">
 			<DateString date={new Date(data.blog.post.first_published_at)} />
-			<h1 class="mb-7 mt-3 text-center text-2xl font-bold sm:text-4xl">{data.blog.post.content.title}</h1>
+			<h1 class="mb-7 mt-3 text-2xl font-bold">{data.blog.post.content.title}</h1>
 			<Author post={data.blog.post} />
 		</div>
 		<div class="mt-7 h-[1px] w-full bg-gray-200" />
 		<article class="prose mt-10 flex max-w-none flex-col items-center text-sm">
 			{@html data.blog.post.content.long_text}
 		</article>
-		<Comments slug={data.slug} />
+		<!-- <Comments slug={data.slug} />
 		<LoadComments {data} />
-		<ViewComments />
+		<ViewComments /> -->
 		{#await data.streamed.morePosts then value}
+			<div class="mt-12 h-[1px] w-full bg-gray-200" />
 			<MorePosts posts={value} />
 		{/await}
 	</div>
