@@ -39,6 +39,18 @@ export const websites: Website[] = [
 		]
 	},
 	{
+		title: 'Nomad Magazine',
+		href: 'https://nomad-magazine.com/',
+		symbol: 'https://nomad-magazine.com/favicon.png',
+		description: 'Global print-first magazine dedicated to the digital nomad lifestyle, with in-depth stories, tips, and resources for modern nomads.',
+		techStack: [
+			{ name: 'Astro', logo: 'astro', color: '#000000' },
+			{ name: 'TypeScript', logo: 'typescript', color: '#3178C6' },
+			{ name: 'Tailwind CSS', logo: 'tailwindcss', color: '#06B6D4' },
+			{ name: 'Vercel', logo: 'vercel', color: '#000000' }
+		]
+	},
+	{
 		title: 'Dualment',
 		href: 'https://dualment.com/',
 		symbol: 'https://dualment.com/assets/favicons/apple-touch-icon.png',
@@ -60,6 +72,18 @@ export const websites: Website[] = [
 			{ name: 'TypeScript', logo: 'typescript', color: '#3178C6' },
 			{ name: 'Tailwind CSS', logo: 'tailwindcss', color: '#06B6D4' },
 			{ name: 'Vercel', logo: 'vercel', color: '#000000' }
+		]
+	},
+	{
+		title: 'Capgo',
+		href: 'https://capgo.app/',
+		symbol: 'https://capgo.app/favicon.svg',
+		description: 'Live updates for Capacitor apps - ship updates instantly.',
+		techStack: [
+			{ name: 'Astro', logo: 'astro', color: '#000000' },
+			{ name: 'Vue.js', logo: 'vuedotjs', color: '#4FC08D' },
+			{ name: 'TypeScript', logo: 'typescript', color: '#3178C6' },
+			{ name: 'Cloudflare', logo: 'cloudflare', color: '#F38020' }
 		]
 	},
 	{
@@ -113,18 +137,6 @@ export const websites: Website[] = [
 		]
 	},
 	{
-		title: 'Capgo',
-		href: 'https://capgo.app/',
-		symbol: 'https://capgo.app/favicon.svg',
-		description: 'Live updates for Capacitor apps - ship updates instantly.',
-		techStack: [
-			{ name: 'Astro', logo: 'astro', color: '#000000' },
-			{ name: 'Vue.js', logo: 'vuedotjs', color: '#4FC08D' },
-			{ name: 'TypeScript', logo: 'typescript', color: '#3178C6' },
-			{ name: 'Cloudflare', logo: 'cloudflare', color: '#F38020' }
-		]
-	},
-	{
 		title: 'Arian Architects',
 		href: 'https://arian-architects.github.io/',
 		symbol: 'https://arian-architects.github.io/static/favicon-image.png',
@@ -147,18 +159,6 @@ export const websites: Website[] = [
 			{ name: 'Bootstrap', logo: 'bootstrap', color: '#563D7C' },
 			{ name: 'Jenkins', logo: 'jenkins', color: '#D24939' },
 			{ name: 'Cloudflare', logo: 'cloudflare', color: '#F38020' }
-		]
-	},
-	{
-		title: 'Nomad Magazine',
-		href: 'https://nomad-magazine.com/',
-		symbol: 'https://nomad-magazine.com/favicon.png',
-		description: 'Global print-first magazine dedicated to the digital nomad lifestyle, with in-depth stories, tips, and resources for modern nomads.',
-		techStack: [
-			{ name: 'Astro', logo: 'astro', color: '#000000' },
-			{ name: 'TypeScript', logo: 'typescript', color: '#3178C6' },
-			{ name: 'Tailwind CSS', logo: 'tailwindcss', color: '#06B6D4' },
-			{ name: 'Vercel', logo: 'vercel', color: '#000000' }
 		]
 	},
 	{
