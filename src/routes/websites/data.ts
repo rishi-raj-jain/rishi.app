@@ -148,6 +148,30 @@ export const websites: Website[] = [
 			{ name: 'Jenkins', logo: 'jenkins', color: '#D24939' },
 			{ name: 'Cloudflare', logo: 'cloudflare', color: '#F38020' }
 		]
+	},
+	{
+		title: 'Nomad Magazine',
+		href: 'https://nomad-magazine.com/',
+		symbol: 'https://nomad-magazine.com/favicon.png',
+		description: 'Global print-first magazine dedicated to the digital nomad lifestyle, with in-depth stories, tips, and resources for modern nomads.',
+		techStack: [
+			{ name: 'Astro', logo: 'astro', color: '#000000' },
+			{ name: 'TypeScript', logo: 'typescript', color: '#3178C6' },
+			{ name: 'Tailwind CSS', logo: 'tailwindcss', color: '#06B6D4' },
+			{ name: 'Vercel', logo: 'vercel', color: '#000000' }
+		]
+	},
+	{
+		title: 'TailwindCSS on Fly',
+		href: 'https://tailwindcss-on-fly.fly.dev/',
+		symbol: 'https://www.google.com/s2/favicons?domain=tailwindcss-on-fly.fly.dev&sz=128',
+		description: 'An easy to use API that generates TailwindCSS on the fly.',
+		techStack: [
+			{ name: 'Astro', logo: 'astro', color: '#000000' },
+			{ name: 'TypeScript', logo: 'typescript', color: '#3178C6' },
+			{ name: 'Tailwind CSS', logo: 'tailwindcss', color: '#06B6D4' },
+			{ name: 'Fly.io', logo: 'flydotio', color: '#7B3BE2' }
+		]
 	}
 ]
 
