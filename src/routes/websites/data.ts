@@ -135,6 +135,19 @@ export const websites: Website[] = [
 			{ name: 'Tailwind CSS', logo: 'tailwindcss', color: '#06B6D4' },
 			{ name: 'GitHub Pages', logo: 'github', color: '#181717' }
 		]
+	},
+	{
+		title: 'Wellowise',
+		href: 'https://web.archive.org/web/20240822101341/https://wellowise.com/',
+		symbol: 'https://web.archive.org/web/20220625185039im_/https://wellowise.com/assets/images/hotlink-ok/wellowise.png',
+		description: 'Precision nutrition plan guided by your genes and unique health needs.',
+		techStack: [
+			{ name: 'Angular', logo: 'angular', color: '#DD0031' },
+			{ name: 'TypeScript', logo: 'typescript', color: '#3178C6' },
+			{ name: 'Bootstrap', logo: 'bootstrap', color: '#563D7C' },
+			{ name: 'Jenkins', logo: 'jenkins', color: '#D24939' },
+			{ name: 'Cloudflare', logo: 'cloudflare', color: '#F38020' }
+		]
 	}
 ]
 
