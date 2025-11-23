@@ -9,5 +9,6 @@
 	<a class={`font-light ${$page.url.pathname.includes('/storyblok') && 'border-b text-black'}`} href="/storyblok">Storyblok</a>
 	<a class={`font-light ${$page.url.pathname.includes('/showcase') && 'border-b text-black'}`} href="/showcase">Showcase</a>
 	<a class={`font-light ${$page.url.pathname.includes('/videos') && 'border-b text-black'}`} href="/videos">Videos</a>
+	<a class={`font-light ${$page.url.pathname.includes('/websites') && 'border-b text-black'}`} href="/websites">Websites</a>
 	<a class={`font-light ${$page.url.pathname.includes('/uses') && 'border-b text-black'}`} href="/uses">Uses</a>
 </nav>

@@ -17,7 +17,7 @@
 			and technical understanding. Typically, I briefly explain a project, and he builds it impressively in a short period. I highly recommend him for engineering and software
 			development projects.
 		</span>
-		<span class="mt-2 text-slate-600 text-xs"> Enes Akar </span>
+		<span class="mt-2 text-xs text-slate-600"> Enes Akar </span>
 		<span class="text-xs text-slate-600"> CEO </span>
 		<span class="text-xs text-slate-600"> Upstash </span>
 	</div>
@@ -30,7 +30,7 @@
 			great technical writing skills, able to tackle a wide range of topics. Working with Rishi was a fantastic experience, and his contributions really helped us scale our content
 			production.
 		</span>
-		<span class="mt-2 text-slate-600 text-xs"> Edouard Bonlieu </span>
+		<span class="mt-2 text-xs text-slate-600"> Edouard Bonlieu </span>
 		<span class="text-xs text-slate-600"> Co-Founder and CPO </span>
 		<span class="text-xs text-slate-600"> Koyeb </span>
 	</div>
@@ -40,15 +40,15 @@
 	<div class="flex flex-col">
 		<span class="text-sm font-light">
 			We collaborated with Rishi for a few
-			<a target="_blank" href="https://www.harperdb.io/author/rishi-raj-jain"><u>tutorials/articles on HarperDB</u></a>. He was great to work with, set
-			clear expectations, and produced the content we were looking for! Great resource for the dev community.
+			<a target="_blank" href="https://www.harperdb.io/author/rishi-raj-jain"><u>tutorials/articles on HarperDB</u></a>. He was great to work with, set clear expectations, and
+			produced the content we were looking for! Great resource for the dev community.
 		</span>
 		<span class="mt-2 text-xs text-slate-600"> Margo McCabe </span>
 		<span class="text-xs text-slate-600"> Head of Partnerships & DevRel </span>
 		<span class="text-xs text-slate-600"> HarperDB </span>
 	</div>
 </div>
-<ol class="mt-4 flex w-full ml-4 gap-y-1 flex-col text-sm">
+<ol class="ml-4 mt-4 flex w-full flex-col gap-y-1 text-sm">
 	{#each data.posts as item}
 		<li class="list-decimal text-gray-400 hover:underline">
 			{#if item.slug}
