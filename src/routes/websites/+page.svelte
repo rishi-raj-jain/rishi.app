@@ -50,8 +50,7 @@
 				<img src={website.symbol} class="mt-1 h-8 w-8 rounded" alt={`${website.title} favicon`} />
 				<div class="flex flex-1 flex-col gap-y-1">
 					<a href={website.href} target="_blank" rel="noopener noreferrer" class="group flex flex-row items-center gap-x-2 text-xl font-medium hover:underline">
-						<span>{website.title}</span>
-						<span class="text-sm text-gray-400 group-hover:text-black">&#8599;</span>
+						{website.title}
 					</a>
 					{#if website.description}
 						<p class="text-sm font-light text-gray-600">{website.description}</p>

@@ -123,6 +123,18 @@ export const websites: Website[] = [
 			{ name: 'TypeScript', logo: 'typescript', color: '#3178C6' },
 			{ name: 'Cloudflare', logo: 'cloudflare', color: '#F38020' }
 		]
+	},
+	{
+		title: 'Arian Architects',
+		href: 'https://arian-architects.github.io/',
+		symbol: 'https://arian-architects.github.io/static/favicon-image.png',
+		description: 'A leading architecture studio in Delhi practicing architecture, interiors and furniture design.',
+		techStack: [
+			{ name: 'Astro', logo: 'astro', color: '#000000' },
+			{ name: 'TypeScript', logo: 'typescript', color: '#3178C6' },
+			{ name: 'Tailwind CSS', logo: 'tailwindcss', color: '#06B6D4' },
+			{ name: 'GitHub Pages', logo: 'github', color: '#181717' }
+		]
 	}
 ]
 
