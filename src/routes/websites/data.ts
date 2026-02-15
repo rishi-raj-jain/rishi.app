@@ -88,7 +88,7 @@ export const websites: Website[] = [
 	},
 	{
 		title: 'Tripinfox',
-		href: 'https://www.tripinfox.com/',
+		href: '/websites/tripinfox',
 		symbol: 'https://www.tripinfox.com/symbol.png',
 		description: 'Travel information and planning platform.',
 		techStack: [
