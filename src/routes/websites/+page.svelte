@@ -49,18 +49,17 @@
 			<div class="flex items-start gap-x-3">
 				<img src={website.symbol} class="mt-1 h-8 w-8 rounded" alt={`${website.title} favicon`} />
 				<div class="flex flex-1 flex-col gap-y-1">
-					<a href={website.href} target="_blank" rel="noopener noreferrer" class="group flex flex-row items-center gap-x-2 text-xl font-medium hover:underline">
+					<a href={website.href} target={website.href.startsWith('/') ? "_self" : "_blank"} rel="noopener noreferrer" class="group flex flex-row items-center gap-x-2 text-xl font-medium hover:underline">
 						{website.title}
 					</a>
 					{#if website.description}
 						<p class="text-sm font-light text-gray-600">{website.description}</p>
 					{/if}
-					<a href={website.href} target="_blank" rel="noopener noreferrer" class="text-xs text-gray-400 hover:text-black">
+					<a href={website.href} target={website.href.startsWith('/') ? "_self" : "_blank"} rel="noopener noreferrer" class="text-xs text-gray-400 hover:text-black">
 						{website.href}
 					</a>
 				</div>
 			</div>
-
 			<!-- Tech Stack -->
 			<div class="flex flex-col gap-y-2">
 				<span class="text-xs font-medium text-gray-500">Tech Stack</span>
@@ -79,7 +78,6 @@
 			</div>
 		</div>
 	{/each}
-
 	{#if filteredWebsites.length === 0}
 		<div class="flex flex-col items-center justify-center py-12 text-center">
 			<p class="text-gray-500">No websites found with the selected technology.</p>

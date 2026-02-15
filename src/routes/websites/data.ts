@@ -150,7 +150,7 @@ export const websites: Website[] = [
 	},
 	{
 		title: 'Wellowise',
-		href: 'https://web.archive.org/web/20240822101341/https://wellowise.com/',
+		href: '/websites/wellowise',
 		symbol: 'https://web.archive.org/web/20220625185039im_/https://wellowise.com/assets/images/hotlink-ok/wellowise.png',
 		description: 'Precision nutrition plan guided by your genes and unique health needs.',
 		techStack: [
